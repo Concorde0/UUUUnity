@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bounds
+  - Water
+  - GroundEnemy
+  - AirEnemy
+  - Interactable
+  - ChestMonster
+  - NPC
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - GroundEnemy
+  - AirEnemy
+  - ChestMonster
+  - Bridge
+  - Attack
+  - NPC
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: back ground
+    uniqueID: 1168611625
+    locked: 0
+  - name: view
+    uniqueID: 3280772041
+    locked: 0
+  - name: main
+    uniqueID: 3208621879
+    locked: 0
+  - name: ForwardTree
+    uniqueID: 243348757
+    locked: 0
+  - name: character
+    uniqueID: 797268387
+    locked: 0
+  - name: ForHead
+    uniqueID: 371249615
+    locked: 0

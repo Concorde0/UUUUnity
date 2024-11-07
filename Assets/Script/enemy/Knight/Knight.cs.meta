@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6037aba904c9bb2469cfaa3b7572b46c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - physiscCheck: {instanceID: 0}
+  - knight: {instanceID: 0}
+  - attacker: {instanceID: 0}
+  - posEvent: {fileID: 11400000, guid: 09500edf507e8724f9bc623fc2c7dc09, type: 2}
+  - playerPos: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
