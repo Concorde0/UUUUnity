@@ -134,14 +134,14 @@ public class PlayerController : MonoBehaviour
         }
         if (PowerWaitTimeCounter < 0 && character.currentPower < 200 && isRun == false)
         {
-            character.currentPower += 25*Time.deltaTime;
+            character.currentPower += 50*Time.deltaTime;
             Attack?.Invoke(character);
         }
         if (isRun && rb.velocity.x!= 0 && character.currentPower >0)
         {
             currentSpeed = runSpeed;
             (PowerWaitTimeCounter) = PowerWaitTime;
-            character.currentPower -= 13*Time.deltaTime;
+            character.currentPower -= 25*Time.deltaTime;
             Attack?.Invoke(character);
         }
         else if (character.currentPower<0)
@@ -291,14 +291,14 @@ public class PlayerController : MonoBehaviour
     private void LightAttackPower()
     {
         PowerWaitTimeCounter = PowerWaitTime;
-        character.currentPower -= 20;
+        character.currentPower -= 35;
         Attack?.Invoke(character);
     }
     
     private void HeavyAttackPower()
     {
-        PowerWaitTimeCounter = PowerWaitTime;
-        character.currentPower -= 30;
+        PowerWaitTimeCounter = PowerWaitTime+1f;
+        character.currentPower -= 55;
         Attack?.Invoke(character);
         
     }

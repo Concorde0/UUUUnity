@@ -1798,7 +1798,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_rock_81
+      name: wall
       rect:
         serializedVersion: 2
         x: 16
@@ -7048,7 +7048,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: r7
+      name: r7&anim
       rect:
         serializedVersion: 2
         x: 448
@@ -15757,7 +15757,6 @@ TextureImporter:
       env_rock_79: 1012835691
       env_rock_8: 1445236320
       env_rock_80: -1923136197
-      env_rock_81: -2051400021
       env_rock_82: -1722261734
       env_rock_83: 1012357587
       env_rock_84: 395504538
@@ -15812,9 +15811,10 @@ TextureImporter:
       r4: 1142383700
       r5: 2071206571
       r6: 1831116835
-      r7: -448266107
+      r7&anim: -448266107
       r8: -1000174014
       r9: -1343397908
+      wall: -2051400021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

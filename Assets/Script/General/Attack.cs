@@ -13,7 +13,8 @@ public class Attack : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D other)
     {
-        other.GetComponent<Character>()?.TakeDamage(this);
         other.GetComponent<Bridge>()?.TakeDamage();
+        other.GetComponent<Character>()?.TakeDamage(this);
+        other.GetComponent<HideWall>()?.TakeDamage();
     }
 }

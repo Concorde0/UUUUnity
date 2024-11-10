@@ -43,7 +43,6 @@ public class UIManager : MonoBehaviour
 
     private void OnGameOverEvnet()
     {
-        
         gameOverPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(restartButtom);
     }

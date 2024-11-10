@@ -22,9 +22,9 @@ public class Demon1 : MonoBehaviour
     {
         if(Knight!= null)
         {
-            if (Vector2.Distance(transform.position, Knight.position) < attackDistance)
+            if (Vector2.Distance(transform.position, Knight.position ) < attackDistance)
             {
-                Debug.Log("!!");
+                //Debug.Log("!!");
                 anim.SetBool("attack", true);
             }
             else
