@@ -12,7 +12,6 @@ public class KnightAttack1State : GroundEnemyBaseState
         currentEnemy = enemy;
         currentEnemy.knight.isAttack = true;
         attackWaitTimeConter = attackWait;
-        
         currentEnemy.currentSpeed = 0;
         currentEnemy.anim.SetBool("attack1", true);
     }

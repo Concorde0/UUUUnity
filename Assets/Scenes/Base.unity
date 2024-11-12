@@ -1920,7 +1920,7 @@ MonoBehaviour:
   arrowPrefab: {fileID: 5586905182270694457, guid: b6bd2fb26f6da9147bc5e4822962a79c, type: 3}
   shootWaitTime: 1
   shootWaitTimeCounter: 0
-  PowerWaitTime: 0.7
+  PowerWaitTime: 1
   PowerWaitTimeCounter: 0
   tmpwaitTime: 1
   tmpwaitTimeConter: 0

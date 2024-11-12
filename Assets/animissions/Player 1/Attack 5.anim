@@ -230,7 +230,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.9230769
-    functionName: HheavyAttackShake
+    functionName: HeavyAttackPower
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -169,6 +169,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
+
     }
     private void FixedUpdate()
     {
@@ -241,7 +242,7 @@ public class PlayerController : MonoBehaviour
     }
     private void StopRunning(InputAction.CallbackContext obj)
     {
-
+        
         currentSpeed = speed;
         isRun = false;
 

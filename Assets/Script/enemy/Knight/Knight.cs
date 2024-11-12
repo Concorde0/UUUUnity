@@ -23,15 +23,19 @@ public class Knight : GroundEnemy
         stabState = new KnightStabState();
         whackState = new KnightWhackState();
     }
-    
+    protected override void Update()
+    {
+        base.Update();
+        AttackPlayer();
+    }
     protected override void FixedUpdate()
     {
-        if (!isHurt & !isDead && !wait && !attackPlayer && !isAttack)
+        if (!isHurt && !isDead && !wait && !attackPlayer && !isAttack)
         {
             Move();
         }
         if(!isDead)
-        AttackPlayer();
+        
 
         currentState.PhysicsUpdate();
     }
@@ -73,7 +77,7 @@ public class Knight : GroundEnemy
 
     public override bool FoundPlayer()
     {
-        Debug.Log("Found");
+        Debug.Log("KnightFound");
         return Physics2D.BoxCast(transform.position + (Vector3)centerOffset, checkSize.normalized, 0, faceDir, checkDistance, attackLayer);
     }
 

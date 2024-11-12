@@ -12,11 +12,12 @@ using UnityEngine.TextCore.Text;
 
 public class GroundEnemy : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
     [HideInInspector]public Animator anim;
     [HideInInspector]public PhysiscCheck physiscCheck;
-    public Knight knight;
-    public Skeleton skeleton;
+    [HideInInspector] public Knight knight;
+    [HideInInspector] public Skeleton skeleton;
+    [HideInInspector]public Character character;
     [Header("基本参数")]
 
     public float normalSpeed;
@@ -24,7 +25,7 @@ public class GroundEnemy : MonoBehaviour
     public float attackDistance;
     public float foundDistance;
     [HideInInspector] public float currentSpeed;
-    public Vector3 faceDir;
+    [HideInInspector] public Vector3 faceDir;
     [HideInInspector] public float hurtForce;
     [HideInInspector] public Transform attacker;
 
@@ -38,13 +39,10 @@ public class GroundEnemy : MonoBehaviour
     public Transform playerPos;
     public bool attackPlayer;
     public bool foundPlayer;
-
-
-
     [Header("计时器")]
+    public bool wait;
     public float waitTime;
     public float waitTimeCounter;
-    public bool wait;
     public float lostTime;
     public float lostTimeCounter;
     [Header("状态")]
@@ -60,11 +58,15 @@ public class GroundEnemy : MonoBehaviour
     
     protected virtual void Awake()
     {
+        character = GetComponent<Character>();
         skeleton = GetComponent<Skeleton>();
         knight = GetComponent<Knight>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         physiscCheck = GetComponent<PhysiscCheck>();
+
+
+
         currentSpeed = normalSpeed;
         waitTimeCounter = waitTime; 
     }
@@ -77,6 +79,7 @@ public class GroundEnemy : MonoBehaviour
     {
         posEvent.OnEventRaised += OnposEvent;
         currentState = patrolState;
+        Debug.Log("OnEnable");
         currentState.OnEnter(this);
     }
     private void OnDisable()
@@ -85,7 +88,7 @@ public class GroundEnemy : MonoBehaviour
         currentState.OnExit();
 
     }
-    private void Update()
+    protected virtual void Update()
     {
         faceDir = new Vector3(-transform.localScale.x,0,0);
         currentState.LogicUpdate();
@@ -94,7 +97,7 @@ public class GroundEnemy : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        if (!isHurt & !isDead && !wait )
+        if (!isHurt && !isDead && !wait && !attackPlayer)
         {
             Move();
         }
@@ -201,8 +204,6 @@ public class GroundEnemy : MonoBehaviour
             gameObject.layer = 2;
             anim.SetBool("dead", true);
             isDead = false;
-
-            
         }
         public virtual void DestroyAfterAnimation()
         {

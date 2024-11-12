@@ -270,6 +270,17 @@
                 },
                 {
                     "name": "",
+                    "id": "db2b2d30-13a6-4abf-bf1b-edd591678f4b",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "HeavyAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "77647e78-048f-41c1-b07b-f4956150dfcf",
                     "path": "<Keyboard>/e",
                     "interactions": "",

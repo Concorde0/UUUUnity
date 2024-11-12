@@ -1,26 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class SkeletonChaseState : GroundEnemyBaseState
 {
-    public override void LogicUpdate()
-    {
-        throw new System.NotImplementedException();
-    }
-
     public override void OnEnter(GroundEnemy enemy)
     {
-        throw new System.NotImplementedException();
-    }
+        currentEnemy = enemy;
+        currentEnemy.skeleton.isChase = true;
+        
+        currentEnemy.currentSpeed = currentEnemy.chaseSpeed;
 
-    public override void OnExit()
+    }
+    public override void LogicUpdate()
     {
-        throw new System.NotImplementedException();
+        if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
+        {
+            currentEnemy.rb.transform.localScale = new(1, 1, 1);
+        }
+        if (currentEnemy.rb.transform.position.x > currentEnemy.playerPos.transform.transform.position.x)
+        {
+            currentEnemy.rb.transform.localScale = new(-1, 1, 1);
+        }
+
+        if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+        {
+            //currentEnemy.attackPlayer = true;
+            //Debug.Log("AttackPlayer");
+            currentEnemy.SwichState(NPCState.Attack);
+        }
+        else
+        {
+            currentEnemy.anim.SetBool("run", true);
+        }
+
+
+        
     }
 
     public override void PhysicsUpdate()
     {
-        throw new System.NotImplementedException();
+        
+    }
+    public override void OnExit()
+    {
+        currentEnemy.anim.SetBool("run", false);
+        currentEnemy.skeleton.isChase = false;
     }
 }

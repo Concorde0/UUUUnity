@@ -25,6 +25,8 @@ public class KnightPatrolState : GroundEnemyBaseState
         {
             currentEnemy.rb.transform.localScale = new(-2, 2, 2);
         }
+
+
         if (currentEnemy.knight.attackPlayer && !currentEnemy.knight.wait)//
         {
 

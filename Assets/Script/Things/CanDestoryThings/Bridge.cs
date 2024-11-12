@@ -84,7 +84,6 @@ public class Bridge : MonoBehaviour
         {
             cp.isTrigger = true;
         }
-        
 
     }
     private IEnumerator Destory()
