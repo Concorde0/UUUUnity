@@ -14,9 +14,11 @@ public class GroundEnemy : MonoBehaviour
 {
     public Rigidbody2D rb;
     [HideInInspector]public Animator anim;
-    [HideInInspector] public PhysiscCheck physiscCheck;
-    [HideInInspector] public Knight knight;
+    [HideInInspector]public PhysiscCheck physiscCheck;
+    public Knight knight;
+    public Skeleton skeleton;
     [Header("基本参数")]
+
     public float normalSpeed;
     public float chaseSpeed;
     public float attackDistance;
@@ -50,26 +52,21 @@ public class GroundEnemy : MonoBehaviour
     public bool isDead;
     [Header("特效")]
     public GameObject bloodEffect;
-
+    
 
     protected GroundEnemyBaseState currentState;
     protected GroundEnemyBaseState patrolState;
     protected GroundEnemyBaseState chaseState;
-    protected GroundEnemyBaseState attack1State;
-    protected GroundEnemyBaseState attack2State;
-    protected GroundEnemyBaseState idle2State;
-    protected GroundEnemyBaseState stabState;
-    protected GroundEnemyBaseState whackState;
+    
     protected virtual void Awake()
     {
-        
+        skeleton = GetComponent<Skeleton>();
+        knight = GetComponent<Knight>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         physiscCheck = GetComponent<PhysiscCheck>();
         currentSpeed = normalSpeed;
-        waitTimeCounter = waitTime;
-        knight = GetComponent<Knight>();    
-        
+        waitTimeCounter = waitTime; 
     }
     private void Start()
     {
@@ -110,22 +107,7 @@ public class GroundEnemy : MonoBehaviour
     {
         playerPos = character.transform;
     }
-    //public virtual void Distance()
-    //{
-    //    float distance = (transform.position - playerPos.position).sqrMagnitude;
-    //    if (distance < radius)
-    //    {
-    //        foundPlayer = true;
-    //    }
-    //}
-    //public virtual void AttackDostamce()
-    //{
-    //    float distance = (transform.position - playerPos.position).sqrMagnitude;
-    //    if (distance < attackDistance)
-    //    {
-    //        attackPlayer = true;
-    //    }
-    //}
+  
     public virtual void Move()
     {
         rb.velocity = new Vector2 (currentSpeed * faceDir.x * Time.deltaTime,rb.velocity.y);
@@ -160,17 +142,12 @@ public class GroundEnemy : MonoBehaviour
     
 
 
-    public void SwichState(NPCState state)
+    public virtual void SwichState(NPCState state)
     {
         var newState = state switch
         {
             NPCState.Patrol => patrolState,
             NPCState.Chase => chaseState,
-            NPCState.Attack1 => attack1State,
-            NPCState.Attack2 => attack2State,
-            NPCState.Idel2 => idle2State,
-            NPCState.Stab => stabState,
-            NPCState.Whack => whackState,
 
             _ => null
         };
@@ -185,14 +162,22 @@ public class GroundEnemy : MonoBehaviour
         
         attacker = attackTrans;
         //turn
-        if(attackTrans.position.x - transform.position.x > 0)
-        {
-            transform.localScale = new Vector3(-transform.localScale.x,transform.localScale.y,transform.localScale.z);
-        }
-        if(attackTrans.position.x - transform.position.x < 0)
-        {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
-        }
+
+
+        
+        //if(attackTrans.position.x - transform.position.x > 0)
+        //{
+        //    transform.localScale = new Vector3(-transform.localScale.x,transform.localScale.y,transform.localScale.z);
+        //}
+        //if(attackTrans.position.x - transform.position.x < 0)
+        //{
+        //    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        //}
+
+
+
+
+
         //击退
         
         isHurt = true;
@@ -219,8 +204,6 @@ public class GroundEnemy : MonoBehaviour
 
             
         }
-        
-
         public virtual void DestroyAfterAnimation()
         {
             Destroy(this.gameObject);

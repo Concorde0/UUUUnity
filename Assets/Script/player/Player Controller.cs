@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+//using Rewired;
 using Debug = UnityEngine.Debug;
 
 public class PlayerController : MonoBehaviour
@@ -57,14 +58,20 @@ public class PlayerController : MonoBehaviour
     public UnityEvent<PlayerController> playerControllerEvent;
     public UnityEvent<Character> Attack;
     private Character character;
+    [Header("Shadow")]
+    [Header("XBOX")]
+    public float low =  1;
+    public float high = 1;
+    public float time = 0.2f;
     
 
-    
+
+
     private void Awake()
     {
         //tmp
         tmpwaitTimeConter = tmpwaitTime;
-        
+
         currentSpeed = speed;
         character = GetComponent<Character>();
         rb = GetComponent<Rigidbody2D>();
@@ -92,7 +99,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    
+
 
     private void OnEnable()
     {
@@ -102,7 +109,7 @@ public class PlayerController : MonoBehaviour
         loadDataEvnet.OnEventRaised += OnLoadDataEvnet;
         backToMenuEvent.OnEventRaised += OnLoadDataEvnet;
 
-        
+
     }
 
     private void OnDisable()
@@ -116,14 +123,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-   
 
-    private void Update() 
+
+    private void Update()
     {
         inputDirection = inputControl.GamePlay.Move.ReadValue<Vector2>();
 
         CheckState();
-        if (shootWaitTimeCounter >=-0.1)
+        if (shootWaitTimeCounter >= -0.1)
         {
             shootWaitTimeCounter -= Time.deltaTime;
         }
@@ -134,53 +141,56 @@ public class PlayerController : MonoBehaviour
         }
         if (PowerWaitTimeCounter < 0 && character.currentPower < 200 && isRun == false)
         {
-            character.currentPower += 50*Time.deltaTime;
+            character.currentPower += 50 * Time.deltaTime;
             Attack?.Invoke(character);
         }
-        if (isRun && rb.velocity.x!= 0 && character.currentPower >0)
+        if (isRun && rb.velocity.x != 0 && character.currentPower > 0)
         {
             currentSpeed = runSpeed;
             (PowerWaitTimeCounter) = PowerWaitTime;
-            character.currentPower -= 25*Time.deltaTime;
+            character.currentPower -= 25 * Time.deltaTime;
+            ShadowPool.instance.GetFromPool();
             Attack?.Invoke(character);
         }
-        else if (character.currentPower<0)
+        else if (character.currentPower < 0)
         {
             isRun = false;
-            currentSpeed =speed;
+            currentSpeed = speed;
         }
         ///NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN///
-        if(rb.velocity.x == 0)
+        if (rb.velocity.x == 0)
         {
             tmpwaitTimeConter -= Time.deltaTime;
         }
-        if(rb.velocity.x == 0 && tmpwaitTimeConter < 0)
+        if (rb.velocity.x == 0 && tmpwaitTimeConter < 0)
         {
             isHurt = false;
             tmpwaitTimeConter = tmpwaitTime;
         }
-        
-       
+
+
     }
     private void FixedUpdate()
     {
-        if(!isHurt && !isAttack && !isArrow)
+        if (!isHurt && !isAttack && !isArrow)
         {
             Move();
         }
+
+        
     }
     private void OnLoadEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)
     {
-        inputControl.GamePlay.Disable();    
+        inputControl.GamePlay.Disable();
     }
     private void OnLoadDataEvnet()
     {
         isDead = false;
         isHurt = false;
-        
+
 
     }
-    
+
     private void OnafterSceneLoadedEvent()
     {
         inputControl.GamePlay.Enable();
@@ -188,7 +198,7 @@ public class PlayerController : MonoBehaviour
 
     private void Shoot(InputAction.CallbackContext obj)
     {
-        
+
         if (shootWaitTimeCounter <= 0)
         {
             playerAnimation.PlayArrow();
@@ -201,18 +211,18 @@ public class PlayerController : MonoBehaviour
             Instantiate(arrowPrefab, arorwPosition, transform.rotation);
             shootWaitTimeCounter = shootWaitTime;
         }
-        
-        
+
+
     }
 
 
     public void Move()
     {
-        
-        rb.velocity = new Vector2(inputDirection.x * currentSpeed * Time.deltaTime,rb.velocity.y);
+
+        rb.velocity = new Vector2(inputDirection.x * currentSpeed * Time.deltaTime, rb.velocity.y);
 
         int faceDir = (int)transform.localScale.x;
-            
+
         if (inputDirection.x > 0)
             faceDir = -2;
         if (inputDirection.x < 0)
@@ -226,26 +236,28 @@ public class PlayerController : MonoBehaviour
     {
 
         isRun = true;
+        
         //character.currentPower -= 10*Time.deltaTime;
     }
-    private void StopRunning(InputAction.CallbackContext context)
+    private void StopRunning(InputAction.CallbackContext obj)
     {
 
         currentSpeed = speed;
         isRun = false;
+
     }
 
 
     private void Jump(InputAction.CallbackContext obj)
     {
-        if(physiscCheck.isGround)
-        rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        if (physiscCheck.isGround)
+            rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
     }
 
-   
+
     private void PlayerLightAttack(InputAction.CallbackContext obj)
     {
-        if(character.currentPower > 20)
+        if (character.currentPower > 20)
         {
             playerAnimation.PlayLightAttack();
             isAttack = true;
@@ -253,11 +265,14 @@ public class PlayerController : MonoBehaviour
 
         //character.currentPower -= 5;
         Attack?.Invoke(character);
+        
+
+
 
     }
     private void PlayerHeavyAttack(InputAction.CallbackContext obj)
     {
-        if(character.currentPower > 30)
+        if (character.currentPower > 30)
         {
             playerAnimation.PlayHeavyAttack();
             isAttack = true;
@@ -265,6 +280,7 @@ public class PlayerController : MonoBehaviour
 
         //character.currentPower -= 10;
         Attack?.Invoke(character);
+        
     }
 
     public void GetHurt(Transform attacker)
@@ -273,15 +289,15 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector2.zero;
         Vector2 dir = new Vector2((transform.position.x - attacker.position.x), 0).normalized;
         rb.AddForce(dir * hurtForce, ForceMode2D.Impulse);
-        
+
     }
-   
+
 
     public void PlayerDead()
     {
         isDead = true;
         inputControl.GamePlay.Disable();
-        
+
     }
 
     private void CheckState()
@@ -293,19 +309,27 @@ public class PlayerController : MonoBehaviour
         PowerWaitTimeCounter = PowerWaitTime;
         character.currentPower -= 35;
         Attack?.Invoke(character);
+       
     }
-    
+
     private void HeavyAttackPower()
     {
-        PowerWaitTimeCounter = PowerWaitTime+1f;
+        
+        PowerWaitTimeCounter = PowerWaitTime + 1f;
         character.currentPower -= 55;
         Attack?.Invoke(character);
         
+
     }
     private void AttackConter()
     {
         PowerWaitTimeCounter = PowerWaitTime;
     }
 
+    private void Shadow()
+    {
+        
+    }
+    
 
 }

@@ -1,11 +1,8 @@
 public enum NPCState
 {
-    Patrol, Chase, Skill, Attack, Hit, Tailattcak,Attack1, Attack2,Idel2,Stab,Whack,
+    Patrol, Chase, Skill, Attack, Hit, Tailattcak,Attack1, Attack2,Idel2,Stab,Whack,Rebone,
 }
-public enum KnightState
-{
 
-}
 
 public enum SceneType
 {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KnightStabState : GroundEnemyBaseState
 {
+
     public float attackWait = 3;
     public float attackWaitTimeConter;
     public override void OnEnter(GroundEnemy enemy)

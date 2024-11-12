@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering.UI;
 
 public class Bridge : MonoBehaviour
 {
     public int health;
     private Rigidbody2D rb;
+    private BoxCollider2D bc;
+    public bool hasbc;
+    private CapsuleCollider2D cp;
+    public bool hascp;
     public float invulunerableDuration;
     private float invulunerableCounter;
     public bool invulnerable;
@@ -15,7 +20,11 @@ public class Bridge : MonoBehaviour
     public float otherwardForceMagnitude;
     private void Awake()
     {
+        cp = GetComponent<CapsuleCollider2D>(); 
+        bc = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
+        hasbc = (bc != null);
+        hascp = (cp != null);
     }
     private void Start()
     {
@@ -47,9 +56,9 @@ public class Bridge : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Dynamic;
             StartCoroutine(Destory());
             Addforce();
-
+            StartCoroutine(Fix());
         }
-        StartCoroutine(Fix());
+        
     }
     private void TriggerInvulnerable()
     {
@@ -66,11 +75,21 @@ public class Bridge : MonoBehaviour
         //Debug.Log("change2");
         rb.gravityScale = 1;
         rb.freezeRotation = false;
+        yield return new WaitForSeconds(1f);
+        if (hasbc)
+        {
+            bc.isTrigger = true;
+        }
+        if (hascp)
+        {
+            cp.isTrigger = true;
+        }
         
+
     }
     private IEnumerator Destory()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         Destroy(gameObject);
     }
     private void Addforce()

@@ -173,8 +173,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.2
   invulnerable: 0
+  downwardForceMagnitude: 0
+  otherwardForceMagnitude: 0
 --- !u!70 &260437539150479018
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -207,6 +211,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.0233614, y: 0.71523595}
-  m_Size: {x: 10.93651, y: 1.6094977}
+  m_Offset: {x: -0.98041636, y: 0.68790346}
+  m_Size: {x: 10.982446, y: 1.6254823}
   m_Direction: 1

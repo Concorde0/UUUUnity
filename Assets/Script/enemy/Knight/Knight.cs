@@ -7,7 +7,12 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class Knight : GroundEnemy
 {
     public bool isAttack = false;
-    
+    public GroundEnemyBaseState attack1State;
+    public GroundEnemyBaseState attack2State;
+    public GroundEnemyBaseState idle2State;
+    public GroundEnemyBaseState stabState;
+    public GroundEnemyBaseState whackState;
+
     protected override void Awake()
     {
         base.Awake();
@@ -28,14 +33,9 @@ public class Knight : GroundEnemy
         if(!isDead)
         AttackPlayer();
 
-        //DistanceFoundPlayer();
         currentState.PhysicsUpdate();
     }
 
-    //public int GetRandomNumber(int min, int max)
-    //{
-    //    return Random.Range(min, max);
-    //}
     public override void TimeCounter()
     {
         if (wait)
@@ -71,19 +71,30 @@ public class Knight : GroundEnemy
         }
     }
 
-    //public void DistanceFoundPlayer()
-    //{
-
-    //    if (Vector2.Distance(transform.position, playerPos.position) < foundDistance)
-    //    {
-    //        foundPlayer = true;
-    //        //Debug.Log("FoundPlayer");
-    //    }
-    //}
     public override bool FoundPlayer()
     {
         Debug.Log("Found");
         return Physics2D.BoxCast(transform.position + (Vector3)centerOffset, checkSize.normalized, 0, faceDir, checkDistance, attackLayer);
+    }
+
+    public override void SwichState(NPCState state)
+    {
+        var newState = state switch
+        {
+            NPCState.Patrol => patrolState,
+            NPCState.Chase => chaseState,
+            NPCState.Attack1 => attack1State,
+            NPCState.Attack2 => attack2State,
+            NPCState.Idel2 => idle2State,
+            NPCState.Stab => stabState,
+            NPCState.Whack => whackState,
+
+
+            _ => null
+        };
+        currentState.OnExit();
+        currentState = newState;
+        currentState.OnEnter(this);
     }
     public void DistanceFoundPlayer()
     {
@@ -117,9 +128,6 @@ public class Knight : GroundEnemy
     {
         Destroy(this.gameObject);
     }
-    //public override void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.DrawWireSphere(transform.position + (Vector3)centerOffset + new Vector3(checkDistance * -transform.localScale.x, 0), 0.2f);
-    //}
+   
 
 }

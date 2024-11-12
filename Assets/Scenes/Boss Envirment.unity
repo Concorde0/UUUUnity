@@ -278,6 +278,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -440,6 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: 0
@@ -980,6 +984,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -1192,6 +1198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -1343,8 +1351,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.983741, y: -0.00000059410814}
-  m_Size: {x: 6.958599, y: 1.0000364}
+  m_Offset: {x: 5.522975, y: -0.00000065838987}
+  m_Size: {x: 5.8801303, y: 1.0000434}
   m_Direction: 1
 --- !u!114 &216925124
 MonoBehaviour:
@@ -1359,6 +1367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -2112,6 +2122,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 485130569}
+  - {fileID: 560034061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &369011877
@@ -47358,6 +47369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -47569,8 +47582,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.4327012, y: 0.00000017079128}
-  m_Size: {x: 5.9469304, y: 1.0000234}
+  m_Offset: {x: -0.5143171, y: 0.00000006131137}
+  m_Size: {x: 5.9638267, y: 1.0000354}
   m_Direction: 1
 --- !u!114 &507925753
 MonoBehaviour:
@@ -47585,6 +47598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -47686,6 +47701,270 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &560034060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560034061}
+  - component: {fileID: 560034062}
+  - component: {fileID: 560034063}
+  - component: {fileID: 560034065}
+  - component: {fileID: 560034064}
+  - component: {fileID: 560034066}
+  - component: {fileID: 560034067}
+  m_Layer: 8
+  m_Name: Skeleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &560034061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560034060}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.29, y: -7.86, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1845599388}
+  - {fileID: 1203614523}
+  m_Father: {fileID: 316240641}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &560034062
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560034060}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1086345417
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 29a12dce36e9a8a458acff6ebce2af26, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.25, y: 4.0625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &560034063
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560034060}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &560034064
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560034060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04749044, y: 0.8352331}
+  m_Size: {x: 0.89935815, y: 1.9433849}
+  m_Direction: 0
+--- !u!50 &560034065
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560034060}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &560034066
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560034060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 896
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06000203, y: 0.91409266}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.39693135, y: 0.09844854}
+    oldSize: {x: 6.25, y: 4.0625}
+    newSize: {x: 6.25, y: 4.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.87736785, y: 1.8803914}
+  m_EdgeRadius: 0
+--- !u!114 &560034067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560034060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2173bfef7912fb4895258689714d5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  anim: {fileID: 0}
+  physiscCheck: {fileID: 0}
+  knight: {fileID: 0}
+  skeleton: {fileID: 0}
+  normalSpeed: 200
+  chaseSpeed: 0
+  attackDistance: 0
+  foundDistance: 0
+  currentSpeed: 0
+  faceDir: {x: 0, y: 0, z: 0}
+  hurtForce: 0
+  attacker: {fileID: 0}
+  posEvent: {fileID: 0}
+  centerOffset: {x: 0, y: 0}
+  checkSize: {x: 0, y: 0}
+  checkDistance: 0
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  playerPos: {fileID: 0}
+  attackPlayer: 0
+  foundPlayer: 0
+  waitTime: 0
+  waitTimeCounter: 0
+  wait: 0
+  lostTime: 0
+  lostTimeCounter: 0
+  isHurt: 0
+  isDead: 0
+  bloodEffect: {fileID: 0}
+  LeftPositon: {fileID: 0}
+  RightPositon: {fileID: 0}
 --- !u!1 &567740040
 GameObject:
   m_ObjectHideFlags: 0
@@ -49758,6 +50037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -49909,8 +50190,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.50539786, y: -0.00000006024811}
-  m_Size: {x: 5.9789147, y: 1.0000272}
+  m_Offset: {x: 1.4911867, y: -0.0000001777633}
+  m_Size: {x: 5.995815, y: 1.0000397}
   m_Direction: 1
 --- !u!114 &750385444
 MonoBehaviour:
@@ -49925,6 +50206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -3
@@ -50609,6 +50892,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -50870,6 +51155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -51097,7 +51384,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13877869, y: -0.56812}
+  m_Offset: {x: -0.13877869, y: -0.79875755}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -51108,7 +51395,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9892273, y: 2.01124}
+  m_Size: {x: 2.9892273, y: 2.472515}
   m_EdgeRadius: 0
 --- !u!50 &963540706
 Rigidbody2D:
@@ -51150,6 +51437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: 0
@@ -71002,6 +71291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -71110,7 +71401,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0582237, y: -0.5596552}
+  m_Offset: {x: -1.0582237, y: -0.8164959}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -71121,7 +71412,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1164474, y: 1.9943104}
+  m_Size: {x: 3.1164474, y: 2.5079918}
   m_EdgeRadius: 0
 --- !u!50 &1177086855
 Rigidbody2D:
@@ -71163,6 +71454,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: 0
@@ -71425,7 +71718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u524D\u65B9\u6709\u6076\u9B54\uFF0C\u7B49\u6211\u4E0B\u4EE4\u4E00\u8D77\u51B2\u950B\uFF0C\u593A\u53D6\u57CE\u5821\uFF01"
+  m_text: "\u524D\u65B9\u6709\u6076\u9B54\uFF0C\u7AD9\u5728\u6211\u8EAB\u540E\uFF0C\u7B49\u6211\u4E0B\u4EE4\u4E00\u8D77\u51B2\u950B\uFF0C\u593A\u53D6\u57CE\u5821\uFF01"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4c601226e8389649bf6646c3ddc5e53, type: 2}
   m_sharedMaterial: {fileID: -8554772084241785696, guid: d4c601226e8389649bf6646c3ddc5e53, type: 2}
@@ -71502,6 +71795,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193138068}
   m_CullTransparentMesh: 1
+--- !u!1 &1203614522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203614523}
+  m_Layer: 8
+  m_Name: RightPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1203614523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203614522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 560034061}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1212603657
 GameObject:
   m_ObjectHideFlags: 0
@@ -71613,6 +71937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: 0
@@ -71809,8 +72135,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5094306, y: -0.00000017993813}
-  m_Size: {x: 5.924584, y: 1.0000225}
+  m_Offset: {x: 2.5205028, y: -0.00000030046732}
+  m_Size: {x: 5.958324, y: 1.0000321}
   m_Direction: 1
 --- !u!114 &1231548955
 MonoBehaviour:
@@ -71825,6 +72151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -72077,6 +72405,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -75812,6 +76142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -76602,6 +76934,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -77609,6 +77943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: 0
@@ -78450,6 +78786,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -83689,6 +84027,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -83947,6 +84287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -84221,6 +84563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0
   invulnerable: 0
   downwardForceMagnitude: 0
@@ -84257,7 +84601,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9772644, y: -0.58107376}
+  m_Offset: {x: 0.9772644, y: -0.82270336}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -84268,7 +84612,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9545288, y: 2.0371475}
+  m_Size: {x: 2.9545288, y: 2.5204067}
   m_EdgeRadius: 0
 --- !u!50 &1666707345
 Rigidbody2D:
@@ -84655,8 +84999,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.5028021, y: -0.00000029835724}
-  m_Size: {x: 6.005682, y: 1.0000179}
+  m_Offset: {x: 3.4633117, y: -0.00000041285887}
+  m_Size: {x: 6.0730886, y: 1.0000298}
   m_Direction: 1
 --- !u!114 &1705702966
 MonoBehaviour:
@@ -84671,6 +85015,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -2
@@ -87222,6 +87568,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1845599387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845599388}
+  m_Layer: 8
+  m_Name: LeftPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845599388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845599387}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 560034061}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849520554
 GameObject:
   m_ObjectHideFlags: 0
@@ -88209,8 +88586,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.4779136, y: -0.00000041459955}
-  m_Size: {x: 6.0502563, y: 1.0000303}
+  m_Offset: {x: 4.5311055, y: -0.0000005401498}
+  m_Size: {x: 5.9997106, y: 1.0000455}
   m_Direction: 1
 --- !u!114 &1878890474
 MonoBehaviour:
@@ -88225,6 +88602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -88885,8 +89264,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.45278794, y: 0.00000005397652}
-  m_Size: {x: 5.906385, y: 1.0000207}
+  m_Offset: {x: 0.490871, y: -0.000000058516378}
+  m_Size: {x: 5.9064307, y: 1.0000325}
   m_Direction: 1
 --- !u!114 &1931421765
 MonoBehaviour:
@@ -88901,6 +89280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -89231,8 +89612,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.4869368, y: 0.00000029646594}
-  m_Size: {x: 5.973944, y: 1.0000175}
+  m_Offset: {x: -1.4843017, y: 0.00000017694254}
+  m_Size: {x: 5.957146, y: 1.0000315}
   m_Direction: 1
 --- !u!114 &2043907337
 MonoBehaviour:
@@ -89247,6 +89628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -89459,6 +89842,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  hasbc: 0
+  hascp: 0
   invulunerableDuration: 0.1
   invulnerable: 0
   downwardForceMagnitude: -1
@@ -91954,7 +92339,7 @@ Transform:
   m_GameObject: {fileID: 6329700034319068166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: 10, z: 0}
+  m_LocalPosition: {x: 49.16, y: 9.69, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -92170,6 +92555,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   physiscCheck: {fileID: 0}
   knight: {fileID: 0}
+  skeleton: {fileID: 0}
   normalSpeed: 55
   chaseSpeed: 0
   attackDistance: 5
