@@ -18,37 +18,38 @@ public class GroundEnemy : MonoBehaviour
     [HideInInspector] public Knight knight;
     [HideInInspector] public Skeleton skeleton;
     [HideInInspector]public Character character;
-    [Header("»ù±¾²ÎÊý")]
+    [Header("åŸºæœ¬å±žæ€§")]
 
     public float normalSpeed;
     public float chaseSpeed;
     public float attackDistance;
-    public float foundDistance;
+    public float hurtForce;
     [HideInInspector] public float currentSpeed;
     [HideInInspector] public Vector3 faceDir;
-    [HideInInspector] public float hurtForce;
     [HideInInspector] public Transform attacker;
 
-    [Header("¼àÌýÊÂ¼þ")]
+    [Header("äº‹ä»¶ç›‘å¬")]
     public CharacterEventSO posEvent;
-    [Header("¼ì²â")]
+    [Header("ç‰©ç†æ£€æµ‹")]
     public Vector2 centerOffset;
     public Vector2 checkSize;
     public float checkDistance;
     public LayerMask attackLayer;
     public Transform playerPos;
-    public bool attackPlayer;
-    public bool foundPlayer;
-    [Header("¼ÆÊ±Æ÷")]
+    
+    [Header("Counter")]
     public bool wait;
     public float waitTime;
     public float waitTimeCounter;
     public float lostTime;
     public float lostTimeCounter;
-    [Header("×´Ì¬")]
+    
+    [Header("bool")]
     public bool isHurt;
     public bool isDead;
-    [Header("ÌØÐ§")]
+    public bool attackPlayer;
+    public bool foundPlayer;
+    [Header("prefab")]
     public GameObject bloodEffect;
     
 
@@ -69,6 +70,7 @@ public class GroundEnemy : MonoBehaviour
 
         currentSpeed = normalSpeed;
         waitTimeCounter = waitTime; 
+        
     }
     private void Start()
     {
@@ -79,7 +81,7 @@ public class GroundEnemy : MonoBehaviour
     {
         posEvent.OnEventRaised += OnposEvent;
         currentState = patrolState;
-        Debug.Log("OnEnable");
+        
         currentState.OnEnter(this);
     }
     private void OnDisable()
@@ -166,23 +168,6 @@ public class GroundEnemy : MonoBehaviour
         attacker = attackTrans;
         //turn
 
-
-        
-        //if(attackTrans.position.x - transform.position.x > 0)
-        //{
-        //    transform.localScale = new Vector3(-transform.localScale.x,transform.localScale.y,transform.localScale.z);
-        //}
-        //if(attackTrans.position.x - transform.position.x < 0)
-        //{
-        //    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
-        //}
-
-
-
-
-
-        //»÷ÍË
-        
         isHurt = true;
         anim.SetTrigger("hurt");
         Vector2 dir = new Vector2(transform.position.x - attackTrans.position.x,0).normalized;

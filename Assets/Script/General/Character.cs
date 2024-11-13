@@ -9,21 +9,18 @@ using UnityEngine.TextCore.Text;
 
 public class Character : MonoBehaviour,ISaveable
 {
-    [Header("ÊÂ¼ş¼àÌı")]
+    [Header("äº‹ä»¶ç›‘å¬")]
     public VoidEventSO newGameEvent; 
-    [Header("»ù±¾ÊôĞÔ")]
+    [Header("åŸºç¡€å±æ€§")]
     public float maxHealth;
     public float currentHealth;
     public float maxPower;
     public float currentPower;
-    //public Transform thisTransform;
-    //public Rigidbody2D rb;
     private Rigidbody2D rb;
-    [Header("ÊÜÉËÎŞµĞ")]
+    [Header("æ— æ•Œ")]
     public float invulunerableDuration;
     private float invulunerableCounter;
     public bool invulnerable;
-    //public PlayerController playerController;
     public UnityEvent<Rigidbody2D> characterRB;
     public UnityEvent<Character> PlayerTransfrom;
     public UnityEvent<Character> OnHealthChange;
@@ -95,13 +92,11 @@ public class Character : MonoBehaviour,ISaveable
         {
             currentHealth -= attacker.damage;
             TriggerInvulnerable();
-            //Ö´ĞĞÊÜÉË
             OnTakeDamage?.Invoke(attacker.transform);
         }
         else
         {
             currentHealth = 0;
-            //ËÀÍö
             OnDie?.Invoke();
         }
 

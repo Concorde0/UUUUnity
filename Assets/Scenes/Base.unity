@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 198888198}
   m_Layer: 12
   m_Name: attack4
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 405811545}
   m_Layer: 12
   m_Name: attack5
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 470342866}
   m_Layer: 12
   m_Name: attack6
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 550465265}
   m_Layer: 12
   m_Name: attack2
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1517,7 +1517,7 @@ GameObject:
   - component: {fileID: 971790634}
   m_Layer: 12
   m_Name: attack1
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1914,7 +1914,6 @@ MonoBehaviour:
   isHurt: 0
   isDead: 0
   isAttack: 0
-  isInteract: 0
   isArrow: 0
   isRun: 0
   arrowPrefab: {fileID: 5586905182270694457, guid: b6bd2fb26f6da9147bc5e4822962a79c, type: 3}
@@ -3019,7 +3018,7 @@ GameObject:
   - component: {fileID: 1681074171}
   m_Layer: 7
   m_Name: attack atea
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3814,7 +3813,7 @@ GameObject:
   - component: {fileID: 2063319870}
   m_Layer: 12
   m_Name: attack3
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

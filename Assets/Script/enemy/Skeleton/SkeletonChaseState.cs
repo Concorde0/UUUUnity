@@ -9,12 +9,21 @@ public class SkeletonChaseState : GroundEnemyBaseState
     {
         currentEnemy = enemy;
         currentEnemy.skeleton.isChase = true;
-        
+        currentEnemy.wait = false;
         currentEnemy.currentSpeed = currentEnemy.chaseSpeed;
 
     }
     public override void LogicUpdate()
     {
+        
+        if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn)
+        {
+            currentEnemy.SwichState(NPCState.Reborn);
+        }
+        if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn == false)
+        {
+            currentEnemy.SwichState(NPCState.Dead);
+        }
         if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
         {
             currentEnemy.rb.transform.localScale = new(1, 1, 1);

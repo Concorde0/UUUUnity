@@ -5,14 +5,14 @@ using UnityEngine;
 public class PhysiscCheck : MonoBehaviour
 {
     private CapsuleCollider2D coll;
-    [Header("¼ì²â²ÎÊý")]
+    [Header("åŸºç¡€å±žæ€§")]
     public bool manual;
     public Vector2 leftOffset;
     public Vector2 rightOffset;
     public Vector2 bottomOffset;
     public float checkRadius;
     public LayerMask groundlayer;
-    [Header("×´Ì¬")]
+    [Header("bool")]
     public bool isGround;
     public bool touchLeftWall;
     public bool touchRightWall;

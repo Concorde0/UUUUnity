@@ -10,6 +10,5 @@ public class CharacterEventSO : ScriptableObject
     public void RaiseEvent(Character character)
     {
         OnEventRaised?.Invoke(character);
-        
     }
 }

@@ -14,13 +14,13 @@ public class FlyEnemy : MonoBehaviour
     [HideInInspector] public PhysiscCheck physiscCheck;
     [HideInInspector] public PlayerController playerController;
     [HideInInspector] public Attack attack;
-    [Header("¼àÌıÊÂ¼ş")]
+    [Header("äº‹ä»¶ç›‘å¬")]
     public CharacterEventSO posEvent;
-    [Header("»ù±¾²ÎÊı")]
+    [Header("åŸºæœ¬å±æ€§")]
     public float normalSpeed;
     public float chaseSpeed;
     [HideInInspector] public float currentSpeed;
-    [Header("·ÉĞĞµĞÈËÌØÓĞ²ÎÊı")]
+    [Header("é£è¡Œæ•Œäºº")]
     public Transform movePos;
     public Transform leftDownPos;
     public Transform rightUpPos;
@@ -31,22 +31,22 @@ public class FlyEnemy : MonoBehaviour
     public Vector3 faceDir;
     [HideInInspector] public float hurtForce;
     [HideInInspector] public Transform attacker;
-    [Header("¼ì²â")]
+    [Header("æ£€æµ‹å›¾å±‚")]
     public LayerMask attackLayer;
-    [Header("¼ÆÊ±Æ÷")]
+    [Header("Counter")]
     public float waitTime;
     public float waitTimeCounter;
     public bool wait;
     public float lostTime;
     public float lostTimeCounter;
-    [Header("×´Ì¬")]
+    [Header("bool")]
     public bool isHurt;
     public bool isDead;
     public bool foundPlayer;
     public bool attackPlayer;
     public bool isBite;
     public bool isTail;
-    [Header("ÔÓÏî")]
+    [Header("å…¶ä»–")]
     public Transform playerPos;
     public GameObject bloodEffect;
 
@@ -127,12 +127,13 @@ public class FlyEnemy : MonoBehaviour
             attackPlayer = true;    
         }
     }
-    public virtual void Move()
+
+    protected virtual void Move()
     { 
         
         transform.position = Vector2.MoveTowards(transform.position, movePos.position, currentSpeed * Time.deltaTime);
     }
-    public virtual void Chase()
+    protected virtual void Chase()
     {
         if (playerPos.localScale.x > 0)
         {
@@ -156,7 +157,7 @@ public class FlyEnemy : MonoBehaviour
         Vector2 randomPos = new Vector2(Random.Range(leftDownPos.position.x, rightUpPos.position.x), Random.Range(leftDownPos.position.y, rightUpPos.position.y));
         return randomPos;
     }
-    public void TimeCounter()
+    protected void TimeCounter()
     {
         if (wait)
         {
@@ -177,12 +178,7 @@ public class FlyEnemy : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// ÖØÒª£¬ÕâÀïÒªÇø·ÖAttackµÄºÍÕâÀïµÄÁ½¸öÅö×²Ìå
-    /// ¿ÉÒÔ¶à¼ÓÒ»¸ötriggerboxµÄgameobject×¨ÃÅ×öontrigger
-    /// </summary>
-    /// <param name="other"></param>
-  
+   
 
 
     public void SwichState(NPCState state)
@@ -214,7 +210,7 @@ public class FlyEnemy : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        //»÷ÍË
+        //ï¿½ï¿½ï¿½ï¿½
 
         isHurt = true;
         anim.SetTrigger("hurt");

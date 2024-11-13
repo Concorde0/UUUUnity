@@ -35,12 +35,12 @@ public class EyeBiteState : FlyEnemyBaseState
         }
 
         
-       if (biteTimeConter <= 0 )
-       {
+        if (biteTimeConter <= 0 )
+        {
             currentEnemy.anim.SetBool("bite", false);
             currentEnemy.attackPlayer = false;
             currentEnemy.SwichState(NPCState.Tailattcak);
-       }
+        }
 
 
     }

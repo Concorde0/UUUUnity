@@ -4,23 +4,37 @@ using UnityEngine;
 
 public class SkeletonAttackState : GroundEnemyBaseState
 {
-    public float attackWait = 4;
-    public float attackWaitTimeConter;
+    public float attackTime = 4;
+    public float attackTimeCounter;
     public override void OnEnter(GroundEnemy enemy)
     {
+        //currentEnemy.rb.velocity = Vector2.zero;
         currentEnemy = enemy;
+        currentEnemy.attackPlayer = true;
         currentEnemy.currentSpeed = 0;
-        currentEnemy.attackPlayer = true;//×÷ÓÃÎª  ÈÃmove() ==0
-        attackWaitTimeConter =  attackWait;
+        currentEnemy.rb.velocity = Vector3.zero;
+        currentEnemy.anim.SetBool("attack",true);
+        currentEnemy.anim.SetBool("walk",false);
+        attackTimeCounter = attackTime;
     }
     public override void LogicUpdate()
     {
-        currentEnemy.anim.SetBool("attack",true);
-        attackWaitTimeConter -= Time.deltaTime;
-        if(attackWaitTimeConter < 0)
+        attackTimeCounter -= Time.deltaTime;
+        
+        if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn)
+        {
+            currentEnemy.SwichState(NPCState.Reborn);
+        }
+        if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn == false)
+        {
+            currentEnemy.SwichState(NPCState.Dead);
+        }
+
+        if (attackTimeCounter <= 0)
         {
             currentEnemy.SwichState(NPCState.Chase);
         }
+        
     }
 
     public override void PhysicsUpdate()

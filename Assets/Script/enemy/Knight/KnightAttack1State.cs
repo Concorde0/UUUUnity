@@ -22,7 +22,7 @@ public class KnightAttack1State : GroundEnemyBaseState
         {
             currentEnemy.SwichState(NPCState.Patrol);
         }
-        //3种状态， 返回patrol,   进入斩击 => 返回patrol.   进入idle => 准备刺击 || 旋转攻击 => 返回patrol
+        
     }
 
     public override void PhysicsUpdate()

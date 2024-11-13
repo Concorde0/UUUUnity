@@ -10,11 +10,20 @@ public class SkeletonPatrolState : GroundEnemyBaseState
     {
         currentEnemy = enemy;
         currentEnemy.currentSpeed = currentEnemy.normalSpeed;
-        
+        currentEnemy.skeleton.movePos = currentEnemy.skeleton.LeftPositon;
     }
     public override void LogicUpdate()
     {
-
+        
+        if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn)
+        {
+            currentEnemy.SwichState(NPCState.Reborn);
+        }
+        if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn == false)
+        {
+            currentEnemy.SwichState(NPCState.Dead);
+        }
+        
         if (!currentEnemy.wait)
         {
             currentEnemy.anim.SetBool("walk",true);
@@ -30,16 +39,17 @@ public class SkeletonPatrolState : GroundEnemyBaseState
         }
 
         
-        if (Vector2.Distance(currentEnemy.skeleton.transform.position, currentEnemy.skeleton.LeftPositon.position) < 0.1f)   
+        if (Vector2.Distance(currentEnemy.skeleton.transform.position, currentEnemy.skeleton.movePos.position) < 0.1f)   
         {
             currentEnemy.skeleton.transform.localScale = new Vector3(1, 1, 1);
             currentEnemy.wait = true;
             currentEnemy.skeleton.movePos = currentEnemy.skeleton.RightPositon;
         }
         
-        if (Vector2.Distance(currentEnemy.skeleton.transform.position, currentEnemy.skeleton.RightPositon.position) < 0.1f)
+        if (Vector2.Distance(currentEnemy.skeleton.transform.position, currentEnemy.skeleton.movePos.position) < 0.1f)
         {
             currentEnemy.skeleton.transform.localScale = new Vector3(-1, 1, 1);
+            
             currentEnemy.wait = true;
             currentEnemy.skeleton.movePos = currentEnemy.skeleton.LeftPositon;
         }

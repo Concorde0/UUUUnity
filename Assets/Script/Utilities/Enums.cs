@@ -1,6 +1,6 @@
 public enum NPCState
 {
-    Patrol, Chase, Skill, Attack, Hit, Tailattcak,Attack1, Attack2,Idel2,Stab,Whack,Rebone,
+    Patrol, Chase, Skill, Attack, Hit, Tailattcak,Attack1, Attack2,Idel2,Stab,Whack,Reborn,Dead,
 }
 
 

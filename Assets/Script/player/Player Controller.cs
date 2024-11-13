@@ -11,40 +11,39 @@ using Debug = UnityEngine.Debug;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("¼àÌıÊÂ¼ş")]
+    [Header("äº‹ä»¶ç›‘å¬")]
     public SceneLoadEventSO sceneLoadEvent;
     public VoidEventSO afterSceneLoadedEvent;
     public VoidEventSO loadDataEvnet;
     public VoidEventSO backToMenuEvent;
 
-    public PlayerInputControl inputControl;
+    private PlayerInputControl inputControl;
     public Rigidbody2D rb;
     private PhysiscCheck physiscCheck;
     private PlayerAnimation playerAnimation;
     public Vector2 inputDirection;
-    [Header("»ù±¾²ÎÊı")]
+    [Header("åŸºç¡€å±æ€§")]
     public float currentSpeed;
     public float speed;
     public float runSpeed;
     public float jumpForce;
     public float hurtForce;
     public CapsuleCollider2D coll;
-    [Header("ÎïÀí²ÄÖÊ")]
+    [Header("ç‰©ç†æè´¨")]
     public PhysicsMaterial2D normal;
     public PhysicsMaterial2D wall;
 
-    [Header("×´Ì¬")]
+    [Header("×´bools")]
     public bool isHurt;
     public bool isDead;
     public bool isAttack;
-    public bool isInteract;
     public bool isArrow;
     public bool isRun;
     //public bool isPower;
 
     [Header("prefab")]
     public GameObject arrowPrefab;
-    [Header("¼ÆÊ±Æ÷")]
+    [Header("Conter")]
     //public float shootTime;
     //public float shootTimeCounter;
     public float shootWaitTime;
@@ -54,11 +53,12 @@ public class PlayerController : MonoBehaviour
     //tmp
     public float tmpwaitTime;
     public float tmpwaitTimeConter;
-    [Header("ÊÂ¼ş")]
+    [Header("Unity Event")]
     public UnityEvent<PlayerController> playerControllerEvent;
     public UnityEvent<Character> Attack;
     private Character character;
     [Header("Shadow")]
+    
     [Header("XBOX")]
     public float low =  1;
     public float high = 1;
@@ -229,7 +229,7 @@ public class PlayerController : MonoBehaviour
         if (inputDirection.x < 0)
             faceDir = 2;
 
-        //ÈËÎï·­×ª
+        //ï¿½ï¿½ï¿½ï·­×ª
         transform.localScale = new Vector3(faceDir, 2, 2);
     }
 
