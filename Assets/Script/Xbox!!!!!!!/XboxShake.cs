@@ -20,11 +20,10 @@ public class XboxShake : MonoBehaviour
 
     public IEnumerator IEGamepadVibrate(float low, float high, float time)
     {
-        //防止因未连接手柄造成的 DebugError
+        
         if (Gamepad.current == null)
             yield break;
-
-        //设置手柄的 震动速度 以及 恢复震动 , 计时到达之后暂停震动 
+        
         Gamepad.current.SetMotorSpeeds(low, high);
         Gamepad.current.ResumeHaptics();
         var endTime = Time.time + time;

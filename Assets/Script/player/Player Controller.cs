@@ -2,11 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
-//using Rewired;
+using UnityEngine.Rendering.Universal;
 using Debug = UnityEngine.Debug;
 
 public class PlayerController : MonoBehaviour
@@ -43,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("prefab")]
     public GameObject arrowPrefab;
-    [Header("Conter")]
+    [Header("Counter")]
     //public float shootTime;
     //public float shootTimeCounter;
     public float shootWaitTime;
@@ -57,19 +58,16 @@ public class PlayerController : MonoBehaviour
     public UnityEvent<PlayerController> playerControllerEvent;
     public UnityEvent<Character> Attack;
     private Character character;
-    [Header("Shadow")]
-    
-    [Header("XBOX")]
-    public float low =  1;
-    public float high = 1;
-    public float time = 0.2f;
+
     
 
+
+    
 
 
     private void Awake()
     {
-        //tmp
+        //tmp,To Fix isHurt
         tmpwaitTimeConter = tmpwaitTime;
 
         currentSpeed = speed;
@@ -92,13 +90,28 @@ public class PlayerController : MonoBehaviour
 
         //interact
         inputControl.Enable();
+        //Skill
+        inputControl.GamePlay.Skill.started += skill;
+        //bottle
+        inputControl.GamePlay.bottle.started += bottle;
         //Run
         inputControl.GamePlay.Run.performed += Run;
         //StopRunning
         inputControl.GamePlay.Run.canceled += StopRunning;
-
+        //XBox UP
+        inputControl.GamePlay.UpXbox.started += UpXbox;
+        //Xbox Down
+        inputControl.GamePlay.DownXbox.started += DownXbox;
+        
+        
     }
 
+   
+
+    private void Start()
+    {
+        
+    }
 
 
     private void OnEnable()
@@ -157,7 +170,10 @@ public class PlayerController : MonoBehaviour
             isRun = false;
             currentSpeed = speed;
         }
-        ///NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN///
+        
+        
+        
+        //TODO:
         if (rb.velocity.x == 0)
         {
             tmpwaitTimeConter -= Time.deltaTime;
@@ -228,8 +244,7 @@ public class PlayerController : MonoBehaviour
             faceDir = -2;
         if (inputDirection.x < 0)
             faceDir = 2;
-
-        //���﷭ת
+        
         transform.localScale = new Vector3(faceDir, 2, 2);
     }
 
@@ -283,6 +298,24 @@ public class PlayerController : MonoBehaviour
         Attack?.Invoke(character);
         
     }
+    private void skill(InputAction.CallbackContext obj)
+    {
+        LightSkill.instance.LightSkillStart();
+    }
+    private void bottle(InputAction.CallbackContext obj)
+    {
+        HealthBottle.instance.RecoverHealth();
+    }
+    private void DownXbox(InputAction.CallbackContext obj)
+    {
+
+        SkillsManager.instance.DownChangeSkill();
+    }
+
+    private void UpXbox(InputAction.CallbackContext obj)
+    {
+       SkillsManager.instance.UpChangeSkill();
+    }
 
     public void GetHurt(Transform attacker)
     {
@@ -327,10 +360,7 @@ public class PlayerController : MonoBehaviour
         PowerWaitTimeCounter = PowerWaitTime;
     }
 
-    private void Shadow()
-    {
-        
-    }
+    
     
 
 }

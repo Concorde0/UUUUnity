@@ -15,7 +15,7 @@ public class Grass : MonoBehaviour
         if(other.tag == ("Player"))
         {
             sr.color 
-                = new (sr.color.r,sr.color.g,sr.color.b,0.85f);
+                = new (sr.color.r,sr.color.g,sr.color.b,0.6f);
         }
     }
     private void OnTriggerExit2D(Collider2D other)

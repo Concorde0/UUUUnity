@@ -10,11 +10,11 @@ public class ShadowSprite : MonoBehaviour
 
     private Color color;
 
-    [Header("时间控制参数")]
+    [Header("Counter")]
     public float activeTime;
     public float activeStart;
 
-    [Header("不透明度控制")]
+    [Header("Base")]
     private float alpha;
     public float alphaSet;
     public float alphaMultiplier;

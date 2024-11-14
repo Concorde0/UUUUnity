@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class FadeCanvas : MonoBehaviour
 {
-    [Header("ÊÂ¼ş¼àÌı")]
+    
     public FadeEvnetSO fadeEvent;
     public Image fadeImage;
 

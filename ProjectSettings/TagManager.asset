@@ -12,6 +12,9 @@ TagManager:
   - ChestMonster
   - NPC
   - Attack
+  - LightSkill
+  - Blood
+  - Magic
   layers:
   - Default
   - TransparentFX

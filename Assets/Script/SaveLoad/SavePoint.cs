@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class SavePoint : MonoBehaviour,IInteractable
 {
-    [Header("¹ã²¥")]
+    [Header("äº‹ä»¶ç›‘å¬")]
     public VoidEventSO saveGameEvent;
-    [Header("Êı¾İ")]
+    [Header("other")]
     private Animator anim;
+
+    public GameObject fireLight;
+    public GameObject baseLight;
 
     private void Awake()
     {
@@ -21,6 +24,8 @@ public class SavePoint : MonoBehaviour,IInteractable
 
     public void TriggerAction()
     {
+        fireLight.SetActive(true);
+        baseLight.SetActive(true);
         anim.SetBool("isLoad", true);
         saveGameEvent.RaiseEvent();
         this.gameObject.tag = "Untagged";

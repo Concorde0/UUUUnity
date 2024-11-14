@@ -7,15 +7,15 @@ public class FadeEvnetSO: ScriptableObject
 {
     public UnityAction<Color, float, bool> OnEventRaised;
 /// <summary>
-/// Öð½¥±äºÚ
+/// ï¿½ð½¥±ï¿½ï¿½
 /// </summary>
 /// <param name="duration"></param>
    public void FadeIn(float duration)
    {
-        RaiseEvent(Color.black, duration, true);
+        RaiseEvent(Color.black,duration, true);
    }
     /// <summary>
-    /// Öð½¥±äÍ¸Ã÷
+    /// ï¿½ð½¥±ï¿½Í¸ï¿½ï¿½
     /// </summary>
     /// <param name="duration"></param>
     public void FadeOut(float duration)

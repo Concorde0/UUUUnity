@@ -89,6 +89,42 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UpXbox"",
+                    ""type"": ""Button"",
+                    ""id"": ""e6c3a949-5693-4642-91d7-9b04fe421e0c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DownXbox"",
+                    ""type"": ""Button"",
+                    ""id"": ""fd86509a-4f5e-480e-8462-ca0faf124815"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill"",
+                    ""type"": ""Button"",
+                    ""id"": ""e76f9f15-fc7c-44dc-a3d1-2afc422e09bc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""bottle"",
+                    ""type"": ""Button"",
+                    ""id"": ""b9646fe9-bdd0-413d-8da3-d374e7d16b84"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -342,6 +378,50 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Run"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""df62f271-91c5-4d58-ab81-f9e4a4753687"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UpXbox"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9f21d926-26f3-40c3-99af-6c2bdc315a8a"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DownXbox"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""42a3647f-88c2-48de-af6c-1ecc054921dc"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cf970efd-315b-4b04-a7fc-9c4dad09c097"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""bottle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -936,6 +1016,10 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         m_GamePlay_HeavyAttack = m_GamePlay.FindAction("HeavyAttack", throwIfNotFound: true);
         m_GamePlay_Interact = m_GamePlay.FindAction("Interact", throwIfNotFound: true);
         m_GamePlay_Run = m_GamePlay.FindAction("Run", throwIfNotFound: true);
+        m_GamePlay_UpXbox = m_GamePlay.FindAction("UpXbox", throwIfNotFound: true);
+        m_GamePlay_DownXbox = m_GamePlay.FindAction("DownXbox", throwIfNotFound: true);
+        m_GamePlay_Skill = m_GamePlay.FindAction("Skill", throwIfNotFound: true);
+        m_GamePlay_bottle = m_GamePlay.FindAction("bottle", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1016,6 +1100,10 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_HeavyAttack;
     private readonly InputAction m_GamePlay_Interact;
     private readonly InputAction m_GamePlay_Run;
+    private readonly InputAction m_GamePlay_UpXbox;
+    private readonly InputAction m_GamePlay_DownXbox;
+    private readonly InputAction m_GamePlay_Skill;
+    private readonly InputAction m_GamePlay_bottle;
     public struct GamePlayActions
     {
         private @PlayerInputControl m_Wrapper;
@@ -1027,6 +1115,10 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         public InputAction @HeavyAttack => m_Wrapper.m_GamePlay_HeavyAttack;
         public InputAction @Interact => m_Wrapper.m_GamePlay_Interact;
         public InputAction @Run => m_Wrapper.m_GamePlay_Run;
+        public InputAction @UpXbox => m_Wrapper.m_GamePlay_UpXbox;
+        public InputAction @DownXbox => m_Wrapper.m_GamePlay_DownXbox;
+        public InputAction @Skill => m_Wrapper.m_GamePlay_Skill;
+        public InputAction @bottle => m_Wrapper.m_GamePlay_bottle;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1057,6 +1149,18 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Run.started += instance.OnRun;
             @Run.performed += instance.OnRun;
             @Run.canceled += instance.OnRun;
+            @UpXbox.started += instance.OnUpXbox;
+            @UpXbox.performed += instance.OnUpXbox;
+            @UpXbox.canceled += instance.OnUpXbox;
+            @DownXbox.started += instance.OnDownXbox;
+            @DownXbox.performed += instance.OnDownXbox;
+            @DownXbox.canceled += instance.OnDownXbox;
+            @Skill.started += instance.OnSkill;
+            @Skill.performed += instance.OnSkill;
+            @Skill.canceled += instance.OnSkill;
+            @bottle.started += instance.OnBottle;
+            @bottle.performed += instance.OnBottle;
+            @bottle.canceled += instance.OnBottle;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -1082,6 +1186,18 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Run.started -= instance.OnRun;
             @Run.performed -= instance.OnRun;
             @Run.canceled -= instance.OnRun;
+            @UpXbox.started -= instance.OnUpXbox;
+            @UpXbox.performed -= instance.OnUpXbox;
+            @UpXbox.canceled -= instance.OnUpXbox;
+            @DownXbox.started -= instance.OnDownXbox;
+            @DownXbox.performed -= instance.OnDownXbox;
+            @DownXbox.canceled -= instance.OnDownXbox;
+            @Skill.started -= instance.OnSkill;
+            @Skill.performed -= instance.OnSkill;
+            @Skill.canceled -= instance.OnSkill;
+            @bottle.started -= instance.OnBottle;
+            @bottle.performed -= instance.OnBottle;
+            @bottle.canceled -= instance.OnBottle;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -1271,6 +1387,10 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         void OnHeavyAttack(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
+        void OnUpXbox(InputAction.CallbackContext context);
+        void OnDownXbox(InputAction.CallbackContext context);
+        void OnSkill(InputAction.CallbackContext context);
+        void OnBottle(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

@@ -18,6 +18,7 @@ public class GroundEnemy : MonoBehaviour
     [HideInInspector] public Knight knight;
     [HideInInspector] public Skeleton skeleton;
     [HideInInspector]public Character character;
+    
     [Header("基本属性")]
 
     public float normalSpeed;

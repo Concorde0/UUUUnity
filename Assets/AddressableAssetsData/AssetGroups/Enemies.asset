@@ -17,6 +17,16 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 23cb2aa496b0a3f4d9973e5f2906edde
   m_SerializeEntries:
+  - m_GUID: 1c0868349cada8c48b74fbd237158415
+    m_Address: Assets/Prefab/enemy/Skeleton.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64892d13c6242cd4e8650c1df25add33
+    m_Address: Assets/Prefab/enemy/ChestMonster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 681cd126a6ab5514aac57604de31b4a4
     m_Address: pig
     m_ReadOnly: 0

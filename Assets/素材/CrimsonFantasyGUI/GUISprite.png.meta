@@ -168,7 +168,7 @@ TextureImporter:
         width: 62
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,6 +176,27 @@ TextureImporter:
       bones: []
       spriteID: 95545cc18d61cac419ed5a647b876c29
       internalID: -382606401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillUI
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 93
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7203d17ad73a15542a6cd656c6077eed
+      internalID: 917774224
       vertices: []
       indices: 
       edges: []
@@ -195,6 +216,7 @@ TextureImporter:
       GUISprite_1: 1971380724
       GUISprite_2: -548719863
       GUISprite_3: -382606401
+      SkillUI: 917774224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
