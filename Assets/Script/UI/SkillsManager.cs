@@ -41,7 +41,7 @@ public class SkillsManager : MonoBehaviour
 
     public  void UpChangeSkill()
     {
-        Debug.Log("up change");
+        
         foreach (GameObject ui in UpuiSkills)
         {
             ui.SetActive(false);
@@ -51,7 +51,7 @@ public class SkillsManager : MonoBehaviour
     }
     public void DownChangeSkill()
     {
-        Debug.Log("down change");
+       
         foreach (GameObject ui in DownuiSkills)
         {
             ui.SetActive(false);

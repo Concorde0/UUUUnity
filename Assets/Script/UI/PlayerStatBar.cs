@@ -9,6 +9,8 @@ public class PlayerStatBar : MonoBehaviour
     public Image healthDelayImage;
     public Image powerImage;
     public Image powerDelayImage;
+    public Image magicImage;
+    public Image magicDelayImage;
 
     private void Update()
     {
@@ -20,6 +22,11 @@ public class PlayerStatBar : MonoBehaviour
         {
             powerDelayImage.fillAmount -= Time.deltaTime;
         }
+
+        if (magicDelayImage.fillAmount > magicImage.fillAmount)
+        {
+            magicDelayImage.fillAmount -= Time.deltaTime;
+        }
     }
 
     public void OnHealthChange(float percentage)
@@ -29,5 +36,10 @@ public class PlayerStatBar : MonoBehaviour
     public void OnPowerChange(float percentage)
     {
         powerImage.fillAmount = percentage;
+    }
+
+    public void OnMagicChange(float percentage)
+    {
+        magicImage.fillAmount = percentage;
     }
 }

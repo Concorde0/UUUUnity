@@ -14,6 +14,8 @@ public class Character : MonoBehaviour,ISaveable
     [Header("基础属性")]
     public float maxHealth;
     public float currentHealth;
+    public float maxMagic;
+    public float currentMagic;
     public float maxPower;
     public float currentPower;
     private Rigidbody2D rb;

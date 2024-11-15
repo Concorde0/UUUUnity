@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 public class HealthBottle : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class HealthBottle : MonoBehaviour
     public float recoverCounter;
     public float healthBottleNumber;
     public bool isRecover;
+    public UnityEvent<Character> Bottle;
     private void Awake()
     {
         instance = this;
@@ -41,6 +43,8 @@ public class HealthBottle : MonoBehaviour
             }
             isRecover = true;
         }
+        Bottle?.Invoke(character);
+        
     }
 
     private void RecoverTime()

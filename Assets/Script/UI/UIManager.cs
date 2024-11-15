@@ -7,21 +7,23 @@ using UnityEngine.EventSystems;
 public class UIManager : MonoBehaviour
 {
     public PlayerStatBar playerStatBar;
-    [Header("事件监听")]
+    [Header("浜嬩欢鐩戝惉")]
     public CharacterEventSO healthEvent;
+    public CharacterEventSO magicEvent;
     public CharacterEventSO powerEvent;
     public SceneLoadEventSO unloadedSceneEvent;
     public VoidEventSO loadDataEvent;
     public VoidEventSO gameOverEvent;
     public VoidEventSO backToMenuEvent;
 
-    [Header("组件")]
+    [Header("缁勪欢")]
     public GameObject gameOverPanel;
     public GameObject restartButtom;
     private void OnEnable()
     {
         healthEvent.OnEventRaised += OnHealthEvent;
         powerEvent.OnEventRaised += OnPowerEvent;
+        magicEvent.OnEventRaised += OnMagicEvent;
         //healthEvent.OnEventRaised += KnightOnHealEvent;
         unloadedSceneEvent.LoadRequestEvent += OnUnLoadedSceneEvent;
         loadDataEvent.OnEventRaised += OnLoadDataEvnet;
@@ -32,6 +34,7 @@ public class UIManager : MonoBehaviour
     {
         healthEvent.OnEventRaised -= OnHealthEvent;
         powerEvent.OnEventRaised -= OnPowerEvent;
+        magicEvent.OnEventRaised -= OnMagicEvent;
         //healthEvent.OnEventRaised -= KnightOnHealEvent;
         unloadedSceneEvent.LoadRequestEvent -= OnUnLoadedSceneEvent;
         loadDataEvent.OnEventRaised -= OnLoadDataEvnet;
@@ -66,6 +69,13 @@ public class UIManager : MonoBehaviour
         var precentage = character.currentHealth / character.maxHealth;
 
         playerStatBar.OnHealthChange(precentage);
+    }
+    private void OnMagicEvent(Character character)
+    {
+        //Debug.Log("Magic");
+        var precentage = character.currentMagic / character.maxMagic;
+
+        playerStatBar.OnMagicChange(precentage);
     }
     private void OnPowerEvent(Character character)
     {

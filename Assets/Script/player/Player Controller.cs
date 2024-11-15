@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
     [Header("Unity Event")]
     public UnityEvent<PlayerController> playerControllerEvent;
     public UnityEvent<Character> Attack;
+    public UnityEvent<Character> Magic;
     private Character character;
 
     
@@ -300,16 +301,34 @@ public class PlayerController : MonoBehaviour
     }
     private void skill(InputAction.CallbackContext obj)
     {
-        LightSkill.instance.LightSkillStart();
+        if (character.currentMagic >= LightSkill.instance.magicConsumer)
+        {
+            LightSkill.instance.LightSkillStart();
+            character.currentMagic -= LightSkill.instance.magicConsume;
+            Magic?.Invoke(character);
+        }
+        if (character.currentMagic >= LightSkill.instance.magicConsumer)
+        {
+            WaterSkill.instance.WaterSkillStart();
+            character.currentMagic -= WaterSkill.instance.magicConsume;
+            Magic?.Invoke(character);
+            
+        }
+        
     }
+
+   
+    
+
     private void bottle(InputAction.CallbackContext obj)
     {
         HealthBottle.instance.RecoverHealth();
+        MagicBottle.instance.RecoverMagic();
     }
     private void DownXbox(InputAction.CallbackContext obj)
     {
-
         SkillsManager.instance.DownChangeSkill();
+
     }
 
     private void UpXbox(InputAction.CallbackContext obj)

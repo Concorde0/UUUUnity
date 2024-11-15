@@ -19,9 +19,10 @@ GameObject:
   - component: {fileID: 1098797527752778325}
   - component: {fileID: 6843657810214736485}
   - component: {fileID: 1464878972124666364}
+  - component: {fileID: 1703102818321580090}
   m_Layer: 8
   m_Name: pig
-  m_TagString: GroundEnemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,12 +237,16 @@ MonoBehaviour:
   newGameEvent: {fileID: 11400000, guid: 36b76c370aef5c9438fc55019b4852ea, type: 2}
   maxHealth: 10
   currentHealth: 10
+  maxMagic: 0
+  currentMagic: 0
+  maxPower: 0
+  currentPower: 0
   invulunerableDuration: 0.23
   invulnerable: 0
   characterRB:
     m_PersistentCalls:
       m_Calls: []
-  UpdateTransfrom:
+  PlayerTransfrom:
     m_PersistentCalls:
       m_Calls: []
   OnHealthChange:
@@ -337,7 +342,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
-  attackRange: 0
   attackRate: 0
 --- !u!114 &6843657810214736485
 MonoBehaviour:
@@ -355,13 +359,14 @@ MonoBehaviour:
   anim: {fileID: 0}
   physiscCheck: {fileID: 0}
   knight: {fileID: 0}
+  skeleton: {fileID: 0}
+  character: {fileID: 0}
   normalSpeed: 100
   chaseSpeed: 260
   attackDistance: 0
-  foundDistance: 0
+  hurtForce: 1
   currentSpeed: 0
   faceDir: {x: 0, y: 0, z: 0}
-  hurtForce: 1
   attacker: {fileID: 0}
   posEvent: {fileID: 11400000, guid: 09500edf507e8724f9bc623fc2c7dc09, type: 2}
   centerOffset: {x: 0, y: 0.65}
@@ -371,15 +376,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   playerPos: {fileID: 0}
-  attackPlayer: 0
-  foundPlayer: 0
+  wait: 0
   waitTime: 1
   waitTimeCounter: 0
-  wait: 0
   lostTime: 4
   lostTimeCounter: 0
   isHurt: 0
   isDead: 0
+  attackPlayer: 0
+  foundPlayer: 0
   bloodEffect: {fileID: 1133313273171254190, guid: 946c6c9873dadfd4ca9285cff14b5970, type: 3}
 --- !u!114 &1464878972124666364
 MonoBehaviour:
@@ -395,3 +400,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistentType: 0
   ID: c26e5aff-74a0-4953-838b-46ee9b9fcad6
+--- !u!114 &1703102818321580090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521272524325901655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214c1b45a563c474699d8a41f5c7830b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

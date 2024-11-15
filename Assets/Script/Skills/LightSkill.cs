@@ -13,11 +13,13 @@ public class LightSkill : MonoBehaviour
     public float lightTime;
     public float lightTimeCounter;
     public bool isLight;
+    public float magicConsume;
+    public float magicConsumer;
 
     private void Awake()
     {
-        
         instance = this;
+        
     }
 
     private void OnEnable()
@@ -29,6 +31,7 @@ public class LightSkill : MonoBehaviour
     private void Update()
     {
         LightTime();
+        MagicConsume();
     }
 
     public void LightSkillStart()
@@ -37,6 +40,19 @@ public class LightSkill : MonoBehaviour
         {
             light.SetActive(true);
             isLight = true;
+            
+        }
+    }
+
+    public void MagicConsume()
+    {
+        if (lightSign.activeSelf && !isLight)
+        {
+            magicConsume = magicConsumer;
+        }
+        else
+        {
+            magicConsume = 0;
         }
     }
 

@@ -15,6 +15,7 @@ TagManager:
   - LightSkill
   - Blood
   - Magic
+  - Enemy
   layers:
   - Default
   - TransparentFX

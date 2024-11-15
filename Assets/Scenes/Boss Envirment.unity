@@ -1937,7 +1937,7 @@ GameObject:
   - component: {fileID: 316240641}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2083,7 +2083,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1714887161273505906, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -47036,9 +47037,9 @@ GameObject:
   - component: {fileID: 485130572}
   - component: {fileID: 485130574}
   - component: {fileID: 485130575}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: demon
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70756,7 +70757,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1714887161273505906, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -77461,6 +77463,8 @@ MonoBehaviour:
   newGameEvent: {fileID: 11400000, guid: 36b76c370aef5c9438fc55019b4852ea, type: 2}
   maxHealth: 10
   currentHealth: 10
+  maxMagic: 0
+  currentMagic: 0
   maxPower: 0
   currentPower: 0
   invulunerableDuration: 0.01
@@ -92858,6 +92862,8 @@ MonoBehaviour:
   newGameEvent: {fileID: 11400000, guid: 36b76c370aef5c9438fc55019b4852ea, type: 2}
   maxHealth: 100
   currentHealth: 100
+  maxMagic: 0
+  currentMagic: 0
   maxPower: 0
   currentPower: 0
   invulunerableDuration: 0.25
@@ -92956,11 +92962,11 @@ GameObject:
   - component: {fileID: 300291625623261865}
   m_Layer: 8
   m_Name: Knight
-  m_TagString: GroundEnemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &6378247863691582611
 GameObject:
   m_ObjectHideFlags: 0
