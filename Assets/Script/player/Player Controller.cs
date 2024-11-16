@@ -301,22 +301,74 @@ public class PlayerController : MonoBehaviour
     }
     private void skill(InputAction.CallbackContext obj)
     {
-        if (character.currentMagic >= LightSkill.instance.magicConsumer)
+        //LightSkill
+        if (LightSkill.instance.lightSign.activeSelf)
         {
-            LightSkill.instance.LightSkillStart();
-            character.currentMagic -= LightSkill.instance.magicConsume;
-            Magic?.Invoke(character);
+            if (character.currentMagic >= LightSkill.instance.magicConsumer)
+            {
+                LightSkill.instance.LightSkillStart();
+                character.currentMagic -= LightSkill.instance.magicConsume;
+                Magic?.Invoke(character);
+            }
         }
-        if (character.currentMagic >= LightSkill.instance.magicConsumer)
+        
+        //BloodLineSkill
+        if (BloodLineSkill.instance.bloodLineSign.activeSelf)
         {
-            WaterSkill.instance.WaterSkillStart();
-            character.currentMagic -= WaterSkill.instance.magicConsume;
-            Magic?.Invoke(character);
+            if (character.currentMagic >= BloodLineSkill.instance.magicConsumer)
+            {
+                BloodLineSkill.instance.BloodLineSkillStart();
+                character.currentMagic -= BloodLineSkill.instance.magicConsume;
+                Magic?.Invoke(character);
+                inputControl.GamePlay.Disable();
+                StartCoroutine(FixBloodLineSkill());
+            }
+        }
+        
+        //GoldSkill
+        if (GoldSkill.instance.goldSign.activeSelf)
+        {
+            if (character.currentMagic >= GoldSkill.instance.magicConsumer)
+            {
+                GoldSkill.instance.GoldSkillStart();
+                character.currentMagic -= GoldSkill.instance.magicConsume;
+                Magic?.Invoke(character);
+            }
+        }
+        
+        //WaterSkill
+        if (WaterSkill.instance.waterSign.activeSelf)
+        {
+            if (character.currentMagic >= WaterSkill.instance.magicConsumer)
+            {
+                WaterSkill.instance.WaterSkillStart();
+                StartCoroutine(FixWaterSkill());
             
+            
+            }
         }
+        
+        
+        
+        
         
     }
 
+    private IEnumerator FixBloodLineSkill()
+    {
+        yield return new WaitForSeconds(1.5f);
+        inputControl.GamePlay.Enable();
+    }
+    private IEnumerator FixWaterSkill()
+    {
+        yield return new WaitForSeconds(0.05f);
+        if (WaterSkillCheckEnemy.instance.isWater == false)
+        {
+            character.currentMagic -= WaterSkill.instance.magicConsume;
+        }
+        WaterSkillCheckEnemy.instance.isWater = true;
+        Magic?.Invoke(character);
+    }
    
     
 

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class WaterSkillCheckEnemy : MonoBehaviour
 {
+    public static WaterSkillCheckEnemy instance;
     public GameObject waterSkill;
     public GameObject player;
     public float detectionRange ;
@@ -15,20 +16,17 @@ public class WaterSkillCheckEnemy : MonoBehaviour
     private RaycastHit2D hit;
     public Vector2 direction;
     public bool isDirection;
+    public bool isWater = true;
 
     private void Awake()
     {
-        
+        instance = this;
     }
 
     private void OnEnable()
     {
         anim = GetComponent<Animator>();
         
-    }
-
-    private void OnDisable()
-    {
     }
 
     void Update()
@@ -44,11 +42,11 @@ public class WaterSkillCheckEnemy : MonoBehaviour
 
         if (hit.collider != null)
         {
-            
             if (!isDirection)
             {
                 direction = hit.point;
                 isDirection = true;
+                isWater = false;
             }
             anim.SetBool("water", true);
         }
@@ -68,7 +66,8 @@ public class WaterSkillCheckEnemy : MonoBehaviour
         waterSkill.SetActive(false);
         WaterSkill.instance.isWaterSkill = false;
         isDirection = false;
-        
+        isWater = true;
+
     }
 
 }

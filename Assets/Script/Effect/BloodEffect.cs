@@ -9,4 +9,5 @@ public class BloodEffect : MonoBehaviour
     {
         Destroy(gameObject, timeToDestry);
     }
+    
 }

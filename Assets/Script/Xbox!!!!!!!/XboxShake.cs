@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,8 @@ public class XboxShake : MonoBehaviour
     [SerializeField] private float hHeavyAttackTime = 0.4f;
     [SerializeField] private float bridgeBrokeTime = 0.7f;
     public void GamepadVibrate(float low, float high, float time) => StartCoroutine(IEGamepadVibrate(low, high, time));
+
+   
 
     public IEnumerator IEGamepadVibrate(float low, float high, float time)
     {
@@ -47,10 +50,12 @@ public class XboxShake : MonoBehaviour
     public void HheavyAttackShake()
     {
         GamepadVibrate(low3, high3, hHeavyAttackTime);
+        
     }
     public void LightAttackShake()
     {
         GamepadVibrate(low1, high1, lightAttackTime);
+        Debug.Log("lightShake");
     }
     public void BridgeBroke()
     {

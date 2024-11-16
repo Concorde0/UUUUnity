@@ -105,7 +105,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +126,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +134,237 @@ TextureImporter:
       bones: []
       spriteID: e79ffb44ae9eb9148b1e9aec6353900f
       internalID: 2139516002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightTop1
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2080
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8901e05d4b730df4ba9b723877154e5f
+      internalID: 1012781372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightTop2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2080
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2db7ebd7f2430047a41c02b0249a552
+      internalID: 498029613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightTop3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2080
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb25bf4b4dac6a40a3cf16390966180
+      internalID: 1606052177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightdown1
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2096
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d15a6f21fbf2c74789fd6bfea6688f1
+      internalID: 2128931711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightdown2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2096
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e68c44621400b24d9296c547b7f99a7
+      internalID: 688390748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightdown3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2096
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842c6b1a0e834854fb5cd7191ca4437f
+      internalID: 95531626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightdown4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2096
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd23c329dd342f4cb1b83829cf3194d
+      internalID: -997938837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightWall1
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2072
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532bb62418dfb02418ff925765983507
+      internalID: -236617621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightWall2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2072
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d193816add4c2864ea425b39b56ef465
+      internalID: 1873551209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightWall3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2072
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a63f4fe43dd654459e59ba5be2ca363
+      internalID: 1882129324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackLightWall4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2072
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fade70e94403da842a836a4d34a4d0b2
+      internalID: 1283544774
       vertices: []
       indices: 
       edges: []
@@ -149,6 +380,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      BlackLightTop1: 1012781372
+      BlackLightTop2: 498029613
+      BlackLightTop3: 1606052177
+      BlackLightWall1: -236617621
+      BlackLightWall2: 1873551209
+      BlackLightWall3: 1882129324
+      BlackLightWall4: 1283544774
+      BlackLightdown1: 2128931711
+      BlackLightdown2: 688390748
+      BlackLightdown3: 95531626
+      BlackLightdown4: -997938837
       Blue: 2139516002
       Health: 1539562444
   mipmapLimitGroupName: 

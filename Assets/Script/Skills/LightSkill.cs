@@ -36,7 +36,7 @@ public class LightSkill : MonoBehaviour
 
     public void LightSkillStart()
     {
-        if (lightSign.activeSelf && !isLight)
+        if (!isLight)
         {
             light.SetActive(true);
             isLight = true;
@@ -46,7 +46,7 @@ public class LightSkill : MonoBehaviour
 
     public void MagicConsume()
     {
-        if (lightSign.activeSelf && !isLight)
+        if (!isLight)
         {
             magicConsume = magicConsumer;
         }

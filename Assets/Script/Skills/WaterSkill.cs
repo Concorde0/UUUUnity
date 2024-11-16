@@ -31,18 +31,17 @@ public class WaterSkill : MonoBehaviour
 
     public void WaterSkillStart()
     {
-        if (waterSign.activeSelf && !isWaterSkill)
+        if (!isWaterSkill)
         {
             waterSkill.SetActive(true);
         }
         isWaterSkill = true;
     }
 
-    
-    
-    public void MagicConsume()
+
+    private void MagicConsume()
     {
-        if (waterSign.activeSelf &&!isWaterSkill)
+        if (!isWaterSkill )
         {
             magicConsume = magicConsumer;
         }
@@ -51,7 +50,6 @@ public class WaterSkill : MonoBehaviour
             magicConsume = 0;
         }
     }
-
     
     
 }
