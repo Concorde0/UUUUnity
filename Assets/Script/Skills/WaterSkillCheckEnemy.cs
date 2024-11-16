@@ -17,6 +17,7 @@ public class WaterSkillCheckEnemy : MonoBehaviour
     public Vector2 direction;
     public bool isDirection;
     public bool isWater = true;
+    public Transform playerTrans;
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class WaterSkillCheckEnemy : MonoBehaviour
     void Update()
     {
         CheckEnemy();
+        transform.localScale = playerTrans.localScale*1.8f;
         transform.position = direction;
     }
 

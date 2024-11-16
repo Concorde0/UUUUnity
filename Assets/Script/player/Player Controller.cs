@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     [Header("物理材质")]
     public PhysicsMaterial2D normal;
     public PhysicsMaterial2D wall;
+    public GameObject BloodEffect;
 
     [Header("״bools")]
     public bool isHurt;
@@ -40,6 +41,8 @@ public class PlayerController : MonoBehaviour
     public bool isAttack;
     public bool isArrow;
     public bool isRun;
+    public bool isMagic;
+    public bool isMagic2;
     //public bool isPower;
 
     [Header("prefab")]
@@ -61,8 +64,6 @@ public class PlayerController : MonoBehaviour
     private Character character;
 
     
-
-
     
 
 
@@ -306,9 +307,15 @@ public class PlayerController : MonoBehaviour
         {
             if (character.currentMagic >= LightSkill.instance.magicConsumer)
             {
+                if (LightSkill.instance.isLight == false)
+                {
+                    isMagic = true;
+                    playerAnimation.PlayMagic();
+                }
                 LightSkill.instance.LightSkillStart();
                 character.currentMagic -= LightSkill.instance.magicConsume;
                 Magic?.Invoke(character);
+                
             }
         }
         
@@ -317,11 +324,10 @@ public class PlayerController : MonoBehaviour
         {
             if (character.currentMagic >= BloodLineSkill.instance.magicConsumer)
             {
-                BloodLineSkill.instance.BloodLineSkillStart();
-                character.currentMagic -= BloodLineSkill.instance.magicConsume;
-                Magic?.Invoke(character);
-                inputControl.GamePlay.Disable();
+                BloodEffect.SetActive(true);
                 StartCoroutine(FixBloodLineSkill());
+                
+                
             }
         }
         
@@ -330,6 +336,7 @@ public class PlayerController : MonoBehaviour
         {
             if (character.currentMagic >= GoldSkill.instance.magicConsumer)
             {
+                
                 GoldSkill.instance.GoldSkillStart();
                 character.currentMagic -= GoldSkill.instance.magicConsume;
                 Magic?.Invoke(character);
@@ -341,6 +348,11 @@ public class PlayerController : MonoBehaviour
         {
             if (character.currentMagic >= WaterSkill.instance.magicConsumer)
             {
+                if (WaterSkill.instance.isWaterSkill == false)
+                {
+                    isMagic = true;
+                    playerAnimation.PlayMagic();
+                }
                 WaterSkill.instance.WaterSkillStart();
                 StartCoroutine(FixWaterSkill());
             
@@ -353,11 +365,19 @@ public class PlayerController : MonoBehaviour
         
         
     }
-
     private IEnumerator FixBloodLineSkill()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
+        playerAnimation.PlayMagicRebecaa();
+        isMagic2 = true;
+        BloodLineSkill.instance.BloodLineSkillStart();
+        character.currentMagic -= BloodLineSkill.instance.magicConsume;
+        Magic?.Invoke(character);
+        inputControl.GamePlay.Disable();
+        BloodEffect.SetActive(false);
+        yield return new WaitForSeconds(1.3f);
         inputControl.GamePlay.Enable();
+        isMagic2 = false;
     }
     private IEnumerator FixWaterSkill()
     {

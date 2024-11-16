@@ -33,6 +33,8 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetBool("isDead", playerController.isDead);
         anim.SetBool("isAttack",playerController.isAttack);
         anim.SetBool("isArrow",playerController.isArrow);
+        anim.SetBool("isMagic",playerController.isMagic);
+        anim.SetBool("isMagic2",playerController.isMagic2);
     }
 
 
@@ -44,18 +46,26 @@ public class PlayerAnimation : MonoBehaviour
     public void PlayLightAttack()
     {
         anim.SetTrigger("lightAttack");
-            
     }
     public void PlayHeavyAttack()
     {
 
         anim.SetTrigger("heavyAttack");
-
-            
+        
     }
 
     public void PlayArrow()
     {
         anim.SetTrigger("arrow");
+    }
+
+    public void PlayMagic()
+    {
+        anim.SetTrigger("magic");
+    }
+
+    public void PlayMagicRebecaa()
+    {
+        anim.SetTrigger("magic2");
     }
 }

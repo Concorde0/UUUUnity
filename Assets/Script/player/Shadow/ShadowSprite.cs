@@ -39,7 +39,7 @@ public class ShadowSprite : MonoBehaviour
     {
         alpha *= alphaMultiplier;
 
-        color = new Color(0.5f,0.5f,0.5f,alpha);
+        color = new Color(0.5f,0.5f,1f,alpha);
 
         thisSprite.color = color;   
 

@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 1098797527752778325}
   - component: {fileID: 6843657810214736485}
   - component: {fileID: 1464878972124666364}
-  - component: {fileID: 1703102818321580090}
   m_Layer: 8
   m_Name: pig
   m_TagString: Enemy
@@ -400,15 +399,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistentType: 0
   ID: c26e5aff-74a0-4953-838b-46ee9b9fcad6
---- !u!114 &1703102818321580090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4521272524325901655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214c1b45a563c474699d8a41f5c7830b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

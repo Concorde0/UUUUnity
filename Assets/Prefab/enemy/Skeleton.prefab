@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 4547286363914559642}
   - component: {fileID: 7464187560036383652}
   - component: {fileID: 1297313776998334699}
+  - component: {fileID: 3458108001819243360}
   m_Layer: 8
   m_Name: Skeleton
   m_TagString: Enemy
@@ -350,6 +351,20 @@ MonoBehaviour:
   OnDie:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3458108001819243360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3717171366861583907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc750ceba6b1944a95355aa36f532c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistentType: 0
+  ID: f77d7a62-2d87-4003-88e3-b1f64a8f604b
 --- !u!1 &3901651155536882187
 GameObject:
   m_ObjectHideFlags: 0

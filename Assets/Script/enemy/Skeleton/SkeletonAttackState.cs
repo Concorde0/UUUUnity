@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkeletonAttackState : GroundEnemyBaseState
 {
-    public float attackTime = 4;
+    public float attackTime = 3.8f;
     public float attackTimeCounter;
     public override void OnEnter(GroundEnemy enemy)
     {

@@ -6,17 +6,26 @@ using UnityEngine.InputSystem;
 
 public class XboxShake : MonoBehaviour
 {
-
+    public static XboxShake instance;
     [SerializeField] private float low1 =0.5f;
     [SerializeField] private float low2 =0.8f;
     [SerializeField] private float low3 = 1f;
+    [SerializeField] private float lowBlood = 1f;
     [SerializeField] private float high1= 0.5f;
     [SerializeField] private float high2= 0.8f;
     [SerializeField] private float high3 = 1f;
+    [SerializeField] private float highBlood = 1f;
     [SerializeField] private float lightAttackTime=0.2f;
     [SerializeField] private float heavyAttackTime=0.3f;  
     [SerializeField] private float hHeavyAttackTime = 0.4f;
     [SerializeField] private float bridgeBrokeTime = 0.7f;
+    [SerializeField] private float bloodTime = 1.1f;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public void GamepadVibrate(float low, float high, float time) => StartCoroutine(IEGamepadVibrate(low, high, time));
 
    
@@ -55,10 +64,13 @@ public class XboxShake : MonoBehaviour
     public void LightAttackShake()
     {
         GamepadVibrate(low1, high1, lightAttackTime);
-        Debug.Log("lightShake");
     }
     public void BridgeBroke()
     {
         GamepadVibrate(low1, high1, bridgeBrokeTime);
+    }
+    public void BloodSkillShake()
+    {
+        GamepadVibrate(lowBlood, highBlood, bloodTime);
     }
 }

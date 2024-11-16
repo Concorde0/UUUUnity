@@ -1457,8 +1457,8 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.1
+  m_Color: {r: 0.374466, g: 0.5397629, b: 0.9339623, a: 1}
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 000000002999a745c99b8cc337af3fbf1535810ea359852fcfd12016
@@ -46849,6 +46849,7 @@ GameObject:
   - component: {fileID: 485130572}
   - component: {fileID: 485130574}
   - component: {fileID: 485130575}
+  - component: {fileID: 485130576}
   m_Layer: 8
   m_Name: demon
   m_TagString: Enemy
@@ -47021,6 +47022,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDistance: 10
   Knight: {fileID: 1462032916}
+--- !u!114 &485130576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485130568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc750ceba6b1944a95355aa36f532c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistentType: 0
+  ID: 20f90cee-6ae2-4685-8565-e1ab50e4eefc
 --- !u!1 &505510949
 GameObject:
   m_ObjectHideFlags: 0
@@ -70658,11 +70673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7744388813526853768, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.96627
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7744388813526853768, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.446955
+      value: -23.6
       objectReference: {fileID: 0}
     - target: {fileID: 7744388813526853768, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70700,35 +70715,13 @@ PrefabInstance:
     - {fileID: 1714887161273505906, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 550438697693334676, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1124370124}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
 --- !u!4 &1124370122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7744388813526853768, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
   m_PrefabInstance: {fileID: 1124370121}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1124370123 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 550438697693334676, guid: 1c0868349cada8c48b74fbd237158415, type: 3}
-  m_PrefabInstance: {fileID: 1124370121}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1124370124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124370123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc750ceba6b1944a95355aa36f532c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  persistentType: 0
-  ID: 086ed253-455c-4c57-a917-227683e0d3d7
 --- !u!1 &1127108175
 GameObject:
   m_ObjectHideFlags: 0

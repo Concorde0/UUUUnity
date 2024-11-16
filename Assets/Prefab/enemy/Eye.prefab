@@ -308,7 +308,6 @@ GameObject:
   - component: {fileID: 6559698656067051938}
   - component: {fileID: 8693134918156638588}
   - component: {fileID: 4639676660569760232}
-  - component: {fileID: 9043955239368848956}
   m_Layer: 9
   m_Name: EyeEnemy
   m_TagString: Enemy
@@ -611,15 +610,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistentType: 0
   ID: 3ad2cdcd-96eb-48a6-98d8-7dbef9aaebc0
---- !u!114 &9043955239368848956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8731077874982890750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214c1b45a563c474699d8a41f5c7830b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
