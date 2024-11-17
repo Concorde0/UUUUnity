@@ -14,15 +14,15 @@ public class SceneLoader : MonoBehaviour,ISaveable
     public Transform playerTrans;
     public Vector3 firstPosition;
     public Vector3 menuPosition;
-    [Header("ÊÂ¼ş¼àÌı")]
+    [Header("äº‹ä»¶ç›‘å¬")]
     public SceneLoadEventSO loadEventSO;
     public VoidEventSO newGameEvent;
     public VoidEventSO backToMenuEvnet;
-    [Header("¹ã²¥")]
+    [Header("å¹¿æ’­")]
     public VoidEventSO afterSceneLoadedEvent;
     public FadeEvnetSO fadeEvnet;
     public SceneLoadEventSO unloadedeSceneEvent;
-    [Header("³¡¾°")]
+    [Header("åœºæ™¯")]
     public GameSceneSO firstLoadScene;
     public GameSceneSO menuLoadScene;
     public GameSceneSO currentLoadedScene;
@@ -78,7 +78,7 @@ public class SceneLoader : MonoBehaviour,ISaveable
         loadEventSO.RaiseLoadRequestEvent(sceneToLoad, firstPosition, true);
     }
     /// <summary>
-    /// ³¡¾°¼ÓÔØÊÂ¼şÇëÇó
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     /// <param name="locationToLoad"></param>
     /// <param name="posToGo"></param>
@@ -128,7 +128,7 @@ public class SceneLoader : MonoBehaviour,ISaveable
         loadingOption.Completed += OnLoadCompleted;
     }
     /// <summary>
-    /// ³¡¾°¼ÓÔØÍê³Éºó
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éºï¿½
     /// </summary>
     /// <param name="handle"></param>
     /// <exception cref="NotImplementedException"></exception>
@@ -147,7 +147,7 @@ public class SceneLoader : MonoBehaviour,ISaveable
         
         if(currentLoadedScene.sceneType != SceneType.Menu)
         {
-            //³¡¾°¼ÓÔØÍê³ÉºóÊÂ¼ş
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éºï¿½ï¿½Â¼ï¿½
             afterSceneLoadedEvent.RaiseEvent();
         }
         

@@ -1,0 +1,6652 @@
+fileFormatVersion: 2
+guid: cc710cc1fbdf9ab41b0de089dcd29cab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2153
+        width: 79
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a242f9309e21d42a7d10b0ebeb932c
+      internalID: -394157989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2150
+        width: 78
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107ea41079dc6a9468f6a4b4cd8dc203
+      internalID: -471297512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 2149
+        width: 78
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103653d7752bf8a46b0700b2e86bf49a
+      internalID: -860744486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle5
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2146
+        width: 78
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dcf7af4924a324ba6f6750e7482f0d
+      internalID: 371029973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_4
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2146
+        width: 76
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9701d93fb1ae57b4eb59944e8f8f8d55
+      internalID: 1320192960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_5
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 2145
+        width: 75
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f7e89f10a93b94aa57e2ccbe172ce0
+      internalID: -258399920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_6
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 2142
+        width: 72
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b03e5284eb6867488e9a6ed0792a162
+      internalID: -1466808360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_7
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2142
+        width: 68
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820322af763378448aef68395bc5b885
+      internalID: -1404687814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_8
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2144
+        width: 68
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbbd75eada962448bf19c270399c059
+      internalID: -356171881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_9
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 2150
+        width: 70
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b132079c0bc409942b35898e465f5c41
+      internalID: 1896987321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_10
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2148
+        width: 57
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a7ae99caafcfa4e9de47443c2a47e5
+      internalID: -164245602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2083
+        width: 78
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cec9d89f61e10a48b6ba7d64cc76bc1
+      internalID: 1882340692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2083
+        width: 81
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8775e38af47cff3428b273429c6b91cf
+      internalID: -2099026148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2083
+        width: 80
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ba404f440901d46bca21b1afa54996
+      internalID: -1969664295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2083
+        width: 78
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f20b0beb037fa9459d153db20ea543f
+      internalID: -1330187245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 2083
+        width: 83
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f74282c9c875ad4fa4cc6f39472087f
+      internalID: -566286617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run6
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 2083
+        width: 81
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315aea2c0fceb2640b1146674f52c69d
+      internalID: 1683696539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run7
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 2083
+        width: 77
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c9f28a0b74dec4a9b4241556061362
+      internalID: 951601616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run8
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 2083
+        width: 80
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3fc4753bfb84846ab89f906c6ecd98
+      internalID: -687746540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run9
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 2083
+        width: 77
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163d96897e255cc4383b9679583aaba9
+      internalID: -983991928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run10
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 2083
+        width: 76
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e54b3cd350f62498bda7dbfb95c3ab
+      internalID: -1638471378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run11
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 2083
+        width: 85
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cea9e42ce735446bb02c5946cbd822
+      internalID: 868504576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run12
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 2083
+        width: 79
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c4c46070f81c24aa70be7eda8419d3
+      internalID: -825363906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2005
+        width: 71
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dd609cce6fb3e49b1a5af65abe030d
+      internalID: -1388516616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2007
+        width: 66
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baedd19243c1e343bc5fdbe6797581d
+      internalID: -658829044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2003
+        width: 46
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85aa8df00949719449a8fbb5fc8df1dd
+      internalID: 1817325923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly4
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2005
+        width: 39
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632d76bef310d3143849234207ecd7b3
+      internalID: -1684598202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2014
+        width: 46
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2f21a9fa2f2dc42b3648dd512ed350
+      internalID: 696143347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2016
+        width: 57
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f657dce5153fd4993485edda4b728a
+      internalID: -1627982146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2018
+        width: 55
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57bfd795a3e1084397cc8cb182ee6be
+      internalID: -744654471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly8
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 2019
+        width: 58
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b43b8ed2845cd848a98d969a745eba2
+      internalID: 1769908340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly9
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 2017
+        width: 59
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c4fbf3537aed34397137b61dbce854
+      internalID: 805468446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly10
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 2016
+        width: 57
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf6b91ecc5dba54dafcfb31229d7427
+      internalID: -1887000618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 2015
+        width: 59
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9047c177da5fbe549bf31de880a3e599
+      internalID: 2106943557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly12
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2003
+        width: 58
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41b5537e32a4bb4b9863e97d58facb2
+      internalID: -1643597110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly13
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 2007
+        width: 59
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8027d805ca1b4a34993d18da95b06a48
+      internalID: 1473709392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly14
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 2011
+        width: 64
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2b73c3dc657274180bcb39ded51a22
+      internalID: 1773351217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly15
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 2014
+        width: 55
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0b40a14af99b242b723abd68bc42cf
+      internalID: -1623117068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly16
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 2014
+        width: 55
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97322013837752d43bf84c2dc25c3f0f
+      internalID: 1723886958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_39
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1923
+        width: 89
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a287c17f7268b9f478f1ff9a74414608
+      internalID: -2034304567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_40
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1924
+        width: 105
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536e1c0ce2fced04ba91b032f2dfe1c8
+      internalID: -1180777865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_41
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1926
+        width: 114
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ca06e6a818e7148b1722b91ad2c19b
+      internalID: -1516705542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_42
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1931
+        width: 125
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07adf4cdb3485c24085a1e33931a0d78
+      internalID: -1280225414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_43
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1933
+        width: 76
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864df3668b1fbd942afa1d83ed1daf30
+      internalID: -1064493900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_44
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1853
+        width: 72
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75fbf715dffab54f8676bd8a0caab81
+      internalID: 409134664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_45
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1853
+        width: 86
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bebd05d2a3938e47b8cfff82f6c6c2b
+      internalID: 564344897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_46
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1853
+        width: 78
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2538bc617610cf74983163077057fe96
+      internalID: -1247953561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_47
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1854
+        width: 58
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c565944fd86ab64e90ab7cf4faa601e
+      internalID: 1097240086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_48
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1855
+        width: 74
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085ed43881d7723418ef3cb4f7580690
+      internalID: -1803437542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_49
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1854
+        width: 72
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375eb900039f5824f8c0f8d498262d18
+      internalID: 1906793261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_50
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1854
+        width: 64
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e25a4cc4fe3ba74cacf6b9f23c71143
+      internalID: 1107690065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_51
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1850
+        width: 62
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f404a2488133d0146aa7541bcd8b9bb9
+      internalID: -1787810311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_52
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1851
+        width: 63
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bcfe70b1789a24e9f00428aafd9a7d
+      internalID: -1918787202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1770
+        width: 80
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88d125a00d605a429f49b44ebd111c0
+      internalID: -1913466139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1769
+        width: 89
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cf2357cf1a4724d996cb106d3fa589
+      internalID: -1641033562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1767
+        width: 95
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6121515ff0f9e11488b08a306770c1e2
+      internalID: -2038654169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1768
+        width: 95
+        height: 66
+      alignment: 9
+      pivot: {x: 0.47489753, y: 0.0000018495502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044af7ff3e9b0444bae86eb13ba62a95
+      internalID: -278079025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack5
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1769
+        width: 80
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002448850cbf3d24ea45a126f7b510f5
+      internalID: 158998505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1774
+        width: 80
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b708f1710f52e1544b1654214b85b758
+      internalID: -468879873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack7
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1775
+        width: 91
+        height: 45
+      alignment: 9
+      pivot: {x: 0.34133676, y: -0.004546441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f75983e9a53f524195aa83b2fbf7fc9
+      internalID: -1060449994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack8
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1771
+        width: 85
+        height: 50
+      alignment: 9
+      pivot: {x: 0.2882159, y: -0.004091797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a829ace8523988489d868bf83b33b65
+      internalID: 368459960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack9
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1772
+        width: 84
+        height: 46
+      alignment: 9
+      pivot: {x: 0.41232952, y: -0.008895211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515b2467e90a66742beff762fa9a002f
+      internalID: 1113964050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack10
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1773
+        width: 79
+        height: 43
+      alignment: 9
+      pivot: {x: 0.66313386, y: -0.009515807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74228c4bb8dbc445b96e6e9121389e5
+      internalID: -764984276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1680
+        width: 70
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5976264, y: -0.008628151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66035d7a2b12ee94e8293747903caf64
+      internalID: -1128798477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1678
+        width: 88
+        height: 65
+      alignment: 9
+      pivot: {x: 0.3231139, y: 0.0029202974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870bd081bf746f14db31d5650db2749f
+      internalID: 1546058146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1673
+        width: 88
+        height: 38
+      alignment: 9
+      pivot: {x: 0.67904335, y: -0.0049952455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add6ef4a6d676d84a923ac70366b4e76
+      internalID: 1062951669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1676
+        width: 75
+        height: 48
+      alignment: 9
+      pivot: {x: 0.694891, y: -0.0039545693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa10ea1f4503eb4f821adcbc6561c0b
+      internalID: -908451460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack15
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1681
+        width: 82
+        height: 42
+      alignment: 9
+      pivot: {x: 0.24766652, y: -0.009039016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebab7e6672968f648aa694a7c9045e31
+      internalID: -1149246851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack16
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1683
+        width: 67
+        height: 37
+      alignment: 9
+      pivot: {x: 0.29883814, y: 0.0051302523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e53c5586845f2441a99becb2d52bd74
+      internalID: -1832762979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack17
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1684
+        width: 74
+        height: 35
+      alignment: 9
+      pivot: {x: 0.29221407, y: -0.0054234094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad99752c9011b4b499fe03f2721d3862
+      internalID: 379155881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack18
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1686
+        width: 84
+        height: 34
+      alignment: 9
+      pivot: {x: 0.29661196, y: -0.011165843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89924c6e4ea5b0045ab09bf522fad613
+      internalID: -738683945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack19
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1683
+        width: 87
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11003f8e061414945bb45acaac0f926d
+      internalID: 1889792758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_73
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1613
+        width: 75
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe536a81e688af04c9bfb264bc2a6fce
+      internalID: 462406330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_74
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1616
+        width: 68
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b91c07889ba974cac484943aadf5ae
+      internalID: -1991943347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_75
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1621
+        width: 70
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0422fe59fb6c0c54d8b2925c446f80ca
+      internalID: 392159394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_76
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1622
+        width: 71
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73a1db7af457134ea669bc57cc60af1
+      internalID: -1358761582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_77
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1628
+        width: 73
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dfca360c3a81042b06697e18a418c0
+      internalID: -1427551435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_78
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1625
+        width: 68
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9dc9a386286294496c4bda433aa8c5
+      internalID: -250809463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_79
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1627
+        width: 55
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21109c2afca251c4fb58555b2435cd4c
+      internalID: -1109662460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_80
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1629
+        width: 46
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307d0aa152c9eed409dcc78e754c0ca4
+      internalID: -719987499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_81
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1630
+        width: 49
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d834049a9226d544d8ca660b9b6e565f
+      internalID: 1585358736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_82
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1633
+        width: 54
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa9d4d5bde2071418eff78483dabb08
+      internalID: 514428228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_83
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1627
+        width: 47
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f98ee17ba5c4d24f8b52d918db29b11
+      internalID: -1586783548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_84
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1632
+        width: 53
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac99df398d1e8f9459defd1ea4abe251
+      internalID: 985026641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_85
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1634
+        width: 54
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6088b768921754cb6152a5ad06349f
+      internalID: -1518107464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_86
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1542
+        width: 63
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f196291b908de047befb92dca5624ed
+      internalID: -737111823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_87
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1549
+        width: 80
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbba3038fc124d4a9faa1d4dd357642
+      internalID: -1361147282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_88
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1548
+        width: 87
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dd8fbe29b6a5144828cafd8bd79bd1
+      internalID: -1842735235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_89
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1547
+        width: 65
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a420a673e3b774e969c90674590309
+      internalID: 248855981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11.1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1476
+        width: 66
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b504cbb12325ed4aae283e75b4bd155
+      internalID: -1900107404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11.2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1470
+        width: 67
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2f466dad2117641bd082fb47564481
+      internalID: 174865838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11.3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1471
+        width: 62
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73c029f5622a3347a4887d37f5e737d
+      internalID: -53299054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11.4
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1456
+        width: 53
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5766580279c3d41ad2725b9b708d08
+      internalID: 571173583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11.5
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1457
+        width: 52
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85dcde74eca49948bdbd5d89aad9190
+      internalID: 239716302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11.6
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1456
+        width: 52
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fab94428a832a438ac363b292b4207
+      internalID: -568635771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly11.7
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1458
+        width: 55
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6d647d1d0413348acaf5b27a87a45c
+      internalID: -1341878532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_97
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1366
+        width: 63
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a61612b110ce349b66bad16ca5b9e6
+      internalID: 1608097546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_98
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1371
+        width: 61
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b469b18a4bbcb84f91605862b626c5a
+      internalID: -1203877305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_99
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1371
+        width: 43
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3b8ae6e0ffd3b4b8ba57e63906a78f
+      internalID: -1757892051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_100
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1376
+        width: 43
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2670aaf55cdf6b4c9d6e6bcc370d928
+      internalID: -2101145850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_101
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1377
+        width: 44
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7bdf21a4931d543a05ffb6aad35f72
+      internalID: -680288508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_102
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1375
+        width: 42
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3a8b4c280ebc34b820cf4677e4d240
+      internalID: 598006484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_103
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1372
+        width: 39
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b7a7b586785f64b8146afec581ddc3
+      internalID: -2014058612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_104
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1372
+        width: 37
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7880edac9b56e0a429d175cb9a1f71ca
+      internalID: 1295836001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_105
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1377
+        width: 36
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7122bd1f917804ab193fcfacc53793
+      internalID: 1667172907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_106
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1281
+        width: 53
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26d7c617e963e149ae43b62c3d12e09
+      internalID: -1664314555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_107
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1283
+        width: 49
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014617cec40dbf145952de0c240a77a0
+      internalID: -1237003289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_108
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1283
+        width: 48
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f8846a5168a85488cc8e5bb1d6e76a
+      internalID: -1621174846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_109
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1287
+        width: 45
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4db71278ecf8b44abc29596524d43f8
+      internalID: -1484539922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_110
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1284
+        width: 43
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c30979f3b3bae2469372fc582c5e516
+      internalID: 220262980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_111
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1270
+        width: 48
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca9c0725ca2988458a5bdd2eb6e72ac
+      internalID: 81214630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_112
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1272
+        width: 36
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda83eb0eb1ae034e80c0d56de15dc02
+      internalID: 1948140787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_114
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1272
+        width: 33
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63ac9ebde7f18247aac2c258aa06eab
+      internalID: 1092789173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_115
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1272
+        width: 35
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb9d4c87c403b4459075bb77a953c83
+      internalID: -409902117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_147
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1160
+        width: 35
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e3bf2023f5eee479f0d83b51eaed10
+      internalID: 1875858533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_148
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1159
+        width: 34
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e3873c38bacda4695a0c73b56c5b1e
+      internalID: 1443391378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_149
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1163
+        width: 34
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c8175df0902cb4ba07fc837633f1d6
+      internalID: 270814071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_150
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1164
+        width: 31
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fb6a0a0ef8a994ca53cfff8f3e8c67
+      internalID: 560414474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_151
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1162
+        width: 32
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cab5205d06a0304ca139101aafca744
+      internalID: -873567402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_152
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1162
+        width: 33
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341fe9b1648e940419a31610f26b53f0
+      internalID: -1210436061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_153
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1162
+        width: 30
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec54e2ba088a53b45918c0bf613de903
+      internalID: 98022265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_154
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1164
+        width: 30
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e3f1881894e9349b5a165594b56137
+      internalID: 1316840814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_155
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1157
+        width: 47
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898eb4468a7d5e64eb652534ae38515b
+      internalID: -2097324164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_156
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1152
+        width: 46
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e328b3fa014ca8840820185183d470cf
+      internalID: 398021150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_157
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1151
+        width: 46
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebcac462cfd9264a914c7f2080f52f9
+      internalID: -1670714790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_158
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1159
+        width: 41
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0152b3834c7d9438ff2a40dfcb000f
+      internalID: 1179482910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_159
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1162
+        width: 31
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f9677c66c0b544aa538408684b9f38
+      internalID: 1591884315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_160
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1161
+        width: 31
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f90c09be58cfc44a8e70e703ba24532
+      internalID: -850472815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_161
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1046
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a205ef33465dbc8478d56219d435d9e0
+      internalID: 2083042744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_162
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1046
+        width: 40
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd621d496f92b7e479f5e09ac4ddfbab
+      internalID: -33746894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_163
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1042
+        width: 64
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d92acd9b29091448f30dec0533025f
+      internalID: 1344285886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_164
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1055
+        width: 59
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903fa0563c107e7448de287986fedb44
+      internalID: -1668386406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_165
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1051
+        width: 45
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c30c60d7bacaf4a97423845836b9b5
+      internalID: -120214513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_166
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1056
+        width: 43
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f824183b39dc0840b350b54a82d4fb1
+      internalID: -1909624746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_167
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 947
+        width: 50
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9c53b3d80502541ad82217600e0618
+      internalID: -1238043988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_168
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 952
+        width: 56
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519ef928682079c4caf6dbebe6b9b86a
+      internalID: -1326003019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_169
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 955
+        width: 61
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ad691a6c3479a4c81eec94631a31e0
+      internalID: 107354695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_170
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 960
+        width: 59
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98945329385cf2349b70352dfcfede85
+      internalID: -80308908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_171
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 962
+        width: 46
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01abc0dba70b1b0438be15a7323df457
+      internalID: 1384762894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_172
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 955
+        width: 45
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a091a485037dfd9408b30bb2c16decd3
+      internalID: -1695973346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_173
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 960
+        width: 50
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef748e04c6d14fc4b89b44c96b3ace59
+      internalID: -365867581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_174
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 971
+        width: 49
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c82b232379041439cd331f29f786b4
+      internalID: 671584902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_175
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 974
+        width: 56
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783d9132722e4bb4f8808799824fd3b6
+      internalID: 590160975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_176
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 981
+        width: 63
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5908d65a5e75b4bacb433d641fe45e
+      internalID: 1509375224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_177
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 979
+        width: 58
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb71901a69d10f4095d217c1136874a
+      internalID: -1283221486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_178
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 847
+        width: 35
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2368838701523434b84c37eccf8b38b1
+      internalID: 931767033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_179
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 844
+        width: 37
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc25f3f2a95c3b849bde26edb4afd568
+      internalID: -90569635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_180
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 846
+        width: 38
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d32ae68375a244bbb8b6d09eaf9b77
+      internalID: 1544029197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_181
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 845
+        width: 49
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbd5570d5c7ce14aa17ef54ea7ffc1c
+      internalID: -445894068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_182
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 848
+        width: 47
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088349381a32f2341b790392c80f2721
+      internalID: -1723113376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_183
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 846
+        width: 45
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d3eec386211714aadfcbf2a5755aff
+      internalID: 126863031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_184
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 835
+        width: 43
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919fbe3971f10ac41843910a90ca43cc
+      internalID: -1950419034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_185
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 832
+        width: 42
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d382d697eab264f99f17bc4a883eff
+      internalID: -1765885465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_186
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 835
+        width: 44
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c092815228923264f906d21a4a82bc95
+      internalID: -672894367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_187
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 834
+        width: 43
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6438a4ce3ed4c948981d68357f9fe0d
+      internalID: 1366715301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_188
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 845
+        width: 58
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737fc5f939298394285d86abd015bc25
+      internalID: -1860667585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_189
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 829
+        width: 56
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edb61450cb476b4c929c5ed55975d8f
+      internalID: -2021070340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_190
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 828
+        width: 56
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e96cb909560334e8dff83ab917e6c5
+      internalID: 1537290490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_191
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 835
+        width: 51
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5b9c30655003047b81c26310b5bd81
+      internalID: 402325690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_192
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 840
+        width: 51
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e57abf9d4582e4594fc1ef1e22df12
+      internalID: -114397968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_193
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 846
+        width: 55
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83efd4731a316db4e9864cd6acac7892
+      internalID: -1584131147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_194
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 838
+        width: 58
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400f5826d4355b54b84e93da0dc11641
+      internalID: 1745912710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_195
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 836
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a2185e246e46844acf5f3f89243dad
+      internalID: 1144079006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_196
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 834
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb1bc3da15455a42ad230f4bda483f1
+      internalID: 859112872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_197
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 766
+        width: 70
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b110e3d983f594e9389cb3023431a5
+      internalID: -191049499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_198
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 765
+        width: 70
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d526ec154e6ea459f52e78c781e18a
+      internalID: -277686529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_199
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 762
+        width: 70
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e351bcd28867a844b27a89146d56d9c
+      internalID: 912030348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_200
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 761
+        width: 77
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b89653c63241c1478bd4d4e1378b5df
+      internalID: 740248210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_201
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 764
+        width: 60
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2849fc71b80e534b85b2b427db088f4
+      internalID: -1360106853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_202
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 765
+        width: 54
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bd3fa978befe54b95086fcea33516d
+      internalID: -136476868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_203
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 760
+        width: 68
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abc6e26c5274de43bf3721a0a0e528b
+      internalID: 1222291292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_204
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 758
+        width: 74
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df9668ac25dd0d409b34e40975288e2
+      internalID: 1429016310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_205
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 759
+        width: 62
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ac0510a67e0d34bb60ad9be1c9e8f6
+      internalID: -1207287422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_206
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 764
+        width: 62
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2cf8b2df8176149861b732d0e88a69
+      internalID: 1181829597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_207
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 772
+        width: 64
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205115a90a2926a479270fe4409c6eea
+      internalID: 655558181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_208
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 782
+        width: 63
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3078d785092ed49b2c08c28b56825c
+      internalID: 1076251948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_209
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 740
+        width: 15
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4848fa45d47ecd46bed821951a047a3
+      internalID: -845419028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_210
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 740
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944b546b75c45aa458cb0e790e4ee0bd
+      internalID: -386662381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_211
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 740
+        width: 5
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d6683aa28a6144e8a73c7b88e69d52
+      internalID: 2147022355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_212
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 740
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12c74b04fa37b24eb129cf25f7fc0d2
+      internalID: 1235117329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_213
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 740
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72229ebbfe2d60e449e3805947f67205
+      internalID: 1871649956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_214
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 740
+        width: 7
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd65ab4290057349b5185a3b2717d40
+      internalID: -191525940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_215
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa0af9baf1442d45ae6097512f1b412
+      internalID: -1125327218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_216
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 740
+        width: 7
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40327fedbb185614ca62969870f6601c
+      internalID: 256823332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_217
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9f246bbdb65ca4d979dc45754f5712
+      internalID: -307854523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_218
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5ffffc3c26b6d49a5a60acc641efc3
+      internalID: -1680282034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_219
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 740
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d378c09453dbe9642849b9daad475ce3
+      internalID: -1379109124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_220
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfaabdf0d239c94892dd1ea1862bd50
+      internalID: 1618510700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_221
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 740
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce59c7b5fc60fb24db5376787559ae2f
+      internalID: -1438866187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_222
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 741
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f751bac88a87e44c9637df52e51be90
+      internalID: 1620078727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_223
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 740
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef005e470a281f4e9d8abbdd1e516ee
+      internalID: 1845506243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_224
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 740
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4e5691cea8a994cb78e470771ea0fd
+      internalID: 1809875498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_225
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9e6c7db7397cd4db79fc39951dd1a3
+      internalID: -818707200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_226
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fa38e174be56640a3751dee240eb42
+      internalID: -429209846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_227
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 740
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0540578cc2dae94ca3729e04447cb38
+      internalID: 508551624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_228
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 740
+        width: 7
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f9b23d335a3dd4498418aebb97b169
+      internalID: 724550275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_229
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 741
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76f7de1342163149b174e6aaaf74814
+      internalID: 1141908562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_230
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 740
+        width: 6
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a2bc41a1987954f86e97fefe899881
+      internalID: -1522740042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_231
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 741
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c6c66aa12d6274e880ad4684a8953c
+      internalID: 206279868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_232
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 740
+        width: 7
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c1aa459de53ab4fb68bcb67d78febf
+      internalID: -1319452565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_233
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 740
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d62b0ac9f873a439780a3c7bcc4aae
+      internalID: 2019695374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_234
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 740
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2656427f3776fc4489aa1d4e59757e5c
+      internalID: -559132900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_235
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6b8710ee0fef148b191fe1b1bdf456
+      internalID: 1883626140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_236
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 740
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d4a460221a3e54c9dcc02f678bdb77
+      internalID: -389476887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_237
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 740
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364f14869bfcfd34fa3e3ec15810efc6
+      internalID: 1430440176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_238
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 740
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f079890bc8e6941a23ae9b4719e4bf
+      internalID: 1232501455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_239
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 740
+        width: 7
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960058ea8442fd944b2e2b00913a071b
+      internalID: -1338300432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_240
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 741
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d73edfd9bead3145b3d37fd5c9ceedb
+      internalID: 704986408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_241
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 738
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdc93b8e54e2d748906e6574367467c
+      internalID: 2027941640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_242
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 669
+        width: 70
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74bc2442cbb99049af3b9fb11f5d4ce
+      internalID: -1717943211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_243
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 673
+        width: 67
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9739b795706963b4f953271429cf2966
+      internalID: -1433318029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_244
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 672
+        width: 74
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440979f0034d5d140b6c8c5790505fb5
+      internalID: -607561987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_245
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 666
+        width: 73
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4b4300ed6c72844837663d3584c6ea
+      internalID: 260577182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_246
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 663
+        width: 72
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7555c2cf6e5c3a479d31ee65ea92bed
+      internalID: 1032907893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_247
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 657
+        width: 75
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6289b9462fda34b981d671340f9052
+      internalID: -459563516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_248
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 657
+        width: 66
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357ec555ce9b7204caeff2cf0269bde4
+      internalID: 531729591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_249
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 654
+        width: 63
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd807f589be10324d997d33b4c5c33d9
+      internalID: 1544568253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_250
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 667
+        width: 70
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc20620f873e32a40bed6bf8c99f2db8
+      internalID: -1498832760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_251
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 659
+        width: 71
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01042b38e7ccfd849a96ffc512132693
+      internalID: 1520856530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_252
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 669
+        width: 76
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477c469b1078f684db3e15de6e540796
+      internalID: 1307866378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_253
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 668
+        width: 75
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4d415c7d7e13f479172aff719bdc2b
+      internalID: 244035232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_254
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 675
+        width: 70
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23d17d11feb1524abe73701f5fa9788
+      internalID: -1749539082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 561
+        width: 92
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b5865d7a220a048b5d80a6e454b867
+      internalID: -1233606750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 562
+        width: 89
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d90a8705bfbb1e4cac43b34286e7a3e
+      internalID: 591154533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 566
+        width: 69
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa0f6c2a5d405a4da48f2fa6e1437ff
+      internalID: -928286770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 560
+        width: 50
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495a27b4b75b4ce4e946b51c9b19edad
+      internalID: -310006736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 562
+        width: 62
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e97c57b5db684459b1456d17f45754
+      internalID: -441276797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic6
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 562
+        width: 71
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567a298e2bc2f8048a5958ba1b52e575
+      internalID: -1614484638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 486
+        width: 78
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69122c6771433234ab57acd7fc276143
+      internalID: -1307158580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 484
+        width: 75
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf62596b3f437fa4eb689c1c5c43b820
+      internalID: -607760449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 490
+        width: 76
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0f51de1940d4844951b7f6d1327782
+      internalID: 71392796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 489
+        width: 74
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff8cd8d37d37a443aeebf5cd31f9055
+      internalID: -246348715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 488
+        width: 63
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f08e1bebbce3f48aab389a9676246d
+      internalID: -1175838666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 486
+        width: 57
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b112660756606143ae58271e8baf6da
+      internalID: 803388291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 414
+        width: 51
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de2edfac4c41b940aeab241bcfa9d08
+      internalID: 2076131156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 412
+        width: 50
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c8f9fb9cdadb34d931cd396f92502e
+      internalID: 1444547247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 415
+        width: 52
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5504aecd9fadce46a65c982a01a1814
+      internalID: -1891099642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 417
+        width: 63
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a42662f672137e4fa92be29cc63b2d1
+      internalID: -531441295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 418
+        width: 84
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7166b603db16c134c91d0474a6e55c2f
+      internalID: 1676078832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack12
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 422
+        width: 78
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab559c97189da247ac9996d17097900
+      internalID: -1679239622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 424
+        width: 64
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c869e1f66dc669749a52de6074615c5a
+      internalID: 331092776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack14
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 427
+        width: 62
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e84304ff9ffbe4387742dce0c8e3e4
+      internalID: -566582527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2attack15
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 428
+        width: 65
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab7845fd861dda4d99a44543dc52008
+      internalID: 1585831252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_276
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 335
+        width: 75
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be698264d0f3e9428bc481d17ba9d96
+      internalID: 337915994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_277
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 332
+        width: 74
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d2ada1cb49b064da4620b58d842f38
+      internalID: -1222846609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_278
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 322
+        width: 74
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265c69aa8c8787142add6e47ec8fcd4f
+      internalID: 1768920774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_279
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 316
+        width: 70
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cde67f4a66a2a14c9213c8b9ff464e4
+      internalID: 887851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_280
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 308
+        width: 76
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eada4019fb71b0740aba3aa1ec317812
+      internalID: 1281604287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_281
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 303
+        width: 76
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69426030d2577c4da977e086c915bbe
+      internalID: 1167812251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_282
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 302
+        width: 77
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f83a3d900ea6b42bfe8ceaa5ffe6b0
+      internalID: 1472511922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_283
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 302
+        width: 76
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a01b83c0d026df478555f25c66abf14
+      internalID: -1139795362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_284
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 302
+        width: 76
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c5fac1f4d18c54f88e5f9d11359b5c
+      internalID: 542217648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_285
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 220
+        width: 90
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9118a0dabe2dfa74798fdd03fbf7407f
+      internalID: -419366670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_286
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 214
+        width: 86
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b869da05f0ec74580eaaf6630566b0
+      internalID: 56908802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_287
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 216
+        width: 84
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ea56052c979234a9455b1c5bcc9a73
+      internalID: -1282608892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_288
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 217
+        width: 84
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7158f542ee7da3b41802c84ee9e5ab9e
+      internalID: 627105310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_289
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 218
+        width: 83
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932505d6cb19f674d99dc79a30287ce9
+      internalID: 1905207611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_290
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 222
+        width: 79
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbce43d0974f8534286546fb179c5c5a
+      internalID: 1841655345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_291
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 213
+        width: 77
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc3352621d810446845fed1accc451d
+      internalID: -569391573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_292
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 223
+        width: 55
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5331923373eccbd40ae8ff46a8243679
+      internalID: 624660892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_293
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 238
+        width: 51
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e6d1cfa31f31349b0cf9d192d68775
+      internalID: -1354635479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_294
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 237
+        width: 41
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de03f2518cd83b4ca1a4f7ded44c534
+      internalID: 546059385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_295
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 242
+        width: 54
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac702a84cb2ec94ba177fa775c43fcf
+      internalID: 2098646293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_296
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 235
+        width: 69
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da46b2606651bc41963edea3b29cebd
+      internalID: 2144157432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_297
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 148
+        width: 56
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7eab0aeafbe7124c9d21c2ec0b3c36e
+      internalID: 1839626806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_298
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 148
+        width: 46
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c74fa2b99bce2f428c322687ec21907
+      internalID: -762972824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_299
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 146
+        width: 65
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b50096e98444d45b5baad1bf22fb23
+      internalID: 860950175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_300
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 148
+        width: 58
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01123d293af803b42a5d1e13d9c4c0a0
+      internalID: -1906645908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_301
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 144
+        width: 67
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b06115c2c711a409441300f6495fa0
+      internalID: 224020947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_302
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 145
+        width: 76
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445e735fe49ff554fb1c81b37be6f23e
+      internalID: 185981662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_303
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 147
+        width: 73
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7db563a36ac53f40a4d310583aa55ab
+      internalID: -1997644383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_304
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 149
+        width: 71
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12a4d1bc4f69884cad5cc059e0a26e6
+      internalID: -570989621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_305
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 150
+        width: 58
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a8b30a6fd61074f9cc9491968ab9fe
+      internalID: -623116317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_306
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 150
+        width: 63
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3d120f7ac61d44caef1ec0e4484472
+      internalID: 1325109853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_307
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 150
+        width: 59
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4625f3a62865bc49969cb7434290373
+      internalID: -1034293857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_308
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 152
+        width: 66
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdd8278099bee244b57c248237cd068
+      internalID: 141735103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_309
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 50
+        width: 92
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f7d1f0f64f8ae4093ba6921eb1b847
+      internalID: -352189816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_310
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 55
+        width: 89
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8167672dec62bb840b627750ccc06448
+      internalID: 487095226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_311
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 46
+        width: 69
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc82a858471d04489e316239509fda2
+      internalID: 1138835249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_312
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 42
+        width: 50
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519b96dd0c9b66f4f981a148f77b3984
+      internalID: 1661851493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_313
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 43
+        width: 50
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3331bf161b6fb94c9a01962a81831e0
+      internalID: -1002009517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_314
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 42
+        width: 50
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80db3fe401369fa459450751367cb422
+      internalID: -4619830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_315
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 43
+        width: 50
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5184a6610e7855409fb7e29cb447ecf
+      internalID: 313311138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_316
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 45
+        width: 50
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b716d5b1f231f134b97ffba8dab95937
+      internalID: 487645538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_317
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 44
+        width: 49
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abf1b9c154b7ec45903abe15cff67b6
+      internalID: -351602667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_318
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 57
+        width: 41
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73665a948d6541447b1cd43ec92c25a3
+      internalID: -1353345316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_319
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 75
+        width: 31
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8299d267ecb38104abd131ffe9141b11
+      internalID: -1852443462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_323
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 46
+        width: 79
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008e778f84bb53045b0004850c6236d4
+      internalID: 440343609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_330
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 48
+        width: 56
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9113bb177bb1924591178bdd2558ab6
+      internalID: 1517784265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_333
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 48
+        width: 56
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d87cf6745c858548b44ba06c08d883f
+      internalID: 1973557417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_336
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 48
+        width: 56
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40ac15b72d913f49bd930431506d309
+      internalID: 1280974751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_339
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 8
+        width: 57
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94b1663cdb3f904b8e5de4fe7da1071
+      internalID: 1036480487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_340
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 9
+        width: 57
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d81d426186be2d4785224816c1cced3
+      internalID: -1302476588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_341
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 11
+        width: 57
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0addc21836970f842a0cc8e7aa09d08c
+      internalID: 2121957035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_342
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 10
+        width: 57
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab89a68a087bcd45b03741ea3a64655
+      internalID: 1368922239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      2attack1: -1307158580
+      2attack10: -531441295
+      2attack11: 1676078832
+      2attack12: -1679239622
+      2attack13: 331092776
+      2attack14: -566582527
+      2attack15: 1585831252
+      2attack2: -607760449
+      2attack3: 71392796
+      2attack4: -246348715
+      2attack5: -1175838666
+      2attack6: 803388291
+      2attack7: 2076131156
+      2attack8: 1444547247
+      2attack9: -1891099642
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_10: -164245602
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_100: -2101145850
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_101: -680288508
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_102: 598006484
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_103: -2014058612
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_104: 1295836001
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_105: 1667172907
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_106: -1664314555
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_107: -1237003289
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_108: -1621174846
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_109: -1484539922
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_110: 220262980
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_111: 81214630
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_112: 1948140787
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_113: 1095340534
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_114: 1092789173
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_115: -409902117
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_116: -108244785
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_117: 2081814032
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_118: -464402928
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_119: -458237223
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_120: -183386113
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_121: 584758806
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_122: -1452243981
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_123: 916715861
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_124: 1805054796
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_125: -1771255346
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_126: 1596757489
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_127: -90646277
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_128: 399085060
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_129: 1419779491
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_130: -45888254
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_131: -961607462
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_132: 2075019220
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_133: 857697193
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_134: 1459597222
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_135: -1658471357
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_136: -654959376
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_137: -409951594
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_138: 1337254304
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_139: 1719850004
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_140: 1506597391
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_141: 668652094
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_142: -736561007
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_143: 1001114915
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_144: -1967574051
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_145: 124025369
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_146: 341656685
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_147: 1875858533
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_148: 1443391378
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_149: 270814071
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_150: 560414474
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_151: -873567402
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_152: -1210436061
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_153: 98022265
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_154: 1316840814
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_155: -2097324164
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_156: 398021150
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_157: -1670714790
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_158: 1179482910
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_159: 1591884315
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_160: -850472815
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_161: 2083042744
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_162: -33746894
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_163: 1344285886
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_164: -1668386406
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_165: -120214513
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_166: -1909624746
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_167: -1238043988
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_168: -1326003019
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_169: 107354695
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_170: -80308908
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_171: 1384762894
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_172: -1695973346
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_173: -365867581
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_174: 671584902
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_175: 590160975
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_176: 1509375224
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_177: -1283221486
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_178: 931767033
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_179: -90569635
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_180: 1544029197
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_181: -445894068
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_182: -1723113376
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_183: 126863031
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_184: -1950419034
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_185: -1765885465
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_186: -672894367
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_187: 1366715301
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_188: -1860667585
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_189: -2021070340
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_190: 1537290490
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_191: 402325690
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_192: -114397968
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_193: -1584131147
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_194: 1745912710
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_195: 1144079006
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_196: 859112872
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_197: -191049499
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_198: -277686529
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_199: 912030348
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_200: 740248210
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_201: -1360106853
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_202: -136476868
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_203: 1222291292
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_204: 1429016310
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_205: -1207287422
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_206: 1181829597
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_207: 655558181
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_208: 1076251948
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_209: -845419028
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_210: -386662381
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_211: 2147022355
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_212: 1235117329
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_213: 1871649956
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_214: -191525940
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_215: -1125327218
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_216: 256823332
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_217: -307854523
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_218: -1680282034
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_219: -1379109124
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_220: 1618510700
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_221: -1438866187
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_222: 1620078727
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_223: 1845506243
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_224: 1809875498
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_225: -818707200
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_226: -429209846
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_227: 508551624
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_228: 724550275
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_229: 1141908562
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_230: -1522740042
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_231: 206279868
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_232: -1319452565
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_233: 2019695374
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_234: -559132900
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_235: 1883626140
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_236: -389476887
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_237: 1430440176
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_238: 1232501455
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_239: -1338300432
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_240: 704986408
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_241: 2027941640
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_242: -1717943211
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_243: -1433318029
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_244: -607561987
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_245: 260577182
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_246: 1032907893
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_247: -459563516
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_248: 531729591
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_249: 1544568253
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_250: -1498832760
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_251: 1520856530
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_252: 1307866378
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_253: 244035232
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_254: -1749539082
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_276: 337915994
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_277: -1222846609
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_278: 1768920774
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_279: 887851
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_280: 1281604287
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_281: 1167812251
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_282: 1472511922
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_283: -1139795362
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_284: 542217648
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_285: -419366670
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_286: 56908802
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_287: -1282608892
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_288: 627105310
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_289: 1905207611
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_290: 1841655345
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_291: -569391573
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_292: 624660892
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_293: -1354635479
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_294: 546059385
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_295: 2098646293
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_296: 2144157432
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_297: 1839626806
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_298: -762972824
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_299: 860950175
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_300: -1906645908
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_301: 224020947
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_302: 185981662
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_303: -1997644383
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_304: -570989621
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_305: -623116317
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_306: 1325109853
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_307: -1034293857
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_308: 141735103
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_309: -352189816
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_310: 487095226
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_311: 1138835249
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_312: 1661851493
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_313: -1002009517
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_314: -4619830
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_315: 313311138
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_316: 487645538
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_317: -351602667
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_318: -1353345316
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_319: -1852443462
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_320: 882694511
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_321: -1184065835
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_322: 352072349
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_323: 440343609
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_324: -767614659
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_325: -462755092
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_326: -804358139
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_327: -168515478
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_328: 1430323160
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_329: 256008082
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_330: 1517784265
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_331: -273594412
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_332: 325206861
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_333: 1973557417
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_334: 904129035
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_335: 1539891598
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_336: 1280974751
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_337: 447041170
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_338: -1248978448
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_339: 1036480487
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_340: -1302476588
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_341: 2121957035
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_342: 1368922239
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_39: -2034304567
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_4: 1320192960
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_40: -1180777865
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_41: -1516705542
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_42: -1280225414
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_43: -1064493900
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_44: 409134664
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_45: 564344897
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_46: -1247953561
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_47: 1097240086
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_48: -1803437542
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_49: 1906793261
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_5: -258399920
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_50: 1107690065
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_51: -1787810311
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_52: -1918787202
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_6: -1466808360
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_65: 1055054033
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_7: -1404687814
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_73: 462406330
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_74: -1991943347
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_75: 392159394
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_76: -1358761582
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_77: -1427551435
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_78: -250809463
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_79: -1109662460
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_8: -356171881
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_80: -719987499
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_81: 1585358736
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_82: 514428228
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_83: -1586783548
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_84: 985026641
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_85: -1518107464
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_86: -737111823
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_87: -1361147282
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_88: -1842735235
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_89: 248855981
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_9: 1896987321
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_97: 1608097546
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_98: -1203877305
+      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_99: -1757892051
+      attack1: -1913466139
+      attack10: -764984276
+      attack11: 1062951669
+      attack12: -908451460
+      attack13: -1128798477
+      attack14: 1546058146
+      attack15: -1149246851
+      attack16: -1832762979
+      attack17: 379155881
+      attack18: -738683945
+      attack19: 1889792758
+      attack2: -1641033562
+      attack3: -2038654169
+      attack4: -278079025
+      attack5: 158998505
+      attack6: -468879873
+      attack7: -1060449994
+      attack8: 368459960
+      attack9: 1113964050
+      fly1: -1388516616
+      fly10: -1887000618
+      fly11: 2106943557
+      fly11.1: -1900107404
+      fly11.2: 174865838
+      fly11.3: -53299054
+      fly11.4: 571173583
+      fly11.5: 239716302
+      fly11.6: -568635771
+      fly11.7: -1341878532
+      fly12: -1643597110
+      fly13: 1473709392
+      fly14: 1773351217
+      fly15: -1623117068
+      fly16: 1723886958
+      fly2: -658829044
+      fly3: 1817325923
+      fly4: -1684598202
+      fly5: 696143347
+      fly6: -1627982146
+      fly7: -744654471
+      fly8: 1769908340
+      fly9: 805468446
+      idle1: -394157989
+      idle2: -471297512
+      idle3: -860744486
+      idle5: 371029973
+      magic1: -1233606750
+      magic2: 591154533
+      magic3: -928286770
+      magic4: -310006736
+      magic5: -441276797
+      magic6: -1614484638
+      run1: 1882340692
+      run10: -1638471378
+      run11: 868504576
+      run12: -825363906
+      run2: -2099026148
+      run3: -1969664295
+      run4: -1330187245
+      run5: -566286617
+      run6: 1683696539
+      run7: 951601616
+      run8: -687746540
+      run9: -983991928
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

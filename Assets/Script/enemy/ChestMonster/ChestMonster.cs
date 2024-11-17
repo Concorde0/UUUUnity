@@ -9,7 +9,7 @@ using UnityEngine.UIElements;
 public class ChestMonster : MonoBehaviour, IInteractable
 {
     private Animator anim;
-    [Header("事件监听")]
+    [Header("浜嬩欢鐩戝惉")]
     public PlayerControllerSO playerControllerEvent;
     private PlayerController herePlayerController;
     public CharacterEventSO posEvent;
@@ -18,8 +18,7 @@ public class ChestMonster : MonoBehaviour, IInteractable
     public bool isDone;
     private Character currentCharacter;
     public GameObject Coin;
-
-    //if player dead , 广播给UI,再广播死亡面板
+    
     public UnityEvent PlayerDead;
     public UnityEvent<Character> OnPlayerHealthChange;
 

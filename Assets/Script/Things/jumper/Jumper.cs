@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class Jumper : MonoBehaviour
 {
-
-    [Header("ÊÂ¼þ¼àÌý")]
+    
     public RigidBodySO rbEvent;
     public float upwardForceMagnitude;
     private GameObject playerObject;

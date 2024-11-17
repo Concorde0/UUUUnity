@@ -326,8 +326,6 @@ public class PlayerController : MonoBehaviour
             {
                 BloodEffect.SetActive(true);
                 StartCoroutine(FixBloodLineSkill());
-                
-                
             }
         }
         

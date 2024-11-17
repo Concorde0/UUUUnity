@@ -52,7 +52,6 @@ public class Bridge : MonoBehaviour
         TriggerInvulnerable();
         if (health < 0)
         {
-            //Debug.Log("change");
             rb.bodyType = RigidbodyType2D.Dynamic;
             StartCoroutine(Destory());
             Addforce();
@@ -72,7 +71,6 @@ public class Bridge : MonoBehaviour
     private IEnumerator Fix()
     {
         yield return new WaitForSeconds(0.05f);
-        //Debug.Log("change2");
         rb.gravityScale = 1;
         rb.freezeRotation = false;
         yield return new WaitForSeconds(1f);

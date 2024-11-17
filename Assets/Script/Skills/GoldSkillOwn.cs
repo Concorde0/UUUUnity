@@ -17,6 +17,13 @@ public class GoldSkillOwn : MonoBehaviour
       rb = GetComponent<Rigidbody2D>();
       player = GameObject.FindGameObjectWithTag("Player");
    }
+
+   private void OnEnable()
+   {
+      transform.position = player.transform.position;
+      
+   }
+
    private void Start()
    {
 
@@ -36,7 +43,7 @@ public class GoldSkillOwn : MonoBehaviour
    }
    private void Update()
    {
-      transform.localScale = playerTrans.localScale * 0.5f;
+      // transform.localScale = playerTrans.localScale * 0.5f;
       float distance = (transform.position - startPos).sqrMagnitude;
       if (distance > destoryDistance)
       {

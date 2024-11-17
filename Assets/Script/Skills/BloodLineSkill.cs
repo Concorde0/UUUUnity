@@ -14,15 +14,14 @@ public class BloodLineSkill : MonoBehaviour
 
     private void Awake()
     {
-        MagicConsume();
         instance = this;
     }
 
     private void Update()
     {
+        MagicConsume();
         if (!bloodLineSkill.activeSelf)
         {
-            
             isBloodLine = false;
         }
     }
@@ -31,7 +30,6 @@ public class BloodLineSkill : MonoBehaviour
     {
         if (!isBloodLine)
         {
-            
             bloodLineSkill.SetActive(true);
         }
         isBloodLine = true;
@@ -39,7 +37,7 @@ public class BloodLineSkill : MonoBehaviour
 
     private void MagicConsume()
     {
-        if (!isBloodLine )
+        if (!isBloodLine)
         {
             magicConsume = magicConsumer;
         }
