@@ -30,6 +30,8 @@ public class Skeleton : GroundEnemy
         deadState = new SkeletonDeadState();
     }
 
+    
+
     protected override void FixedUpdate()
     {
 
@@ -92,7 +94,6 @@ public class Skeleton : GroundEnemy
 
         if (wait)
         {
-            Debug.Log("Wait");
             waitTimeCounter -= Time.deltaTime;
             if (waitTimeCounter <= 0)
             {

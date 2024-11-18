@@ -35,8 +35,6 @@ public class SkeletonChaseState : GroundEnemyBaseState
 
         if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
         {
-            //currentEnemy.attackPlayer = true;
-            //Debug.Log("AttackPlayer");
             currentEnemy.SwichState(NPCState.Attack);
         }
         else

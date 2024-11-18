@@ -12,8 +12,10 @@ public class PhysiscCheck : MonoBehaviour
     public Vector2 bottomOffset;
     public float checkRadius;
     public LayerMask groundlayer;
+    public LayerMask oneWayPlatformLayer;
     [Header("bool")]
     public bool isGround;
+    public bool isOneWayPlatform;
     public bool touchLeftWall;
     public bool touchRightWall;
     private void Awake()
@@ -33,6 +35,8 @@ public class PhysiscCheck : MonoBehaviour
     }
     public void Check()
     {
+        //check one Way
+        isOneWayPlatform = Physics2D.OverlapCircle((Vector2)transform.position+ bottomOffset, checkRadius, oneWayPlatformLayer);
         //check ground
         isGround =  Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset,checkRadius,groundlayer);
         //check wall

@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        //tmp,To Fix isHurt
+        //tmp  .To Fix isHurt
         tmpwaitTimeConter = tmpwaitTime;
 
         currentSpeed = speed;
@@ -81,6 +81,8 @@ public class PlayerController : MonoBehaviour
         coll = GetComponent<CapsuleCollider2D>();
         //jump
         inputControl.GamePlay.Jump.started += Jump;
+        //interact
+        inputControl.Enable();
 
         //Attack light
         inputControl.GamePlay.LightAttack.started += PlayerLightAttack;
@@ -90,8 +92,6 @@ public class PlayerController : MonoBehaviour
         //shoot
         inputControl.GamePlay.Shoot.started += Shoot;
 
-        //interact
-        inputControl.Enable();
         //Skill
         inputControl.GamePlay.Skill.started += skill;
         //bottle
@@ -104,8 +104,10 @@ public class PlayerController : MonoBehaviour
         inputControl.GamePlay.UpXbox.started += UpXbox;
         //Xbox Down
         inputControl.GamePlay.DownXbox.started += DownXbox;
-        
-        
+        //Down
+        inputControl.GamePlay.Down.started += Down;
+
+
     }
 
    
@@ -143,22 +145,29 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         inputDirection = inputControl.GamePlay.Move.ReadValue<Vector2>();
-
         CheckState();
-        if (shootWaitTimeCounter >= -0.1)
+        ShootCoolDown();
+        PowerConsume();
+        HurtFix();
+        //TODO:
+
+
+
+
+    }
+    private void FixedUpdate()
+    {
+        if (!isHurt && !isAttack && !isArrow)
         {
-            shootWaitTimeCounter -= Time.deltaTime;
+            Move();
         }
 
-        if (PowerWaitTimeCounter > 0)
-        {
-            PowerWaitTimeCounter -= Time.deltaTime;
-        }
-        if (PowerWaitTimeCounter < 0 && character.currentPower < 200 && isRun == false)
-        {
-            character.currentPower += 50 * Time.deltaTime;
-            Attack?.Invoke(character);
-        }
+        
+    }
+
+    private void PowerConsume()
+    {
+        //Run
         if (isRun && rb.velocity.x != 0 && character.currentPower > 0)
         {
             currentSpeed = runSpeed;
@@ -174,8 +183,27 @@ public class PlayerController : MonoBehaviour
         }
         
         
-        
-        //TODO:
+        if (PowerWaitTimeCounter > 0)
+        {
+            PowerWaitTimeCounter -= Time.deltaTime;
+        }
+        if (PowerWaitTimeCounter < 0 && character.currentPower < 200 && isRun == false)
+        {
+            character.currentPower += 50 * Time.deltaTime;
+            Attack?.Invoke(character);
+        }
+    }
+
+    private void ShootCoolDown()
+    {
+        if (shootWaitTimeCounter >= -0.1)
+        {
+            shootWaitTimeCounter -= Time.deltaTime;
+        }
+    }
+
+    private void HurtFix()
+    {
         if (rb.velocity.x == 0)
         {
             tmpwaitTimeConter -= Time.deltaTime;
@@ -185,29 +213,18 @@ public class PlayerController : MonoBehaviour
             isHurt = false;
             tmpwaitTimeConter = tmpwaitTime;
         }
-
-
-
     }
-    private void FixedUpdate()
-    {
-        if (!isHurt && !isAttack && !isArrow)
-        {
-            Move();
-        }
-
-        
-    }
+    
+    
     private void OnLoadEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)
     {
         inputControl.GamePlay.Disable();
     }
+    
     private void OnLoadDataEvnet()
     {
         isDead = false;
         isHurt = false;
-
-
     }
 
     private void OnafterSceneLoadedEvent()
@@ -252,27 +269,41 @@ public class PlayerController : MonoBehaviour
 
     private void Run(InputAction.CallbackContext obj)
     {
-
         isRun = true;
-        
-        //character.currentPower -= 10*Time.deltaTime;
     }
+    
     private void StopRunning(InputAction.CallbackContext obj)
     {
-        
         currentSpeed = speed;
         isRun = false;
-
     }
 
 
     private void Jump(InputAction.CallbackContext obj)
     {
         if (physiscCheck.isGround)
+        {
             rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        }
+           
     }
 
+    private void Down(InputAction.CallbackContext obj)
+    {
+        if (physiscCheck.isOneWayPlatform)
+        {
+            gameObject.layer = LayerMask.NameToLayer("OneWayGround");
+            StartCoroutine(RestoreLayer());
+        }
+    }
 
+    private IEnumerator RestoreLayer()
+    {
+        yield return new WaitForSeconds(0.3f);
+        gameObject.layer = LayerMask.NameToLayer("Player");
+    }
+
+    
     private void PlayerLightAttack(InputAction.CallbackContext obj)
     {
         if (character.currentPower > 20)
@@ -280,14 +311,10 @@ public class PlayerController : MonoBehaviour
             playerAnimation.PlayLightAttack();
             isAttack = true;
         }
-
-        //character.currentPower -= 5;
         Attack?.Invoke(character);
-        
-
-
-
     }
+    
+    
     private void PlayerHeavyAttack(InputAction.CallbackContext obj)
     {
         if (character.currentPower > 30)
@@ -295,11 +322,10 @@ public class PlayerController : MonoBehaviour
             playerAnimation.PlayHeavyAttack();
             isAttack = true;
         }
-
-        //character.currentPower -= 10;
         Attack?.Invoke(character);
-        
     }
+    
+    
     private void skill(InputAction.CallbackContext obj)
     {
         //LightSkill
@@ -357,11 +383,6 @@ public class PlayerController : MonoBehaviour
             
             }
         }
-        
-        
-        
-        
-        
     }
     private IEnumerator FixBloodLineSkill()
     {
@@ -377,6 +398,7 @@ public class PlayerController : MonoBehaviour
         inputControl.GamePlay.Enable();
         isMagic2 = false;
     }
+    
     private IEnumerator FixWaterSkill()
     {
         yield return new WaitForSeconds(0.05f);
@@ -389,7 +411,6 @@ public class PlayerController : MonoBehaviour
     }
    
     
-
     private void bottle(InputAction.CallbackContext obj)
     {
         HealthBottle.instance.RecoverHealth();
@@ -398,7 +419,6 @@ public class PlayerController : MonoBehaviour
     private void DownXbox(InputAction.CallbackContext obj)
     {
         SkillsManager.instance.DownChangeSkill();
-
     }
 
     private void UpXbox(InputAction.CallbackContext obj)
@@ -412,7 +432,6 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector2.zero;
         Vector2 dir = new Vector2((transform.position.x - attacker.position.x), 0).normalized;
         rb.AddForce(dir * hurtForce, ForceMode2D.Impulse);
-
     }
 
 
@@ -420,7 +439,6 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
         inputControl.GamePlay.Disable();
-
     }
 
     private void CheckState()
@@ -432,7 +450,6 @@ public class PlayerController : MonoBehaviour
         PowerWaitTimeCounter = PowerWaitTime;
         character.currentPower -= 35;
         Attack?.Invoke(character);
-       
     }
 
     private void HeavyAttackPower()
@@ -442,7 +459,6 @@ public class PlayerController : MonoBehaviour
         character.currentPower -= 55;
         Attack?.Invoke(character);
         
-
     }
     private void AttackConter()
     {

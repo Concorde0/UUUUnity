@@ -17,15 +17,15 @@ public class GroundEnemy : MonoBehaviour
     [HideInInspector]public PhysiscCheck physiscCheck;
     [HideInInspector] public Knight knight;
     [HideInInspector] public Skeleton skeleton;
+    [HideInInspector]public Seeker seeker;
     [HideInInspector]public Character character;
     
     [Header("基本属性")]
-
     public float normalSpeed;
     public float chaseSpeed;
     public float attackDistance;
     public float hurtForce;
-    [HideInInspector] public float currentSpeed;
+    public float currentSpeed;
     [HideInInspector] public Vector3 faceDir;
     [HideInInspector] public Transform attacker;
 
@@ -63,12 +63,10 @@ public class GroundEnemy : MonoBehaviour
         character = GetComponent<Character>();
         skeleton = GetComponent<Skeleton>();
         knight = GetComponent<Knight>();
+        seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         physiscCheck = GetComponent<PhysiscCheck>();
-
-
-
         currentSpeed = normalSpeed;
         waitTimeCounter = waitTime; 
         
@@ -78,11 +76,10 @@ public class GroundEnemy : MonoBehaviour
         
     }
 
-    private void OnEnable()
+    public virtual void OnEnable()
     {
         posEvent.OnEventRaised += OnposEvent;
         currentState = patrolState;
-        
         currentState.OnEnter(this);
     }
     private void OnDisable()
@@ -107,9 +104,9 @@ public class GroundEnemy : MonoBehaviour
         
         currentState.PhysicsUpdate();
     }
-    
 
-    private void OnposEvent(Character character)
+
+    protected void OnposEvent(Character character)
     {
         playerPos = character.transform;
     }

@@ -1239,7 +1239,7 @@ TextureImporter:
         width: 24
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1247,6 +1247,447 @@ TextureImporter:
       bones: []
       spriteID: 81aef31c7f18fea49b70a673560f5f21
       internalID: 1716811799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider1
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f12fdd7751c304097845f74e5cf973
+      internalID: 1067854126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26815e12c1ffa04f8b11dde4035e115
+      internalID: -1572906997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider3
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8c4d2f49029c84381d17cf06fe8f26
+      internalID: 1713872052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider4
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ccc6d7afad45341bdb8587d69e4454
+      internalID: -144191634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider5
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e9f9ae754435c44b7e26e3e9efd6e1
+      internalID: 231828581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider6
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395a6cc04de71464ba141a762600f753
+      internalID: 1610334878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue1
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1304
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b4e3525cfbdb2448e92e2802a87edc
+      internalID: -757337458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue2
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1304
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f411496e78008348be1b6fdcd0caec2
+      internalID: 371620963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue3
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1304
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48913ec8a84e3324c8437f0e403753b1
+      internalID: 962354086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1392
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e195cb638bb08642aeb2cd96821ecea
+      internalID: 1110773794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLight1
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2216
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53abb5172fe33f408dacfc5e90704b7
+      internalID: 235095907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLight2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2216
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1153cc4ef7a8541bfeefbdb744e0fa
+      internalID: 1829308421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLight4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2216
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d7e8529971cb44abdcb7bb7a46db54
+      internalID: 1018283538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLight
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2216
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1328784e41b36a947894cb104636f517
+      internalID: 1186435278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLightTop1
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a748fa1694f25840838fc59ee94f5ca
+      internalID: 367846555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLightTop2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417b80d5d91e07c499083bbcddbb5a80
+      internalID: -2109400335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLightTop3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b624e67e1d5b77b419576f90d277865a
+      internalID: -796626458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLightMain1
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2240
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95aa66cabfbf3a40aa6ba870fa6a2c3
+      internalID: 1662159928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLightMain2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2240
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bbfe567c241364c88cbf97d6c0fe36
+      internalID: -545588387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLightMain3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2240
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbe380b14605474f96c653640ac7533
+      internalID: 2119322613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLightMain4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2240
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156562018853acd40a23881618cce8f6
+      internalID: 885175164
       vertices: []
       indices: 
       edges: []
@@ -1296,11 +1737,32 @@ TextureImporter:
       Key7: 1218524551
       Key8: 105379177
       SkeletonD: 1473239906
+      YellowLight: 1186435278
+      YellowLight1: 235095907
+      YellowLight2: 1829308421
+      YellowLight4: 1018283538
+      YellowLightMain1: 1662159928
+      YellowLightMain2: -545588387
+      YellowLightMain3: 2119322613
+      YellowLightMain4: 885175164
+      YellowLightTop1: 367846555
+      YellowLightTop2: -2109400335
+      YellowLightTop3: -796626458
       doo23: 1380848856
       door: 257216442
       door2: -1700312003
       door4: -1500446295
       message: 1214411038
+      shark: 1110773794
+      spider1: 1067854126
+      spider2: -1572906997
+      spider3: 1713872052
+      spider4: -144191634
+      spider5: 231828581
+      spider6: 1610334878
+      statue1: -757337458
+      statue2: 371620963
+      statue3: 962354086
       teleportDoor: -1408621111
       wood1: -565216848
       wood10: 1773843681
