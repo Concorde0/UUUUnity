@@ -13,9 +13,6 @@ public class Bridge : MonoBehaviour
     public bool hasbc;
     private CapsuleCollider2D cp;
     public bool hascp;
-    public float invulunerableDuration;
-    private float invulunerableCounter;
-    public bool invulnerable;
     public float downwardForceMagnitude;
     public float otherwardForceMagnitude;
     private void Awake()
@@ -32,24 +29,11 @@ public class Bridge : MonoBehaviour
     }
     private void Update()
     {
-        if (invulnerable)
-        {
-            invulunerableCounter -= Time.deltaTime;
-            if (invulunerableCounter <= 0)
-            {
-                invulnerable = false;
-            }
-        }
+        
     }
     public void TakeDamage()
     {
-        Debug.Log("bridge damage");
-        if (invulnerable)
-        {
-            return;
-        }
         health -= 1;
-        TriggerInvulnerable();
         if (health < 0)
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
@@ -59,15 +43,7 @@ public class Bridge : MonoBehaviour
         }
         
     }
-    private void TriggerInvulnerable()
-    {
-        if (!invulnerable)
-        {
-            invulnerable = true;
-            invulunerableCounter = invulunerableDuration;
-            
-        }
-    }
+    
     private IEnumerator Fix()
     {
         yield return new WaitForSeconds(0.05f);

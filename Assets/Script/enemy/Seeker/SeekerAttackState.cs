@@ -18,6 +18,10 @@ public class SeekerAttackState : GroundEnemyBaseState
 
     public override void LogicUpdate()
     {
+        if (currentEnemy.character.currentHealth <= 0)
+        {
+            currentEnemy.SwichState(NPCState.Dead);
+        }
         attackTimeCounter -= Time.deltaTime;
         if (attackTimeCounter <= 0)
         {

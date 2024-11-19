@@ -6,11 +6,14 @@ using UnityEngine;
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
-            Debug.Log("Entered SeekerSpawnState");
         }
 
         public override void LogicUpdate()
         {
+            if (currentEnemy.character.currentHealth <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
             if (currentEnemy.seeker.isFind)
             {
                 currentEnemy.anim.SetBool("spawn",true);

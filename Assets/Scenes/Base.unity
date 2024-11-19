@@ -7885,7 +7885,7 @@ MonoBehaviour:
   leftOffset: {x: -0.55, y: 0}
   rightOffset: {x: 0.47, y: 0}
   bottomOffset: {x: 0, y: 0}
-  checkRadius: 0.1
+  checkRadius: 0.15
   groundlayer:
     serializedVersion: 2
     m_Bits: 18496
@@ -10551,7 +10551,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 768
-  fix: {x: 0, y: -0.05, z: 0}
+  fix: {x: 0, y: 0.05, z: 0}
   direction: {x: 0, y: 0}
   isDirection: 0
   isWater: 1

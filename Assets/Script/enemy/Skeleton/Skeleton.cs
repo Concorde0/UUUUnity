@@ -75,7 +75,7 @@ public class Skeleton : GroundEnemy
         isDead = false;
     }
 
-    public override void Move()
+    protected override void Move()
     {
         transform.position = Vector2.MoveTowards(transform.position, movePos.position, currentSpeed * Time.deltaTime);
     }
@@ -89,7 +89,7 @@ public class Skeleton : GroundEnemy
 
 
     // ReSharper disable Unity.PerformanceAnalysis
-    public override void TimeCounter()
+    protected override void TimeCounter()
     {
 
         if (wait)

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SkeletonAttackState : GroundEnemyBaseState
 {
-    public float attackTime = 3.8f;
-    public float attackTimeCounter;
+    private float attackTime = 3.8f;
+    private float attackTimeCounter;
     public override void OnEnter(GroundEnemy enemy)
     {
         //currentEnemy.rb.velocity = Vector2.zero;

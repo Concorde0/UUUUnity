@@ -13,6 +13,10 @@ using UnityEngine;
 
         public override void LogicUpdate()
         {
+            if (currentEnemy.character.currentHealth <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
             
             //Turn
             if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)

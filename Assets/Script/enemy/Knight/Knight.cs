@@ -40,7 +40,7 @@ public class Knight : GroundEnemy
         currentState.PhysicsUpdate();
     }
 
-    public override void TimeCounter()
+    protected override void TimeCounter()
     {
         if (wait)
         {
@@ -54,7 +54,7 @@ public class Knight : GroundEnemy
         }
     }
 
-    public override void Move()
+    protected override void Move()
     {
         rb.velocity = new Vector2(currentSpeed * -faceDir.x * Time.deltaTime, rb.velocity.y);
     }

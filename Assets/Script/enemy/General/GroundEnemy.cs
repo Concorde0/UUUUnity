@@ -18,6 +18,7 @@ public class GroundEnemy : MonoBehaviour
     [HideInInspector] public Knight knight;
     [HideInInspector] public Skeleton skeleton;
     [HideInInspector]public Seeker seeker;
+    [HideInInspector] public Death death;
     [HideInInspector]public Character character;
     
     [Header("基本属性")]
@@ -64,6 +65,7 @@ public class GroundEnemy : MonoBehaviour
         skeleton = GetComponent<Skeleton>();
         knight = GetComponent<Knight>();
         seeker = GetComponent<Seeker>();
+        death = GetComponent<Death>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         physiscCheck = GetComponent<PhysiscCheck>();
@@ -110,14 +112,14 @@ public class GroundEnemy : MonoBehaviour
     {
         playerPos = character.transform;
     }
-  
-    public virtual void Move()
+
+    protected virtual void Move()
     {
         rb.velocity = new Vector2 (currentSpeed * faceDir.x * Time.deltaTime,rb.velocity.y);
     }
-   
-    
-    public virtual void TimeCounter()
+
+
+    protected virtual void TimeCounter()
     {
         if(wait)
         {
