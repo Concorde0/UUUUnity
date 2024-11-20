@@ -16,6 +16,7 @@ TagManager:
   - Blood
   - Magic
   - Enemy
+  - Witcher
   layers:
   - Default
   - TransparentFX

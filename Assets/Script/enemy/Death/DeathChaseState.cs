@@ -27,6 +27,7 @@ namespace Script.enemy.Death
             {
                 currentEnemy.rb.transform.localScale = new(1, 1, 1);
             }
+            
             //Hide
             if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) > currentEnemy.death.hideDistance && currentEnemy.death.hideCooldownTimeCounter<=0)
             {

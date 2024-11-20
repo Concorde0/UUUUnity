@@ -69,7 +69,6 @@ public class Bridge : MonoBehaviour
     {
         Vector2 forceDirection = new Vector2(otherwardForceMagnitude, downwardForceMagnitude);
         rb.AddForce(forceDirection, ForceMode2D.Impulse);
-        Debug.Log("AddForce");
     }
 
 }

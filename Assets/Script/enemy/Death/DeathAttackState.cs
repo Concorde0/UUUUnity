@@ -20,7 +20,6 @@ namespace Script.enemy.Death
 
         public override void LogicUpdate()
         {
-            Debug.Log("Attack");
             if (currentEnemy.character.currentHealth <= 0)
             {
                 currentEnemy.SwichState(NPCState.Dead);

@@ -59,7 +59,6 @@ public class Seeker : GroundEnemy
         
         if (other.CompareTag("Player"))
         {
-            Debug.Log("find");
             isFind = true;
         }
     }

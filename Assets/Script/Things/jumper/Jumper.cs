@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Jumper : MonoBehaviour
 {
-    
     public RigidBodySO rbEvent;
     public float upwardForceMagnitude;
     private GameObject playerObject;
@@ -14,7 +13,6 @@ public class Jumper : MonoBehaviour
     private Animator anim;
     private void Awake()
     {
-        
         anim = GetComponent<Animator>();
     }
     void Update()

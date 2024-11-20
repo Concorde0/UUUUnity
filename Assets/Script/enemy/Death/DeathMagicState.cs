@@ -8,7 +8,6 @@ namespace Script.enemy.Death
         private float magicTimeCounter;
         public override void OnEnter(GroundEnemy enemy)
         {
-            Debug.Log("Death Magic State");
             currentEnemy = enemy;
             currentEnemy.rb.velocity = Vector3.zero;
             currentEnemy.anim.SetBool("magic",true);

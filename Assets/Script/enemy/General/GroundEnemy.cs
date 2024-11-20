@@ -15,10 +15,14 @@ public class GroundEnemy : MonoBehaviour
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector]public Animator anim;
     [HideInInspector]public PhysiscCheck physiscCheck;
+    
+    [Header("Enemys")]
     [HideInInspector] public Knight knight;
     [HideInInspector] public Skeleton skeleton;
     [HideInInspector]public Seeker seeker;
     [HideInInspector] public Death death;
+    [HideInInspector]public Witcher witcher;
+    
     [HideInInspector]public Character character;
     
     [Header("基本属性")]
@@ -66,6 +70,7 @@ public class GroundEnemy : MonoBehaviour
         knight = GetComponent<Knight>();
         seeker = GetComponent<Seeker>();
         death = GetComponent<Death>();
+        witcher = GetComponent<Witcher>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         physiscCheck = GetComponent<PhysiscCheck>();
