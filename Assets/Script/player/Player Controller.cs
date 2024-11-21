@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public VoidEventSO loadDataEvnet;
     public VoidEventSO backToMenuEvent;
 
-    private PlayerInputControl inputControl;
+    public PlayerInputControl inputControl;
     public Rigidbody2D rb;
     private PhysiscCheck physiscCheck;
     private PlayerAnimation playerAnimation;
@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     public bool isArrow;
     public bool isRun;
     public bool isMagic;
+    public bool isDrink;
     public bool isMagic2;
     //public bool isPower;
 
@@ -413,8 +414,16 @@ public class PlayerController : MonoBehaviour
     
     private void bottle(InputAction.CallbackContext obj)
     {
+        playerAnimation.PlayDrink();
         HealthBottle.instance.RecoverHealth();
         MagicBottle.instance.RecoverMagic();
+        StartCoroutine(FixBottle());
+    }
+
+    private IEnumerator FixBottle()
+    {
+        yield return new WaitForSeconds(0.6f);
+        inputControl.GamePlay.Enable();
     }
     private void DownXbox(InputAction.CallbackContext obj)
     {

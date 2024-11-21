@@ -9,7 +9,6 @@ public class WitcherMagic1 : MonoBehaviour
     private Vector3 startPos;
     public float speed;
     public float destroyDistance;
-    // public Transform witcherTrans;
 
     private void Awake()
     {
@@ -19,7 +18,8 @@ public class WitcherMagic1 : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.position = witcher.transform.position;
+        Vector3 magic1Position = new Vector3(witcher.transform.position.x, witcher.transform.position.y-3.5f, witcher.transform.position.z);
+        transform.position = magic1Position;
     }
 
     private void Start()

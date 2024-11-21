@@ -9,15 +9,14 @@ public class Skills : MonoBehaviour
 {
     public void CallMethodOnActiveChild()
     {
-        // 获取所有子对象
         Transform[] children = transform.GetComponentsInChildren<Transform>();
 
         foreach (Transform child in children)
         {
-            // 检查子对象是否激活
+           
             if (child.gameObject.activeSelf)
             {
-                // 调用子对象的方法
+                
                 InvokeMethod(child.gameObject);
             }
         }
@@ -33,7 +32,7 @@ public class Skills : MonoBehaviour
     }
 }
 
-// 假设这是子对象上的一个组件，包含你要调用的方法
+
 public class LightSkillStart : MonoBehaviour
 {
     public void YourMethod()

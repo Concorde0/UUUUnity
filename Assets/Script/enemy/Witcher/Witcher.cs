@@ -17,6 +17,7 @@ public class Witcher : GroundEnemy
     [Header("Float")]
     public float witcherMagic1Distance;
     public float witcherMagic2Distance;
+    public float chaseDistance;
     public float witcherChaseSpeed;
     [Header("Cool Down")]
     public float magic1CoolDown ;
@@ -43,7 +44,7 @@ public class Witcher : GroundEnemy
         WitcherDeadState = new WitcherDeadState();
         magic1CoolDownCounter = magic1CoolDown;
         magic2CoolDownCounter = magic2CoolDown;
-        magic3CoolDownCounter = magic3CoolDown;
+        magic3CoolDownCounter = 0;
         
     }
 
@@ -83,6 +84,7 @@ public class Witcher : GroundEnemy
             Chase();
         }
         currentState.PhysicsUpdate();
+        
     }
     private void Chase()
     {
@@ -101,8 +103,10 @@ public class Witcher : GroundEnemy
 
     public void Magic1()
     {
-        Vector3 magic1Position = new Vector3(transform.position.x,transform.position.y-10, transform.position.z);
-        Instantiate(witcherMagic1Prefab, magic1Position, Quaternion.identity);
+        
+        
+        Instantiate(witcherMagic1Prefab, transform.position, Quaternion.identity);
+        
     }
     
     public void Magic2()
@@ -111,9 +115,9 @@ public class Witcher : GroundEnemy
     }
     public void Magic3()
     {
-        Vector3 magic1Position = new Vector3(transform.position.x+2, transform.position.y-3, transform.position.z);
-        Vector3 magic2Position = new Vector3(transform.position.x-2, transform.position.y-3, transform.position.z);
-        Instantiate(witcherMagic3Prefab, magic1Position, Quaternion.identity);
+        Vector3 magic2Position = new Vector3(transform.position.x+6, transform.position.y-3, transform.position.z);
+        Vector3 magic3Position = new Vector3(transform.position.x-2, transform.position.y-3, transform.position.z);
         Instantiate(witcherMagic3Prefab, magic2Position, Quaternion.identity);
+        Instantiate(witcherMagic3Prefab, magic3Position, Quaternion.identity);
     }
 }

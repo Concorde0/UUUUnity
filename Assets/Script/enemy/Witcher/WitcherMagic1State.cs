@@ -15,6 +15,11 @@ namespace Script.enemy.Witcher
 
         public override void LogicUpdate()
         {
+            if (currentEnemy.character.currentHealth <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
+            
             magic1TimeCounter -= Time.deltaTime;
             if (magic1TimeCounter <= 0)
             {

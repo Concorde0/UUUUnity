@@ -101,7 +101,7 @@ public class Character : MonoBehaviour,ISaveable
             currentHealth = 0;
             OnDie?.Invoke();
         }
-
+        characterRB?.Invoke(rb);
         OnHealthChange?.Invoke(this);
     }
     public void PowerConsume()

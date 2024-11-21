@@ -34,6 +34,7 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetBool("isAttack",playerController.isAttack);
         anim.SetBool("isArrow",playerController.isArrow);
         anim.SetBool("isMagic",playerController.isMagic);
+        anim.SetBool("isDrink",playerController.isDrink);
         anim.SetBool("isMagic2",playerController.isMagic2);
     }
 
@@ -64,6 +65,10 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetTrigger("magic");
     }
 
+    public void PlayDrink()
+    {
+        anim.SetTrigger("drink");
+    }
     public void PlayMagicRebecaa()
     {
         anim.SetTrigger("magic2");

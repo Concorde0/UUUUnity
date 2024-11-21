@@ -5,12 +5,15 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class SkeletonChaseState : GroundEnemyBaseState
 {
+    public float FixTime = 0.05f;
     public override void OnEnter(GroundEnemy enemy)
     {
         currentEnemy = enemy;
         currentEnemy.skeleton.isChase = true;
         currentEnemy.wait = false;
         currentEnemy.currentSpeed = currentEnemy.chaseSpeed;
+        
+        
 
     }
     public override void LogicUpdate()
@@ -24,23 +27,34 @@ public class SkeletonChaseState : GroundEnemyBaseState
         {
             currentEnemy.SwichState(NPCState.Dead);
         }
-        if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
+
+        if (FixTime >= 0)
         {
-            currentEnemy.rb.transform.localScale = new(1, 1, 1);
-        }
-        if (currentEnemy.rb.transform.position.x > currentEnemy.playerPos.transform.transform.position.x)
-        {
-            currentEnemy.rb.transform.localScale = new(-1, 1, 1);
+            FixTime -= Time.deltaTime;
         }
 
-        if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+        if (FixTime <= 0)
         {
-            currentEnemy.SwichState(NPCState.Attack);
+            if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
+            {
+                currentEnemy.rb.transform.localScale = new(1, 1, 1);
+            }
+            if (currentEnemy.rb.transform.position.x > currentEnemy.playerPos.transform.transform.position.x)
+            {
+                currentEnemy.rb.transform.localScale = new(-1, 1, 1);
+            }
+
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+            {
+                currentEnemy.SwichState(NPCState.Attack);
+            }
+            else
+            {
+                currentEnemy.anim.SetBool("run", true);
+            }
         }
-        else
-        {
-            currentEnemy.anim.SetBool("run", true);
-        }
+        
+        
 
 
         

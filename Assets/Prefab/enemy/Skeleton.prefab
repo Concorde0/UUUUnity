@@ -272,6 +272,9 @@ MonoBehaviour:
   physiscCheck: {fileID: 0}
   knight: {fileID: 0}
   skeleton: {fileID: 0}
+  seeker: {fileID: 0}
+  death: {fileID: 0}
+  witcher: {fileID: 0}
   character: {fileID: 0}
   normalSpeed: 3
   chaseSpeed: 270
@@ -491,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 10
   attackRate: 0
 --- !u!1 &8002314568797941357
 GameObject:
@@ -587,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 10
   attackRate: 0
 --- !u!1 &8118668697361505169
 GameObject:

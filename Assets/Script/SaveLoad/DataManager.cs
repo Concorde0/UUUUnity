@@ -7,8 +7,8 @@ using UnityEngine.InputSystem;
 [DefaultExecutionOrder(order:-100)]
 public class DataManager : MonoBehaviour
 {
-   public static DataManager instance;
-    [Header("ÊÂ¼ş¼àÌı")]
+    public static DataManager instance;
+    [Header("äº‹ä»¶ç›‘å¬")]
     public VoidEventSO saveDataEvent;
     public VoidEventSO loadDataEvent;
 

@@ -32,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 216.28, y: -3.82, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994201fa152543e4b900f68d50111126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  destroyDistance: 100
+  speed: 14
+  destroyDistance: 1300
 --- !u!50 &-6067386480916089582
 Rigidbody2D:
   serializedVersion: 4
@@ -180,7 +180,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 768
   m_LayerOverridePriority: 10
   m_ForceSendLayers:
     serializedVersion: 2

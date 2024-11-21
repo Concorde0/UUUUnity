@@ -8,6 +8,7 @@ public class HealthBottle : MonoBehaviour
 {
     public static HealthBottle instance;
     public Character character;
+    public PlayerController playercontroller;
     public GameObject bottleSign;
     public float recoverTime;
     public float recoverCounter;
@@ -17,6 +18,7 @@ public class HealthBottle : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        playercontroller = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     private void OnEnable()
@@ -33,6 +35,8 @@ public class HealthBottle : MonoBehaviour
     {
         if (bottleSign.activeSelf && !isRecover)
         {
+            playercontroller.isDrink = true;
+            playercontroller.inputControl.GamePlay.Disable();
             if (character.currentHealth >= 70)
             {
                 character.currentHealth = 100;

@@ -33,18 +33,21 @@ namespace Script.enemy.Death
             {
                 currentEnemy.SwichState(NPCState.Hide);
             }
-
-            if (currentEnemy.death.hideCooldownTimeCounter > 0)
+            
+            //Magic
+            if (currentEnemy.death.magicCooldownTimeCounter<=0)
             {
-                //Magic
-                if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) > currentEnemy.death.magicDistance && currentEnemy.death.magicCooldownTimeCounter<=0)
-                {
-                    currentEnemy.SwichState(NPCState.Magic);
-                }
+                currentEnemy.SwichState(NPCState.Magic);
+            }
+            
+            //fire
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance &&currentEnemy.death.fireCooldownTimeCounter <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Magic1);
             }
             
             //Attack
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance && currentEnemy.death.fireCooldownTimeCounter > 0)
             {
                 currentEnemy.SwichState(NPCState.Attack);
             }

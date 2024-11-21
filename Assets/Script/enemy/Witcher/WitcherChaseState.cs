@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Script.enemy.Witcher
@@ -8,12 +9,27 @@ namespace Script.enemy.Witcher
         {
             currentEnemy = enemy;
             currentEnemy.currentSpeed = currentEnemy.witcher.witcherChaseSpeed;
-            currentEnemy.witcher.isChase = true;
             currentEnemy.anim.SetBool("chase",true);
         }
 
         public override void LogicUpdate()
         {
+            if (currentEnemy.character.currentHealth <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
+            
+            if (Vector2.Distance(currentEnemy.transform.position, currentEnemy.playerPos.position) <
+                currentEnemy.witcher.chaseDistance)
+            {
+                currentEnemy.witcher.isChase = false;
+                currentEnemy.anim.SetBool("chase",false);
+            }
+            else
+            {
+                currentEnemy.witcher.isChase = true;
+                currentEnemy.anim.SetBool("chase",true);
+            }
             //Turn
             if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
             {
@@ -23,6 +39,7 @@ namespace Script.enemy.Witcher
             {
                 currentEnemy.rb.transform.localScale = new(-1.5f, 1.5f, 1.5f);
             }
+            
             //Skeleton Magic
             if (currentEnemy.witcher.magic3CoolDownCounter <= 0)
             {
@@ -30,7 +47,7 @@ namespace Script.enemy.Witcher
             }
             
             //Push Magic
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.witcher.witcherMagic1Distance && currentEnemy.witcher.magic2CoolDownCounter<=0)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.witcher.witcherMagic2Distance && currentEnemy.witcher.magic2CoolDownCounter<=0)
             {
                 currentEnemy.SwichState(NPCState.Magic2);
                 currentEnemy.witcher.isMagic2 = true;
