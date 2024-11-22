@@ -7,10 +7,12 @@ public class GoldSkillOwn : MonoBehaviour
 {
    private Rigidbody2D rb;
    private GameObject player;
+   private GameObject goldSkill;
    private Vector3 startPos;
    public float speed;
    public float destoryDistance;
    public Transform playerTrans;
+   
 
    private void Awake()
    {
@@ -20,13 +22,8 @@ public class GoldSkillOwn : MonoBehaviour
 
    private void OnEnable()
    {
-      transform.position = player.transform.position;
-      
-   }
-
-   private void Start()
-   {
-
+      Vector3 pos = new Vector3(player.transform.position.x, player.transform.position.y + 2.5f, player.transform.position.z);
+      transform.position = pos;
       int faceDir = (int)player.transform.localScale.x;
       if (faceDir < 0)
       {
@@ -39,7 +36,18 @@ public class GoldSkillOwn : MonoBehaviour
          transform.localScale = new Vector3(-1,1,1);
       }
         
-      startPos = transform.position;  
+      startPos = transform.position;
+      
+   }
+
+   private void OnDisable()
+   {
+      
+   }
+
+   private void Start()
+   {
+        
    }
    private void Update()
    {
@@ -50,4 +58,5 @@ public class GoldSkillOwn : MonoBehaviour
          gameObject.SetActive(false);
       }
    }
+   
 }

@@ -82,14 +82,13 @@ public class PlayerController : MonoBehaviour
         //interact
         inputControl.Enable();
 
-        //Attack light
+        //Attack
         inputControl.GamePlay.LightAttack.started += PlayerLightAttack;
 
-        //Attack Heavy
-        inputControl.GamePlay.HeavyAttack.started += PlayerHeavyAttack;
         //shoot
         inputControl.GamePlay.Shoot.started += Shoot;
-
+        //Spical
+        inputControl.GamePlay.Spcial.started += Spcial;
         //Skill
         inputControl.GamePlay.Skill.started += skill;
         //bottle
@@ -102,6 +101,10 @@ public class PlayerController : MonoBehaviour
         inputControl.GamePlay.UpXbox.started += UpXbox;
         //Xbox Down
         inputControl.GamePlay.DownXbox.started += DownXbox;
+        //Xbox Right
+        inputControl.GamePlay.RightXbox.started += RightXbox;
+        //Xbox Left
+        inputControl.GamePlay.LeftXbox.started += LeftXbox;
         //Down
         inputControl.GamePlay.Down.started += Down;
         //pause
@@ -109,7 +112,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-   
+    
 
 
     private void Start()
@@ -234,7 +237,6 @@ public class PlayerController : MonoBehaviour
 
     private void Shoot(InputAction.CallbackContext obj)
     {
-
         if (shootWaitTimeCounter <= 0)
         {
             playerAnimation.PlayArrow();
@@ -319,30 +321,50 @@ public class PlayerController : MonoBehaviour
     
     private void PlayerLightAttack(InputAction.CallbackContext obj)
     {
-        if (character.currentPower > 20)
+        if (Sword.instance.swordSign.activeSelf)
         {
-            playerAnimation.PlayLightAttack();
-            isAttack = true;
+            if (character.currentPower > 20)
+            {
+                playerAnimation.PlayLightAttack();
+                isAttack = true;
+            }
+            Attack?.Invoke(character);
         }
-        Attack?.Invoke(character);
+
+        if (Axe.instance.axeSign.activeSelf)
+        {
+            if (character.currentPower > 30)
+            {
+                playerAnimation.PlayHeavyAttack();
+                isAttack = true;
+            }
+            Attack?.Invoke(character);
+        }
     }
-    
-    
-    private void PlayerHeavyAttack(InputAction.CallbackContext obj)
+    private void Spcial(InputAction.CallbackContext obj)
     {
-        if (character.currentPower > 30)
+        if (Bow.instance.bowSign.activeSelf)
         {
-            playerAnimation.PlayHeavyAttack();
-            isAttack = true;
+            if (shootWaitTimeCounter <= 0)
+            {
+                playerAnimation.PlayArrow();
+                if (isArrow)
+                {
+                    return;
+                }
+                isArrow = true;
+                Vector3 arorwPosition = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+                Instantiate(arrowPrefab, arorwPosition, transform.rotation);
+                shootWaitTimeCounter = shootWaitTime;
+            }
         }
-        Attack?.Invoke(character);
+        
+        
     }
-    
-    
-    private void skill(InputAction.CallbackContext obj)
+    private void skill(InputAction.CallbackContext obj) 
     {
         //LightSkill
-        if (LightSkill.instance.lightSign.activeSelf)
+        if (LightSkill.instance.lightSign.activeSelf && Staff.instance.staffSign.activeSelf)
         {
             if (character.currentMagic >= LightSkill.instance.magicConsumer)
             {
@@ -359,7 +381,7 @@ public class PlayerController : MonoBehaviour
         }
         
         //BloodLineSkill
-        if (BloodLineSkill.instance.bloodLineSign.activeSelf)
+        if (BloodLineSkill.instance.bloodLineSign.activeSelf && Staff.instance.staffSign.activeSelf)
         {
             if (character.currentMagic >= BloodLineSkill.instance.magicConsumer)
             {
@@ -369,19 +391,22 @@ public class PlayerController : MonoBehaviour
         }
         
         //GoldSkill
-        if (GoldSkill.instance.goldSign.activeSelf)
+        if (GoldSkill.instance.goldSign.activeSelf && Staff.instance.staffSign.activeSelf)
         {
-            if (character.currentMagic >= GoldSkill.instance.magicConsumer)
+            if (character.currentMagic >= GoldSkill.instance.magicConsumer && character.currentPower >= 55f)
             {
+                if (GoldSkill.instance.isGoldSkill == false)
+                {
+                    inputControl.GamePlay.Disable();
+                    playerAnimation.GoldEffect();
+                    StartCoroutine(FixGoldEffect());
+                }
                 
-                GoldSkill.instance.GoldSkillStart();
-                character.currentMagic -= GoldSkill.instance.magicConsume;
-                Magic?.Invoke(character);
             }
         }
         
         //WaterSkill
-        if (WaterSkill.instance.waterSign.activeSelf)
+        if (WaterSkill.instance.waterSign.activeSelf && Staff.instance.staffSign.activeSelf)
         {
             if (character.currentMagic >= WaterSkill.instance.magicConsumer)
             {
@@ -422,7 +447,16 @@ public class PlayerController : MonoBehaviour
         WaterSkillCheckEnemy.instance.isWater = true;
         Magic?.Invoke(character);
     }
-   
+
+    private IEnumerator FixGoldEffect()
+    {
+        yield return new WaitForSeconds(1f);
+        GoldSkill.instance.GoldSkillStart();
+        character.currentMagic -= GoldSkill.instance.magicConsume;
+        Magic?.Invoke(character);
+        yield return new WaitForSeconds(0.4f);
+        inputControl.GamePlay.Enable();
+    }
     
     private void bottle(InputAction.CallbackContext obj)
     {
@@ -445,6 +479,15 @@ public class PlayerController : MonoBehaviour
     private void UpXbox(InputAction.CallbackContext obj)
     {
        SkillsManager.instance.UpChangeSkill();
+    }
+    private void LeftXbox(InputAction.CallbackContext obj)
+    {
+        SkillsManager.instance.LeftChangeSkill();
+    }
+
+    private void RightXbox(InputAction.CallbackContext obj)
+    {
+       SkillsManager.instance.RightChangeSkill();
     }
 
     public void GetHurt(Transform attacker)

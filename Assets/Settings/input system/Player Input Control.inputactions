@@ -42,15 +42,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "HeavyAttack",
-                    "type": "Button",
-                    "id": "03ef5c0b-621d-40ec-acb6-0789c8b5aee0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "1354ed3c-df07-402f-b99c-1fa36fd21337",
@@ -117,6 +108,33 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "18d316f9-9aa7-4e41-b277-f4e07803ba51",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightXbox",
+                    "type": "Button",
+                    "id": "da5d679c-61b7-425e-8c04-867c5a4798be",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftXbox",
+                    "type": "Button",
+                    "id": "3d9c89bc-1523-4229-90c1-c792e3a2bdc4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Spcial",
+                    "type": "Button",
+                    "id": "30bf10e1-ae2e-46e4-bef7-70c923cf3c62",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -313,28 +331,6 @@
                 },
                 {
                     "name": "",
-                    "id": "1ddf6620-aa29-420c-aded-7fb5e7d88671",
-                    "path": "<XInputController>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "HeavyAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "db2b2d30-13a6-4abf-bf1b-edd591678f4b",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "HeavyAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "77647e78-048f-41c1-b07b-f4956150dfcf",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -451,6 +447,39 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1cdf483b-b99f-419a-9d5d-171083827417",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightXbox",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4715403c-ca7b-4fa4-a3c5-763ceb90a366",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftXbox",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7529565-5963-4d0a-9539-06d7da6f86c0",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Spcial",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

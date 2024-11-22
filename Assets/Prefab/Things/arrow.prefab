@@ -75,14 +75,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 797268387
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1689432448, guid: a8c7776b826f7204cbf042c88509c276, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7adb9eb53febfab4f9d78ffd637a8c56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.4375}
+  m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -151,8 +151,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.4375}
-    newSize: {x: 1, y: 0.4375}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -172,8 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d76f728a7d01904e9528af35b261b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 13
-  destoryDistance: 100
+  speed: 15
+  destoryDistance: 150
 --- !u!114 &2228705050954763343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +186,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
-  attackRange: 0
+  damage: 5
   attackRate: 0

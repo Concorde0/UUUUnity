@@ -64,15 +64,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""HeavyAttack"",
-                    ""type"": ""Button"",
-                    ""id"": ""03ef5c0b-621d-40ec-acb6-0789c8b5aee0"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""1354ed3c-df07-402f-b99c-1fa36fd21337"",
@@ -139,6 +130,33 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""name"": ""Pause"",
                     ""type"": ""Button"",
                     ""id"": ""18d316f9-9aa7-4e41-b277-f4e07803ba51"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightXbox"",
+                    ""type"": ""Button"",
+                    ""id"": ""da5d679c-61b7-425e-8c04-867c5a4798be"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LeftXbox"",
+                    ""type"": ""Button"",
+                    ""id"": ""3d9c89bc-1523-4229-90c1-c792e3a2bdc4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Spcial"",
+                    ""type"": ""Button"",
+                    ""id"": ""30bf10e1-ae2e-46e4-bef7-70c923cf3c62"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -335,28 +353,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1ddf6620-aa29-420c-aded-7fb5e7d88671"",
-                    ""path"": ""<XInputController>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""HeavyAttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""db2b2d30-13a6-4abf-bf1b-edd591678f4b"",
-                    ""path"": ""<Keyboard>/k"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""HeavyAttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""77647e78-048f-41c1-b07b-f4956150dfcf"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -473,6 +469,39 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1cdf483b-b99f-419a-9d5d-171083827417"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightXbox"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4715403c-ca7b-4fa4-a3c5-763ceb90a366"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftXbox"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f7529565-5963-4d0a-9539-06d7da6f86c0"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Spcial"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1064,7 +1093,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         m_GamePlay_Jump = m_GamePlay.FindAction("Jump", throwIfNotFound: true);
         m_GamePlay_LightAttack = m_GamePlay.FindAction("LightAttack", throwIfNotFound: true);
         m_GamePlay_Shoot = m_GamePlay.FindAction("Shoot", throwIfNotFound: true);
-        m_GamePlay_HeavyAttack = m_GamePlay.FindAction("HeavyAttack", throwIfNotFound: true);
         m_GamePlay_Interact = m_GamePlay.FindAction("Interact", throwIfNotFound: true);
         m_GamePlay_Run = m_GamePlay.FindAction("Run", throwIfNotFound: true);
         m_GamePlay_UpXbox = m_GamePlay.FindAction("UpXbox", throwIfNotFound: true);
@@ -1073,6 +1101,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         m_GamePlay_bottle = m_GamePlay.FindAction("bottle", throwIfNotFound: true);
         m_GamePlay_Down = m_GamePlay.FindAction("Down", throwIfNotFound: true);
         m_GamePlay_Pause = m_GamePlay.FindAction("Pause", throwIfNotFound: true);
+        m_GamePlay_RightXbox = m_GamePlay.FindAction("RightXbox", throwIfNotFound: true);
+        m_GamePlay_LeftXbox = m_GamePlay.FindAction("LeftXbox", throwIfNotFound: true);
+        m_GamePlay_Spcial = m_GamePlay.FindAction("Spcial", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1150,7 +1181,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_Jump;
     private readonly InputAction m_GamePlay_LightAttack;
     private readonly InputAction m_GamePlay_Shoot;
-    private readonly InputAction m_GamePlay_HeavyAttack;
     private readonly InputAction m_GamePlay_Interact;
     private readonly InputAction m_GamePlay_Run;
     private readonly InputAction m_GamePlay_UpXbox;
@@ -1159,6 +1189,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_bottle;
     private readonly InputAction m_GamePlay_Down;
     private readonly InputAction m_GamePlay_Pause;
+    private readonly InputAction m_GamePlay_RightXbox;
+    private readonly InputAction m_GamePlay_LeftXbox;
+    private readonly InputAction m_GamePlay_Spcial;
     public struct GamePlayActions
     {
         private @PlayerInputControl m_Wrapper;
@@ -1167,7 +1200,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_GamePlay_Jump;
         public InputAction @LightAttack => m_Wrapper.m_GamePlay_LightAttack;
         public InputAction @Shoot => m_Wrapper.m_GamePlay_Shoot;
-        public InputAction @HeavyAttack => m_Wrapper.m_GamePlay_HeavyAttack;
         public InputAction @Interact => m_Wrapper.m_GamePlay_Interact;
         public InputAction @Run => m_Wrapper.m_GamePlay_Run;
         public InputAction @UpXbox => m_Wrapper.m_GamePlay_UpXbox;
@@ -1176,6 +1208,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         public InputAction @bottle => m_Wrapper.m_GamePlay_bottle;
         public InputAction @Down => m_Wrapper.m_GamePlay_Down;
         public InputAction @Pause => m_Wrapper.m_GamePlay_Pause;
+        public InputAction @RightXbox => m_Wrapper.m_GamePlay_RightXbox;
+        public InputAction @LeftXbox => m_Wrapper.m_GamePlay_LeftXbox;
+        public InputAction @Spcial => m_Wrapper.m_GamePlay_Spcial;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1197,9 +1232,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Shoot.started += instance.OnShoot;
             @Shoot.performed += instance.OnShoot;
             @Shoot.canceled += instance.OnShoot;
-            @HeavyAttack.started += instance.OnHeavyAttack;
-            @HeavyAttack.performed += instance.OnHeavyAttack;
-            @HeavyAttack.canceled += instance.OnHeavyAttack;
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
@@ -1224,6 +1256,15 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @RightXbox.started += instance.OnRightXbox;
+            @RightXbox.performed += instance.OnRightXbox;
+            @RightXbox.canceled += instance.OnRightXbox;
+            @LeftXbox.started += instance.OnLeftXbox;
+            @LeftXbox.performed += instance.OnLeftXbox;
+            @LeftXbox.canceled += instance.OnLeftXbox;
+            @Spcial.started += instance.OnSpcial;
+            @Spcial.performed += instance.OnSpcial;
+            @Spcial.canceled += instance.OnSpcial;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -1240,9 +1281,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Shoot.started -= instance.OnShoot;
             @Shoot.performed -= instance.OnShoot;
             @Shoot.canceled -= instance.OnShoot;
-            @HeavyAttack.started -= instance.OnHeavyAttack;
-            @HeavyAttack.performed -= instance.OnHeavyAttack;
-            @HeavyAttack.canceled -= instance.OnHeavyAttack;
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
@@ -1267,6 +1305,15 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @RightXbox.started -= instance.OnRightXbox;
+            @RightXbox.performed -= instance.OnRightXbox;
+            @RightXbox.canceled -= instance.OnRightXbox;
+            @LeftXbox.started -= instance.OnLeftXbox;
+            @LeftXbox.performed -= instance.OnLeftXbox;
+            @LeftXbox.canceled -= instance.OnLeftXbox;
+            @Spcial.started -= instance.OnSpcial;
+            @Spcial.performed -= instance.OnSpcial;
+            @Spcial.canceled -= instance.OnSpcial;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -1453,7 +1500,6 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnLightAttack(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
-        void OnHeavyAttack(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
         void OnUpXbox(InputAction.CallbackContext context);
@@ -1462,6 +1508,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         void OnBottle(InputAction.CallbackContext context);
         void OnDown(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnRightXbox(InputAction.CallbackContext context);
+        void OnLeftXbox(InputAction.CallbackContext context);
+        void OnSpcial(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

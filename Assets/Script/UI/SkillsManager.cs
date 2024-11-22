@@ -10,8 +10,12 @@ public class SkillsManager : MonoBehaviour
     
     public GameObject[] UpuiSkills;
     public GameObject[] DownuiSkills;
+    public GameObject[] RightuiSkills;
+    public GameObject[] LeftuiSkills;
     private int UpIndex = 0;
     private int DownIndex = 0;
+    private int RightIndex = 0;
+    private int LeftIndex = 0;
 
     private void Awake()
     {
@@ -32,14 +36,21 @@ public class SkillsManager : MonoBehaviour
             ui.SetActive(false);
         }
         DownuiSkills[DownIndex].SetActive(true);
+
+        foreach (GameObject ui in RightuiSkills)
+        {
+            ui.SetActive(false);
+        }
+        RightuiSkills[RightIndex].SetActive(true);
+
+        foreach (GameObject ui in LeftuiSkills)
+        {
+            ui.SetActive(false);
+        }
+        LeftuiSkills[LeftIndex].SetActive(true);
     }
 
-    void Update()
-    {
-        
-    }
-
-    public  void UpChangeSkill()
+    public void UpChangeSkill()
     {
         
         foreach (GameObject ui in UpuiSkills)
@@ -58,5 +69,25 @@ public class SkillsManager : MonoBehaviour
         }
         DownIndex = (DownIndex + 1) % DownuiSkills.Length;
         DownuiSkills[DownIndex].SetActive(true);
+    }
+
+    public void LeftChangeSkill()
+    {
+        foreach (GameObject ui in LeftuiSkills)
+        {
+            ui.SetActive(false);
+        }
+        LeftIndex = (LeftIndex + 1) % LeftuiSkills.Length;
+        LeftuiSkills[LeftIndex].SetActive(true);
+    }
+
+    public void RightChangeSkill()
+    {
+        foreach (GameObject ui in RightuiSkills)
+        {
+            ui.SetActive(false);
+        }
+        RightIndex = (RightIndex + 1) % RightuiSkills.Length;
+        RightuiSkills[RightIndex].SetActive(true);
     }
 }

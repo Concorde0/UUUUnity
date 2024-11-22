@@ -50,9 +50,7 @@ public class PlayerAnimation : MonoBehaviour
     }
     public void PlayHeavyAttack()
     {
-
         anim.SetTrigger("heavyAttack");
-        
     }
 
     public void PlayArrow()
@@ -72,5 +70,10 @@ public class PlayerAnimation : MonoBehaviour
     public void PlayMagicRebecaa()
     {
         anim.SetTrigger("magic2");
+    }
+
+    public void GoldEffect()
+    {
+        anim.SetTrigger("goldEffect");
     }
 }

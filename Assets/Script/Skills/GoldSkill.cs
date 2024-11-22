@@ -15,10 +15,11 @@ public class GoldSkill : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        MagicConsume();
+        
     }
     private void Update()
     {
+        MagicConsume();
         if (!goldSkill.activeSelf)
         {
             isGoldSkill = false;
@@ -30,7 +31,6 @@ public class GoldSkill : MonoBehaviour
         if (!isGoldSkill)
         {
             goldSkill.SetActive(true);
-            
         }
         isGoldSkill = true;
         
