@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class HealthBottle : MonoBehaviour
 {
     public static HealthBottle instance;
-    public Character character;
     public PlayerController playercontroller;
+    public Character character;
+    public GameObject healthEffect;
     public GameObject bottleSign;
     public float recoverTime;
     public float recoverCounter;
@@ -35,6 +36,12 @@ public class HealthBottle : MonoBehaviour
     {
         if (bottleSign.activeSelf && !isRecover)
         {
+            if (Mathf.Approximately(character.currentHealth, 100))
+            {
+                return;
+            }
+            StartCoroutine(EffectTime());
+            healthEffect.SetActive(true);
             playercontroller.isDrink = true;
             playercontroller.inputControl.GamePlay.Disable();
             if (character.currentHealth >= 70)
@@ -49,6 +56,11 @@ public class HealthBottle : MonoBehaviour
         }
         Bottle?.Invoke(character);
         
+    }
+    private IEnumerator EffectTime()
+    {
+        yield return new WaitForSeconds(1.9f);
+        healthEffect.SetActive(false);
     }
 
     private void RecoverTime()

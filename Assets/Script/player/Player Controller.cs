@@ -44,13 +44,11 @@ public class PlayerController : MonoBehaviour
     public bool isMagic;
     public bool isDrink;
     public bool isMagic2;
-    //public bool isPower;
 
     [Header("prefab")]
     public GameObject arrowPrefab;
+    public GameObject pauseMenu;
     [Header("Counter")]
-    //public float shootTime;
-    //public float shootTimeCounter;
     public float shootWaitTime;
     public float shootWaitTimeCounter = 0;
     public float PowerWaitTime;
@@ -72,7 +70,6 @@ public class PlayerController : MonoBehaviour
     {
         //tmp  .To Fix isHurt
         tmpwaitTimeConter = tmpwaitTime;
-
         currentSpeed = speed;
         character = GetComponent<Character>();
         rb = GetComponent<Rigidbody2D>();
@@ -107,11 +104,13 @@ public class PlayerController : MonoBehaviour
         inputControl.GamePlay.DownXbox.started += DownXbox;
         //Down
         inputControl.GamePlay.Down.started += Down;
-
+        //pause
+        inputControl.GamePlay.Pause.started += Pasue;
 
     }
 
    
+
 
     private void Start()
     {
@@ -288,6 +287,19 @@ public class PlayerController : MonoBehaviour
         }
            
     }
+    private void Pasue(InputAction.CallbackContext obj)
+    {
+        if (pauseMenu.activeSelf == false)
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1;
+        }
+    }
 
     private void Down(InputAction.CallbackContext obj)
     {
@@ -463,7 +475,6 @@ public class PlayerController : MonoBehaviour
 
     private void HeavyAttackPower()
     {
-        
         PowerWaitTimeCounter = PowerWaitTime + 1f;
         character.currentPower -= 55;
         Attack?.Invoke(character);

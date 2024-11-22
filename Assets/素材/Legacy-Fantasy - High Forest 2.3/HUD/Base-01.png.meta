@@ -1357,7 +1357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Base-01_60
+      name: Settings
       rect:
         serializedVersion: 2
         x: 50
@@ -1883,7 +1883,6 @@ TextureImporter:
       Base-01_58: 541834316
       Base-01_59: -1669675391
       Base-01_6: 941420459
-      Base-01_60: 710021330
       Base-01_61: 1165031133
       Base-01_62: -1450196223
       Base-01_63: 1712592822
@@ -1905,6 +1904,7 @@ TextureImporter:
       Base-01_80: 1776515495
       Base-01_9: 1493383672
       Baseui: -2090207105
+      Settings: 710021330
       basegreen: 234192184
       basered: 572489026
       blue: -928664961

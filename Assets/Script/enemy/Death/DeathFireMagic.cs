@@ -8,7 +8,6 @@ namespace Script.enemy.Death
         private float fireTimeCounter;
         public override void OnEnter(GroundEnemy enemy)
         {
-            Debug.Log("fireOnEnter");
 
             currentEnemy = enemy;
             currentEnemy.rb.velocity = Vector3.zero;
@@ -18,7 +17,6 @@ namespace Script.enemy.Death
 
         public override void LogicUpdate()
         {
-            Debug.Log("fire");
             if (currentEnemy.character.currentHealth <= 0)
             {
                 currentEnemy.SwichState(NPCState.Dead);
@@ -37,8 +35,6 @@ namespace Script.enemy.Death
 
         public override void OnExit()
         {
-            Debug.Log("fireOnExit");
-
             currentEnemy.anim.SetBool("fire",false);
             currentEnemy.death.fireCooldownTimeCounter = currentEnemy.death.fireCooldown;
         }

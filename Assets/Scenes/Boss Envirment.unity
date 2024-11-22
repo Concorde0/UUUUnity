@@ -104629,7 +104629,7 @@ MonoBehaviour:
   posEvent: {fileID: 11400000, guid: 09500edf507e8724f9bc623fc2c7dc09, type: 2}
   centerOffset: {x: 0, y: 1}
   checkSize: {x: 1.5, y: 1.5}
-  checkDistance: -16
+  checkDistance: -22.1
   attackLayer:
     serializedVersion: 2
     m_Bits: 128

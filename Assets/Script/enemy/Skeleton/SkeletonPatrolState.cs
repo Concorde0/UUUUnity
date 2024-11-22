@@ -6,6 +6,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class SkeletonPatrolState : GroundEnemyBaseState
 {
+    private bool isChange;
     public override void OnEnter(GroundEnemy enemy)
     {
         currentEnemy = enemy;
@@ -14,6 +15,12 @@ public class SkeletonPatrolState : GroundEnemyBaseState
     }
     public override void LogicUpdate()
     {
+        //hurt chase
+        if (currentEnemy.character.currentHealth < currentEnemy.character.maxHealth)
+        {
+            isChange = true;
+            currentEnemy.SwichState(NPCState.Chase);
+        }
         
         if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn)
         {
@@ -33,7 +40,7 @@ public class SkeletonPatrolState : GroundEnemyBaseState
             currentEnemy.anim.SetBool("walk", false);
         }
         //Debug.Log("LogicUpdate");
-        if (currentEnemy.FoundPlayer())
+        if (currentEnemy.FoundPlayer() && isChange == false)
         {
             currentEnemy.SwichState(NPCState.Chase);
         }

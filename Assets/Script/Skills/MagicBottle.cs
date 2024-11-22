@@ -7,8 +7,9 @@ public class MagicBottle : MonoBehaviour
 {
     public static MagicBottle instance;
     public Character character;
-    public PlayerController playercontroller;
     public GameObject bottleSign;
+    public GameObject magicEffect;
+    public PlayerController playercontroller;
     public float recoverTime;
     public float recoverCounter;
     public float magicBottleNumber;
@@ -34,6 +35,12 @@ public class MagicBottle : MonoBehaviour
     {
         if (bottleSign.activeSelf && !isRecover)
         {
+            if (Mathf.Approximately(character.currentMagic, 100))
+            {
+                return;
+            }
+            StartCoroutine(EffectTime());
+            magicEffect.SetActive(true);
             playercontroller.isDrink = true;
             playercontroller.inputControl.GamePlay.Disable();
             if (character.currentMagic >= 70)
@@ -48,6 +55,12 @@ public class MagicBottle : MonoBehaviour
         }
         Bottle?.Invoke(character);
         
+    }
+
+    private IEnumerator EffectTime()
+    {
+        yield return new WaitForSeconds(1.9f);
+        magicEffect.SetActive(false);
     }
 
     private void RecoverTime()

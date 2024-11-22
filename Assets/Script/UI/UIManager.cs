@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public PlayerStatBar playerStatBar;
@@ -15,10 +16,35 @@ public class UIManager : MonoBehaviour
     public VoidEventSO loadDataEvent;
     public VoidEventSO gameOverEvent;
     public VoidEventSO backToMenuEvent;
-
+    public FloatEventSO syncVolumeEvent;
+    [Header("广播")]
+    public VoidEventSO pauseEvent;
     [Header("组件")]
     public GameObject gameOverPanel;
-    public GameObject restartButtom;
+    public GameObject restartButton;
+    public GameObject pausePanel;
+    public Button settingsButton;
+    public Slider volumeSlider;
+    private void Awake()
+    {
+        settingsButton.onClick.AddListener(TogglePausePanel);
+    }
+
+    private void TogglePausePanel()
+    {
+        if (pausePanel.activeInHierarchy)
+        {
+            pausePanel.SetActive(false);
+            Time.timeScale = 1;
+        }
+        else
+        {
+            pauseEvent.RaiseEvent();
+            pausePanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+
     private void OnEnable()
     {
         healthEvent.OnEventRaised += OnHealthEvent;
@@ -29,6 +55,7 @@ public class UIManager : MonoBehaviour
         loadDataEvent.OnEventRaised += OnLoadDataEvnet;
         gameOverEvent.OnEventRaised += OnGameOverEvnet;
         backToMenuEvent.OnEventRaised += OnLoadDataEvnet;
+        syncVolumeEvent.OnEventRaised += OnsyncVolumeEvent;
     }
     private void OnDisable()
     {
@@ -40,14 +67,19 @@ public class UIManager : MonoBehaviour
         loadDataEvent.OnEventRaised -= OnLoadDataEvnet;
         gameOverEvent.OnEventRaised -= OnGameOverEvnet;
         backToMenuEvent.OnEventRaised -= OnLoadDataEvnet;
+        syncVolumeEvent.OnEventRaised -= OnsyncVolumeEvent;
     }
 
-    
+    private void OnsyncVolumeEvent(float amount)
+    {
+        volumeSlider.value = (amount+80)/100f;
+    }
+
 
     private void OnGameOverEvnet()
     {
         gameOverPanel.SetActive(true);
-        EventSystem.current.SetSelectedGameObject(restartButtom);
+        EventSystem.current.SetSelectedGameObject(restartButton);
     }
 
     private void OnLoadDataEvnet()

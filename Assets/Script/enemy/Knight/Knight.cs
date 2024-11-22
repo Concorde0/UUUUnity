@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Script.enemy.Knight;
 using UnityEditor.Search;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
@@ -12,10 +13,12 @@ public class Knight : GroundEnemy
     public GroundEnemyBaseState idle2State;
     public GroundEnemyBaseState stabState;
     public GroundEnemyBaseState whackState;
+    private GroundEnemyBaseState waitState;
 
     protected override void Awake()
     {
         base.Awake();
+        waitState = new KnightWaitState();
         patrolState = new KnightPatrolState();
         attack1State = new KnightAttack1State();
         attack2State = new KnightAttack2State();
@@ -28,6 +31,12 @@ public class Knight : GroundEnemy
         base.Update();
         AttackPlayer();
     }
+    public override void OnEnable()
+    {
+        posEvent.OnEventRaised += OnposEvent;
+        currentState = waitState;
+        currentState.OnEnter(this);
+    }
     protected override void FixedUpdate()
     {
         if (!isHurt && !isDead && !wait && !attackPlayer && !isAttack)
@@ -35,9 +44,7 @@ public class Knight : GroundEnemy
             Move();
         }
         if(!isDead)
-        
-
-        currentState.PhysicsUpdate();
+            currentState.PhysicsUpdate();
     }
 
     protected override void TimeCounter()
@@ -77,7 +84,6 @@ public class Knight : GroundEnemy
 
     public override bool FoundPlayer()
     {
-        Debug.Log("KnightFound");
         return Physics2D.BoxCast(transform.position + (Vector3)centerOffset, checkSize.normalized, 0, faceDir, checkDistance, attackLayer);
     }
 
@@ -85,6 +91,7 @@ public class Knight : GroundEnemy
     {
         var newState = state switch
         {
+            NPCState.Wait => waitState,
             NPCState.Patrol => patrolState,
             NPCState.Chase => chaseState,
             NPCState.Attack1 => attack1State,

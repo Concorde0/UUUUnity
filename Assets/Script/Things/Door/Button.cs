@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Button : MonoBehaviour,IInteractable
+public class Buttons : MonoBehaviour,IInteractable
 {
     private Animator anim;
     public bool isButton;

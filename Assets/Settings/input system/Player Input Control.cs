@@ -134,6 +134,15 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""18d316f9-9aa7-4e41-b277-f4e07803ba51"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -453,6 +462,17 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""afbeb35e-b5dd-4169-8527-6c2c3d38da29"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1052,6 +1072,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         m_GamePlay_Skill = m_GamePlay.FindAction("Skill", throwIfNotFound: true);
         m_GamePlay_bottle = m_GamePlay.FindAction("bottle", throwIfNotFound: true);
         m_GamePlay_Down = m_GamePlay.FindAction("Down", throwIfNotFound: true);
+        m_GamePlay_Pause = m_GamePlay.FindAction("Pause", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1137,6 +1158,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_Skill;
     private readonly InputAction m_GamePlay_bottle;
     private readonly InputAction m_GamePlay_Down;
+    private readonly InputAction m_GamePlay_Pause;
     public struct GamePlayActions
     {
         private @PlayerInputControl m_Wrapper;
@@ -1153,6 +1175,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         public InputAction @Skill => m_Wrapper.m_GamePlay_Skill;
         public InputAction @bottle => m_Wrapper.m_GamePlay_bottle;
         public InputAction @Down => m_Wrapper.m_GamePlay_Down;
+        public InputAction @Pause => m_Wrapper.m_GamePlay_Pause;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1198,6 +1221,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Down.started += instance.OnDown;
             @Down.performed += instance.OnDown;
             @Down.canceled += instance.OnDown;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -1238,6 +1264,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Down.started -= instance.OnDown;
             @Down.performed -= instance.OnDown;
             @Down.canceled -= instance.OnDown;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -1432,6 +1461,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         void OnSkill(InputAction.CallbackContext context);
         void OnBottle(InputAction.CallbackContext context);
         void OnDown(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

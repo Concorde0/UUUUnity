@@ -6,7 +6,7 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     private Animator anim;
-    private Button buttonScript;
+    private Buttons buttonScript;
     private bool isDoor;
     private bool doorIsButton;
     private Transform buttonTransform;
@@ -15,7 +15,7 @@ public class Door : MonoBehaviour
     {
         bc = gameObject.GetComponent<BoxCollider2D>();
         buttonTransform = transform.GetChild(0);
-        buttonScript = buttonTransform.GetComponent<Button>();
+        buttonScript = buttonTransform.GetComponent<Buttons>();
         anim = GetComponent<Animator>();
     }
 
