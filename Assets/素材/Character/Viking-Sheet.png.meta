@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 660aa0b34846750428a5a756eded01e5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Viking-Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93368806b223f684b8ff58798242c941
+      internalID: -525499407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123260592d3727046bcf292f8ea5f249
+      internalID: 502998889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11faaebbbf518324a9cad3c55c45cb1a
+      internalID: -1334128735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105a3583bc5df524993e9291ac11483a
+      internalID: -886213023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f87ccea27d335642b32dd277b53ac37
+      internalID: 1555741724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b7b708625bd794ea6979954c8a9736
+      internalID: 257299183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1e2caef4da2d94380ffdaf55de8d88
+      internalID: -1629284243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6ca8d4d64eb314283dff58f56ba302
+      internalID: 616327844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1227ee7cdce4834dba8dd51e8c0ba79
+      internalID: 2025807522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3b0c11ef9218e45b686b9e0be556cc
+      internalID: -2057405967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking-Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 265
+        width: 115
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716d8e1fd6cef3b4aa839165c4634c55
+      internalID: -1126202344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Viking-Sheet_0: -300085805
+      Viking-Sheet_1: 476322401
+      Viking-Sheet_10: -2014154423
+      Viking-Sheet_100: -1137900130
+      Viking-Sheet_101: 1288019525
+      Viking-Sheet_102: 1780010083
+      Viking-Sheet_103: 1637741404
+      Viking-Sheet_104: -2016933699
+      Viking-Sheet_105: 1577464668
+      Viking-Sheet_106: 754870052
+      Viking-Sheet_107: 63032335
+      Viking-Sheet_108: -1708959747
+      Viking-Sheet_109: -525499407
+      Viking-Sheet_11: -1089028754
+      Viking-Sheet_110: 502998889
+      Viking-Sheet_111: -1334128735
+      Viking-Sheet_112: -886213023
+      Viking-Sheet_113: 1555741724
+      Viking-Sheet_114: 257299183
+      Viking-Sheet_115: -1629284243
+      Viking-Sheet_116: 616327844
+      Viking-Sheet_117: 2025807522
+      Viking-Sheet_118: -2057405967
+      Viking-Sheet_119: -1126202344
+      Viking-Sheet_12: 484420082
+      Viking-Sheet_120: 926256360
+      Viking-Sheet_121: 1983503651
+      Viking-Sheet_122: -1273795680
+      Viking-Sheet_123: 1957438083
+      Viking-Sheet_124: -1230511860
+      Viking-Sheet_125: -868236584
+      Viking-Sheet_126: -1481495333
+      Viking-Sheet_127: 100656613
+      Viking-Sheet_128: 1592893353
+      Viking-Sheet_129: 163180960
+      Viking-Sheet_13: -146382229
+      Viking-Sheet_130: 563849886
+      Viking-Sheet_131: -871209669
+      Viking-Sheet_132: 1683949551
+      Viking-Sheet_133: 260852613
+      Viking-Sheet_134: 1997876701
+      Viking-Sheet_135: -1894258682
+      Viking-Sheet_136: -1995899327
+      Viking-Sheet_137: 52278802
+      Viking-Sheet_138: -1132626963
+      Viking-Sheet_139: -1376069423
+      Viking-Sheet_14: -870777610
+      Viking-Sheet_140: 1130867711
+      Viking-Sheet_141: -2091586861
+      Viking-Sheet_142: 1184291098
+      Viking-Sheet_143: 1776654087
+      Viking-Sheet_144: 769688664
+      Viking-Sheet_145: 1415096919
+      Viking-Sheet_146: 949990654
+      Viking-Sheet_147: -969042713
+      Viking-Sheet_148: 335216396
+      Viking-Sheet_149: 810275898
+      Viking-Sheet_15: -514721243
+      Viking-Sheet_16: -960696917
+      Viking-Sheet_17: 1212692922
+      Viking-Sheet_18: -1085259475
+      Viking-Sheet_19: 354352781
+      Viking-Sheet_2: -1440477308
+      Viking-Sheet_20: -161958512
+      Viking-Sheet_21: 754654994
+      Viking-Sheet_22: 691102728
+      Viking-Sheet_23: 1459710252
+      Viking-Sheet_24: 1046204768
+      Viking-Sheet_25: 1141586698
+      Viking-Sheet_26: -218072839
+      Viking-Sheet_27: 1758771253
+      Viking-Sheet_28: 360721064
+      Viking-Sheet_29: -317171232
+      Viking-Sheet_3: 1084994935
+      Viking-Sheet_30: -413912991
+      Viking-Sheet_31: -1242030421
+      Viking-Sheet_32: -1566871176
+      Viking-Sheet_33: 1692748458
+      Viking-Sheet_34: 828638264
+      Viking-Sheet_35: -1762961088
+      Viking-Sheet_36: 130855200
+      Viking-Sheet_37: -1754812826
+      Viking-Sheet_38: 1808460028
+      Viking-Sheet_39: 581385440
+      Viking-Sheet_4: 2525204
+      Viking-Sheet_40: -2424063
+      Viking-Sheet_41: 2068253963
+      Viking-Sheet_42: 1002642020
+      Viking-Sheet_43: -233577431
+      Viking-Sheet_44: -2065109063
+      Viking-Sheet_45: 1453241865
+      Viking-Sheet_46: 1695598679
+      Viking-Sheet_47: 1475167662
+      Viking-Sheet_48: -2067048616
+      Viking-Sheet_49: 1229509022
+      Viking-Sheet_5: -957211184
+      Viking-Sheet_50: -1675749881
+      Viking-Sheet_51: 1863595596
+      Viking-Sheet_52: 13057599
+      Viking-Sheet_53: -548001634
+      Viking-Sheet_54: 1738748520
+      Viking-Sheet_55: -240353616
+      Viking-Sheet_56: 1654133090
+      Viking-Sheet_57: -302136364
+      Viking-Sheet_58: -442414288
+      Viking-Sheet_59: -231016176
+      Viking-Sheet_6: 1879190740
+      Viking-Sheet_60: -1419196346
+      Viking-Sheet_61: 451971649
+      Viking-Sheet_62: 203230698
+      Viking-Sheet_63: 1941707921
+      Viking-Sheet_64: -2131680277
+      Viking-Sheet_65: 1607580263
+      Viking-Sheet_66: 1678384498
+      Viking-Sheet_67: -1060851721
+      Viking-Sheet_68: 1010391278
+      Viking-Sheet_69: 2049186610
+      Viking-Sheet_7: 1293029816
+      Viking-Sheet_70: 1712180347
+      Viking-Sheet_71: 1218381239
+      Viking-Sheet_72: 483064895
+      Viking-Sheet_73: -958038314
+      Viking-Sheet_74: -2096031432
+      Viking-Sheet_75: 1653772688
+      Viking-Sheet_76: -1178561374
+      Viking-Sheet_77: -1350761649
+      Viking-Sheet_78: -107114833
+      Viking-Sheet_79: 1649437299
+      Viking-Sheet_8: 1283237680
+      Viking-Sheet_80: 1384960691
+      Viking-Sheet_81: -2077303075
+      Viking-Sheet_82: -1218238242
+      Viking-Sheet_83: 607153764
+      Viking-Sheet_84: 136876478
+      Viking-Sheet_85: 892263327
+      Viking-Sheet_86: -1093425904
+      Viking-Sheet_87: -357513365
+      Viking-Sheet_88: 1968222809
+      Viking-Sheet_89: -519792591
+      Viking-Sheet_9: -766828595
+      Viking-Sheet_90: 676512529
+      Viking-Sheet_91: -476300983
+      Viking-Sheet_92: -1952818251
+      Viking-Sheet_93: -818745535
+      Viking-Sheet_94: 591766342
+      Viking-Sheet_95: -1502205052
+      Viking-Sheet_96: 1023522169
+      Viking-Sheet_97: -1268871831
+      Viking-Sheet_98: -273521147
+      Viking-Sheet_99: 306785995
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

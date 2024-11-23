@@ -43,9 +43,9 @@ public class MagicBottle : MonoBehaviour
             magicEffect.SetActive(true);
             playercontroller.isDrink = true;
             playercontroller.inputControl.GamePlay.Disable();
-            if (character.currentMagic >= 70)
+            if (character.currentMagic >= character.maxMagic-30f)
             {
-                character.currentMagic = 100;
+                character.currentMagic = character.maxMagic;
             }
             else
             {

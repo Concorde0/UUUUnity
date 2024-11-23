@@ -12,7 +12,7 @@ public class SkeletonChaseState : GroundEnemyBaseState
         currentEnemy.skeleton.isChase = true;
         currentEnemy.wait = false;
         currentEnemy.currentSpeed = currentEnemy.chaseSpeed;
-        
+        FixTime = 0.05f;
         
 
     }

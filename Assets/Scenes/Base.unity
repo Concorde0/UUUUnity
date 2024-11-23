@@ -10915,7 +10915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 7
+  damage: 6
   attackRate: 0
 --- !u!60 &405811546
 PolygonCollider2D:
@@ -11275,7 +11275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
+  damage: 12
   attackRate: 0
 --- !u!60 &470342867
 PolygonCollider2D:
@@ -12509,7 +12509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 7
+  damage: 6
   attackRate: 0
 --- !u!1 &816758405
 GameObject:
@@ -13029,7 +13029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 4
   attackRate: 0
 --- !u!60 &971790635
 PolygonCollider2D:
@@ -13231,8 +13231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newGameEvent: {fileID: 11400000, guid: 36b76c370aef5c9438fc55019b4852ea, type: 2}
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 500
+  currentHealth: 500
   maxMagic: 100
   currentMagic: 100
   maxPower: 200
@@ -14056,7 +14056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 20
   attackRate: 0
 --- !u!60 &1217141760
 PolygonCollider2D:
@@ -15248,7 +15248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 6
   attackRate: 0
 --- !u!61 &1581163145
 BoxCollider2D:
@@ -22568,7 +22568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 8
   attackRate: 0
 --- !u!60 &2063319871
 PolygonCollider2D:

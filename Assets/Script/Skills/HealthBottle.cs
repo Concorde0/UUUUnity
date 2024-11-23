@@ -44,9 +44,9 @@ public class HealthBottle : MonoBehaviour
             healthEffect.SetActive(true);
             playercontroller.isDrink = true;
             playercontroller.inputControl.GamePlay.Disable();
-            if (character.currentHealth >= 70)
+            if (character.currentHealth >= character.maxHealth-30f)
             {
-                character.currentHealth = 100;
+                character.currentHealth = character.maxHealth;
             }
             else
             {

@@ -18,7 +18,7 @@ public class WitcherMagic1 : MonoBehaviour
 
     private void OnEnable()
     {
-        Vector3 magic1Position = new Vector3(witcher.transform.position.x, witcher.transform.position.y-3.5f, witcher.transform.position.z);
+        Vector3 magic1Position = new Vector3(witcher.transform.position.x, witcher.transform.position.y-4f, witcher.transform.position.z);
         transform.position = magic1Position;
     }
 
@@ -29,12 +29,12 @@ public class WitcherMagic1 : MonoBehaviour
         if (faceDir > 0)
         {
             rb.velocity = Vector2.right * speed;
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(0.6f, 0.75f, 1);
         }
         if(faceDir < 0)
         {
             rb.velocity = Vector2.left * speed;
-            transform.localScale = new Vector3(-1,1,1);
+            transform.localScale = new Vector3(-0.6f,0.75f,1);
         }
         
         startPos = transform.position;  

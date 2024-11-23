@@ -10,8 +10,8 @@ public class Bridge : MonoBehaviour
     public int health;
     private Rigidbody2D rb;
     private BoxCollider2D bc;
-    public bool hasbc;
     private CapsuleCollider2D cp;
+    public bool hasbc;
     public bool hascp;
     public float downwardForceMagnitude;
     public float otherwardForceMagnitude;
