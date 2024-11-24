@@ -30,7 +30,7 @@ using UnityEngine;
             
             
             //Attack
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance && currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Attack);
             }

@@ -19,6 +19,7 @@ public class SkeletonAttackState : GroundEnemyBaseState
     }
     public override void LogicUpdate()
     {
+        
         attackTimeCounter -= Time.deltaTime;
         
         if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn)

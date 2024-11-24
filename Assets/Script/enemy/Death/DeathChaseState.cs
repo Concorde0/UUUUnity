@@ -29,25 +29,25 @@ namespace Script.enemy.Death
             }
             
             //Hide
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) > currentEnemy.death.hideDistance && currentEnemy.death.hideCooldownTimeCounter<=0)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) > currentEnemy.death.hideDistance && currentEnemy.death.hideCooldownTimeCounter<=0 && currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Hide);
             }
             
             //Magic
-            if (currentEnemy.death.magicCooldownTimeCounter<=0)
+            if (currentEnemy.death.magicCooldownTimeCounter<=0 && currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Magic);
             }
             
             //fire
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance &&currentEnemy.death.fireCooldownTimeCounter <= 0)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance &&currentEnemy.death.fireCooldownTimeCounter <= 0 && currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Magic1);
             }
             
             //Attack
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance && currentEnemy.death.fireCooldownTimeCounter > 0)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance && currentEnemy.death.fireCooldownTimeCounter > 0 && currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Attack);
             }

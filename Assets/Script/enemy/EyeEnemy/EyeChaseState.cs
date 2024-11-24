@@ -23,7 +23,7 @@ public class EyeChaseState : FlyEnemyBaseState
         {
             currentEnemy.rb.transform.localScale = new(-1, 1, 1);
         }
-        if (currentEnemy.attackPlayer == true )
+        if (currentEnemy.attackPlayer)
         {
             currentEnemy.SwichState(NPCState.Attack);
         }

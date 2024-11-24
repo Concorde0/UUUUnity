@@ -123,11 +123,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        GameManager.Instance.RegisterPlayer(character);
         playerControllerEvent?.Invoke(this);
         sceneLoadEvent.LoadRequestEvent += OnLoadEvent;
         afterSceneLoadedEvent.OnEventRaised += OnafterSceneLoadedEvent;
         loadDataEvnet.OnEventRaised += OnLoadDataEvnet;
         backToMenuEvent.OnEventRaised += OnLoadDataEvnet;
+        
 
 
     }
@@ -152,6 +154,10 @@ public class PlayerController : MonoBehaviour
         ShootCoolDown();
         PowerConsume();
         HurtFix();
+        if (isDead)
+        {
+            GameManager.Instance.NotifyObservers();
+        }
         //TODO:
 
 

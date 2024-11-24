@@ -20,6 +20,7 @@ namespace Script.enemy.Death
             //Chase
             if (currentEnemy.FoundPlayer())
             {
+                currentEnemy.death.statBar.SetActive(true);
                 currentEnemy.foundPlayer = true;
                 currentEnemy.SwichState(NPCState.Chase);
             }

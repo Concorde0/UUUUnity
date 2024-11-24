@@ -19,6 +19,7 @@ public class SkeletonChaseState : GroundEnemyBaseState
     public override void LogicUpdate()
     {
         
+        
         if (currentEnemy.character.currentHealth == 0 && currentEnemy.skeleton.canReborn)
         {
             currentEnemy.SwichState(NPCState.Reborn);
@@ -44,7 +45,7 @@ public class SkeletonChaseState : GroundEnemyBaseState
                 currentEnemy.rb.transform.localScale = new(-1, 1, 1);
             }
 
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance&& currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Attack);
             }

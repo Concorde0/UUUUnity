@@ -27,6 +27,7 @@ public class Death : GroundEnemy
     [Header("Object")] 
     public GameObject magic;
     public GameObject fire;
+    public GameObject statBar;
     protected override void Awake()
     {
         base.Awake();

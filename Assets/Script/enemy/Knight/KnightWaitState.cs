@@ -16,6 +16,9 @@ namespace Script.enemy.Knight
             if (currentEnemy.FoundPlayer())
             {
                 currentEnemy.SwichState(NPCState.Patrol);
+                currentEnemy.knight.statBar.SetActive(true);
+
+
             }
         }
 

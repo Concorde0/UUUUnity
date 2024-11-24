@@ -10,7 +10,7 @@ using UnityEngine.InputSystem.Processors;
 using UnityEngine.Rendering;
 using UnityEngine.TextCore.Text;
 
-public class GroundEnemy : MonoBehaviour
+public class GroundEnemy : MonoBehaviour, IEndGameObserver
 {
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector]public Animator anim;
@@ -55,6 +55,7 @@ public class GroundEnemy : MonoBehaviour
     public bool isDead;
     public bool attackPlayer;
     public bool foundPlayer;
+    public bool playerDead;
     [Header("prefab")]
     public GameObject bloodEffect;
     
@@ -85,21 +86,28 @@ public class GroundEnemy : MonoBehaviour
 
     public virtual void OnEnable()
     {
+        GameManager.Instance.AddObserver(this);
         posEvent.OnEventRaised += OnposEvent;
         currentState = patrolState;
         currentState.OnEnter(this);
     }
     private void OnDisable()
     {
+        GameManager.Instance.RemoveObserver(this);
         posEvent.OnEventRaised -= OnposEvent;
         currentState.OnExit();
+        
 
     }
     protected virtual void Update()
     {
         faceDir = new Vector3(-transform.localScale.x,0,0);
-        currentState.LogicUpdate();
-        TimeCounter();
+        if (!playerDead)
+        {
+            currentState.LogicUpdate();
+            TimeCounter();
+        }
+        
     }
 
     protected virtual void FixedUpdate()
@@ -204,6 +212,13 @@ public class GroundEnemy : MonoBehaviour
         public virtual void OnDrawGizmosSelected()
         {
             Gizmos.DrawWireSphere(transform.position + (Vector3)centerOffset + new Vector3(checkDistance* -transform.localScale.x,0), 0.2f);
+        }
+
+        public void EndGame()
+        {
+            playerDead = true;
+            foundPlayer = false;
+            attackPlayer = false;
         }
 }
 

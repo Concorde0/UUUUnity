@@ -14,6 +14,7 @@ public class Knight : GroundEnemy
     public GroundEnemyBaseState stabState;
     public GroundEnemyBaseState whackState;
     private GroundEnemyBaseState waitState;
+    public GameObject statBar;
 
     protected override void Awake()
     {
@@ -125,7 +126,8 @@ public class Knight : GroundEnemy
     public IEnumerator OnDead()
     {
         //Debug.Log("IE");
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.05f); 
+        knight.statBar.SetActive(false);
         anim.SetBool("dead", false);
     }
 

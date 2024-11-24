@@ -30,6 +30,7 @@ public class Witcher : GroundEnemy
     public GameObject witcherMagic1Prefab;
     public GameObject witcherMagic2;
     public GameObject witcherMagic3Prefab;
+    public GameObject statBar;
     
     
     

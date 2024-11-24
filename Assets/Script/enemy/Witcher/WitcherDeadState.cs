@@ -10,6 +10,7 @@ namespace Script.enemy.Witcher
             currentEnemy.anim.SetTrigger("dead");
             currentEnemy.rb.velocity = Vector3.zero;
             currentEnemy.isDead = true;
+            currentEnemy.witcher.statBar.SetActive(false);
         }
 
         public override void LogicUpdate()

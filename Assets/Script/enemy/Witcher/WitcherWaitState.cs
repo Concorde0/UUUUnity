@@ -17,6 +17,7 @@ namespace Script.enemy.Witcher
             {
                 currentEnemy.foundPlayer = true;
                 currentEnemy.SwichState(NPCState.Chase);
+                currentEnemy.witcher.statBar.SetActive(true);
             }
             
             

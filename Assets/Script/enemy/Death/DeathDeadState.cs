@@ -8,6 +8,7 @@ namespace Script.enemy.Death
         {
             currentEnemy = enemy;
             currentEnemy.death.isDead = true;
+            currentEnemy.death.statBar.SetActive(false);
             currentEnemy.anim.SetTrigger("dead");
         }
 

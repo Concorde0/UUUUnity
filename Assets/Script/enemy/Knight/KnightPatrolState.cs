@@ -27,7 +27,7 @@ public class KnightPatrolState : GroundEnemyBaseState
         }
 
 
-        if (currentEnemy.knight.attackPlayer && !currentEnemy.knight.wait)//
+        if (currentEnemy.knight.attackPlayer && !currentEnemy.knight.wait && currentEnemy.playerDead == false)//
         {
 
             if (randomNumber == 1)

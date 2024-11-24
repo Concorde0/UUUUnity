@@ -41,13 +41,13 @@ namespace Script.enemy.Witcher
             }
             
             //Skeleton Magic
-            if (currentEnemy.witcher.magic3CoolDownCounter <= 0)
+            if (currentEnemy.witcher.magic3CoolDownCounter <= 0 && currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Magic3);
             }
             
             //Push Magic
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.witcher.witcherMagic2Distance && currentEnemy.witcher.magic2CoolDownCounter<=0)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.witcher.witcherMagic2Distance && currentEnemy.witcher.magic2CoolDownCounter<=0 && currentEnemy.playerDead == false)
             {
                 currentEnemy.SwichState(NPCState.Magic2);
                 currentEnemy.witcher.isMagic2 = true;
@@ -56,7 +56,7 @@ namespace Script.enemy.Witcher
             //Attack Magic
             if (currentEnemy.witcher.isMagic2 == false)
             {
-                if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.witcher.witcherMagic1Distance&& currentEnemy.witcher.magic1CoolDownCounter <= 0)
+                if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.witcher.witcherMagic1Distance&& currentEnemy.witcher.magic1CoolDownCounter <= 0 && currentEnemy.playerDead == false)
                 {
                     currentEnemy.SwichState(NPCState.Magic1);
                 } 

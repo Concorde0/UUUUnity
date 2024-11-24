@@ -14,12 +14,10 @@ public class EyeBiteState : FlyEnemyBaseState
         currentEnemy.currentSpeed = currentEnemy.chaseSpeed;
         biteTimeConter = biteTime;
         
-        //currentEnemy.isBite = true;
     }
     public override void LogicUpdate()
     {
-        //Debug.Log("in bite");
-        //turn
+       
         if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
         {
             currentEnemy.rb.transform.localScale = new(1, 1, 1);
@@ -28,7 +26,7 @@ public class EyeBiteState : FlyEnemyBaseState
         {
             currentEnemy.rb.transform.localScale = new(-1, 1, 1);
         }
-        if (currentEnemy.attackPlayer == true )
+        if (currentEnemy.attackPlayer)
         {
             currentEnemy.anim.SetBool("bite", true);
             biteTimeConter -= Time.deltaTime;
