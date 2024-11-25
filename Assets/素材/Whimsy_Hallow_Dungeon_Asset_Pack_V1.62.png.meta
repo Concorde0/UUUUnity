@@ -2163,7 +2163,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2184,7 +2184,7 @@ TextureImporter:
         width: 40
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2192,6 +2192,237 @@ TextureImporter:
       bones: []
       spriteID: b2e2b06571aa01b4faa43c45c702214d
       internalID: -510252937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorate Camp
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1368
+        width: 136
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447fa9c9a9d891f4991150550f89c243
+      internalID: -721117133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decorate Shop
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1384
+        width: 120
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d915554a6395a40961550a1662cca8
+      internalID: 2134181606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decorate Shop2
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 1400
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbeae5f0e75228242998d32157202da4
+      internalID: -15124506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicMan
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1024
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0753a2d2bf2524e4cb3dd6c5769c3d8e
+      internalID: -523725136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 744
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b8593f7e62f704688fc7c5bd1115f5
+      internalID: 1903363157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BowMan
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 448
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3d8660ab689b5459bcb048850c3dcc
+      internalID: 924821472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338ef19d802eb7544b35238a4bc7819c
+      internalID: -524308401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1280
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285739999be5559419c5a22de9dbc066
+      internalID: -605760448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box1
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1216
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c59baf51bf6493438c5c5701e88fc67
+      internalID: -1806100835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box2
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71e96ae9e099374da7462a7a1015f9a
+      internalID: -572486516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1208
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dbd4f600afeb543997d92abd6d0cb8
+      internalID: -2137723812
       vertices: []
       indices: 
       edges: []
@@ -2231,7 +2462,12 @@ TextureImporter:
       Botton7: 1478385159
       Botton8: 729897275
       Botton9: -170294278
+      BowMan: 924821472
+      Box1: -1806100835
+      Box2: -572486516
+      Box3: -2137723812
       BridgeLeg: 2108384707
+      Chair: -524308401
       CloseDoor1: -1388062261
       CloseDoor10: 1993303597
       CloseDoor11: -901036067
@@ -2246,6 +2482,9 @@ TextureImporter:
       CloseDoor7: 1322302491
       CloseDoor8: 834860276
       CloseDoor9: -1742235302
+      Decorate Shop: 2134181606
+      Decorate Shop2: -15124506
+      Desk: -605760448
       Health: 1539562444
       HighLightDoor: -445437407
       HightLightDoor: 1660478154
@@ -2257,6 +2496,8 @@ TextureImporter:
       Key6: -2070422604
       Key7: 1218524551
       Key8: 105379177
+      Knight: 1903363157
+      MagicMan: -523725136
       RockBall1: 771991915
       RockBall2: 740821569
       RockBall3: 699131190
@@ -2273,6 +2514,7 @@ TextureImporter:
       YellowLightTop1: 367846555
       YellowLightTop2: -2109400335
       YellowLightTop3: -796626458
+      decorate Camp: -721117133
       doo23: 1380848856
       door: 257216442
       door2: -1700312003

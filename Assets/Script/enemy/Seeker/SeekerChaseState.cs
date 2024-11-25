@@ -21,11 +21,11 @@ using UnityEngine;
             //Turn
             if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
             {
-                currentEnemy.rb.transform.localScale = new(2, 2, 2);
+                currentEnemy.rb.transform.localScale = new(1.75f,1.75f, 1.75f);
             }
             if (currentEnemy.rb.transform.position.x > currentEnemy.playerPos.transform.transform.position.x)
             {
-                currentEnemy.rb.transform.localScale = new(-2, 2, 2);
+                currentEnemy.rb.transform.localScale = new(-1.75f, 1.75f, 1.75f);
             }
             
             

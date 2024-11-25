@@ -11,9 +11,6 @@ public class FlyEnemy : MonoBehaviour
 {
     public Rigidbody2D rb;
     [HideInInspector] public Animator anim;
-    [HideInInspector] public PhysiscCheck physiscCheck;
-    [HideInInspector] public PlayerController playerController;
-    [HideInInspector] public Attack attack;
     [Header("事件监听")]
     public CharacterEventSO posEvent;
     [Header("基本属性")]
@@ -26,25 +23,19 @@ public class FlyEnemy : MonoBehaviour
     public Transform rightUpPos;
     public float radius;
     public float attackDistance;
-    
 
-    public Vector3 faceDir;
+
     [HideInInspector] public float hurtForce;
-    [HideInInspector] public Transform attacker;
-    [Header("检测图层")]
-    public LayerMask attackLayer;
     [Header("Counter")]
     public float waitTime;
     public float waitTimeCounter;
     public bool wait;
-    public float lostTime;
     public float lostTimeCounter;
     [Header("bool")]
     public bool isHurt;
     public bool isDead;
     public bool foundPlayer;
     public bool attackPlayer;
-    public bool isBite;
     public bool isTail;
     [Header("其他")]
     public Transform playerPos;
@@ -61,7 +52,7 @@ public class FlyEnemy : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        physiscCheck = GetComponent<PhysiscCheck>();
+        GetComponent<PhysiscCheck>();
         currentSpeed = normalSpeed;
         waitTimeCounter = waitTime;
        
@@ -85,7 +76,7 @@ public class FlyEnemy : MonoBehaviour
    
     private void Update()
     {
-        faceDir = new Vector3(-transform.localScale.x, 0, 0);
+        new Vector3(-transform.localScale.x, 0, 0);
         currentState.LogicUpdate();
         TimeCounter();
         Distance();
@@ -109,7 +100,7 @@ public class FlyEnemy : MonoBehaviour
     {
         playerPos = character.transform;
     }
-    public virtual void Distance()
+    public  void Distance()
     {
         float distance = (transform.position - playerPos.position).sqrMagnitude;
         if(distance <radius)
@@ -118,7 +109,7 @@ public class FlyEnemy : MonoBehaviour
             foundPlayer = true;
         }
     }
-    public virtual void AttackDistance()
+    public  void AttackDistance()
     {
         float distance = (transform.position - playerPos.position).sqrMagnitude;
         if (distance < attackDistance)
@@ -128,19 +119,19 @@ public class FlyEnemy : MonoBehaviour
         }
     }
 
-    protected virtual void Move()
+    protected  void Move()
     { 
         
         transform.position = Vector2.MoveTowards(transform.position, movePos.position, currentSpeed * Time.deltaTime);
     }
-    protected virtual void Chase()
+    protected  void Chase()
     {
-        if (playerPos.localScale.x > 0)
+        if (playerPos.localScale.x > 0 && isDead == false)
         {
             Vector2 playerPosition = new Vector2(playerPos.position.x + 1, playerPos.position.y + 1);
             transform.position = Vector2.MoveTowards(transform.position, playerPosition, currentSpeed * Time.deltaTime);
         }
-        else
+        else if (playerPos.localScale.x < 0 && isDead == false)
         {
             Vector2 playerPosition = new Vector2(playerPos.position.x - 1, playerPos.position.y + 1);
             transform.position = Vector2.MoveTowards(transform.position, playerPosition, currentSpeed * Time.deltaTime);
@@ -200,7 +191,6 @@ public class FlyEnemy : MonoBehaviour
     public void OnTakeDamage(Transform attackTrans)
     {
         //Debug.Log("hurt");
-        attacker = attackTrans;
         //turn
         if (attackTrans.position.x - transform.position.x > 0)
         {
@@ -229,28 +219,17 @@ public class FlyEnemy : MonoBehaviour
 
     public void OnDie()
     {
-        //Debug.Log("Dead");
         gameObject.layer = 2;
-        anim.SetBool("dead", true);
+        anim.SetTrigger("dead");
         isDead = false;
-
-        StartCoroutine(OnDead());
     }
-    public IEnumerator OnDead()
-    {
-        //Debug.Log("IE");
-        yield return new WaitForSeconds(0.05f);
-        anim.SetBool("dead", false);
-    }
+    
 
     public void DestroyAfterAnimation()
     {
         Destroy(this.gameObject);
     }
-    //void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.DrawWireSphere(radius.position, radius);
-    //}
+   
 
 }
 

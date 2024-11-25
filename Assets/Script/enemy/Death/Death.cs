@@ -43,6 +43,7 @@ public class Death : GroundEnemy
 
     public override void OnEnable()
     {
+        GameManager.Instance.AddObserver(this);
         currentState = deathWaitState;
         currentState.OnEnter(this);
         posEvent.OnEventRaised += OnposEvent;
@@ -115,6 +116,8 @@ public class Death : GroundEnemy
     {
         fire.SetActive(true);
     }
+    
+    
 
     
 }

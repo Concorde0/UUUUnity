@@ -57,6 +57,7 @@ public class Witcher : GroundEnemy
 
     public override void OnEnable()
     {
+        GameManager.Instance.AddObserver(this);
         currentState = WitcherWaitState;
         currentState.OnEnter(this);
         posEvent.OnEventRaised += OnposEvent;

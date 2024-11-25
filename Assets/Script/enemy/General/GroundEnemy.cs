@@ -214,7 +214,7 @@ public class GroundEnemy : MonoBehaviour, IEndGameObserver
             Gizmos.DrawWireSphere(transform.position + (Vector3)centerOffset + new Vector3(checkDistance* -transform.localScale.x,0), 0.2f);
         }
 
-        public void EndGame()
+        public virtual void EndGame()
         {
             playerDead = true;
             foundPlayer = false;
