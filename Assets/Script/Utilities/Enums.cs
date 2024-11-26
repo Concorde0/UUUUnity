@@ -13,3 +13,12 @@ public enum PersistentType
 {
     RadeWrite,DoNotPersist
 }
+
+public enum SoundName
+{
+    none,grass1,stone1,
+    hit,
+    drink,bow,
+    BGM,paino1,hal1,clam1,
+    
+}

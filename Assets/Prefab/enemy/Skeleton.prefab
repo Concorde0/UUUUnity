@@ -275,6 +275,7 @@ MonoBehaviour:
   seeker: {fileID: 0}
   death: {fileID: 0}
   witcher: {fileID: 0}
+  bandits: {fileID: 0}
   character: {fileID: 0}
   normalSpeed: 3
   chaseSpeed: 270
@@ -300,6 +301,7 @@ MonoBehaviour:
   isDead: 0
   attackPlayer: 0
   foundPlayer: 0
+  playerDead: 0
   bloodEffect: {fileID: 1133313273171254190, guid: 946c6c9873dadfd4ca9285cff14b5970, type: 3}
   LeftPositon: {fileID: 3470244964025607347}
   RightPositon: {fileID: 3301520616222364343}
@@ -351,9 +353,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 0bca42e3877103544932873e08728bdf, type: 2}
+        m_TargetAssemblyTypeName: VoidEventSO, Assembly-CSharp
+        m_MethodName: RaiseEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0bca42e3877103544932873e08728bdf, type: 2}
+        m_TargetAssemblyTypeName: VoidEventSO, Assembly-CSharp
+        m_MethodName: RaiseEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3458108001819243360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  attackRate: 0
 --- !u!1 &8002314568797941357
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +616,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  attackRate: 0
 --- !u!1 &8118668697361505169
 GameObject:
   m_ObjectHideFlags: 0

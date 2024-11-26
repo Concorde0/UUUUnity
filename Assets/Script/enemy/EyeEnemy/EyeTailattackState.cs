@@ -33,7 +33,7 @@ public class EyeTailattackState : FlyEnemyBaseState
         
         if (tailTimeConter <= 0)
         {
-            if (currentEnemy.foundPlayer == true  )
+            if (currentEnemy.foundPlayer  )
             {
                 currentEnemy.anim.SetBool("tailattack", false);
                 currentEnemy.isTail = false;

@@ -26,14 +26,14 @@ public class EyeBiteState : FlyEnemyBaseState
         {
             currentEnemy.rb.transform.localScale = new(-1, 1, 1);
         }
-        if (currentEnemy.attackPlayer)
+        if (currentEnemy.attackPlayer && currentEnemy.playerDead == false)
         {
             currentEnemy.anim.SetBool("bite", true);
             biteTimeConter -= Time.deltaTime;
         }
 
         
-        if (biteTimeConter <= 0 )
+        if (biteTimeConter <= 0 && currentEnemy.playerDead == false)
         {
             currentEnemy.anim.SetBool("bite", false);
             currentEnemy.attackPlayer = false;

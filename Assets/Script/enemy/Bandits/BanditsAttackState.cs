@@ -9,7 +9,8 @@ namespace Script.enemy.Bandits
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
-            currentEnemy.currentSpeed = 0;
+            // currentEnemy.currentSpeed = 0;
+            currentEnemy.rb.velocity = Vector2.zero;
             currentEnemy.anim.SetBool("attack",true);
             attackTimeCounter = attackTime;
         }
@@ -17,6 +18,10 @@ namespace Script.enemy.Bandits
         public override void LogicUpdate()
         {
             attackTimeCounter -= Time.deltaTime;
+            if (currentEnemy.character.currentHealth <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
             if (attackTimeCounter <= 0)
             {
                 currentEnemy.SwichState(NPCState.Chase);

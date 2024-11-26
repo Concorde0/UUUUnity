@@ -15,12 +15,14 @@ public class UIManager : MonoBehaviour
     public SceneLoadEventSO unloadedSceneEvent;
     public VoidEventSO loadDataEvent;
     public VoidEventSO gameOverEvent;
+    public VoidEventSO gameWinEvent;
     public VoidEventSO backToMenuEvent;
     public FloatEventSO syncVolumeEvent;
     [Header("广播")]
     public VoidEventSO pauseEvent;
     [Header("组件")]
     public GameObject gameOverPanel;
+    public GameObject winPanel;
     public GameObject restartButton;
     public GameObject pausePanel;
     public Button settingsButton;
@@ -54,6 +56,7 @@ public class UIManager : MonoBehaviour
         unloadedSceneEvent.LoadRequestEvent += OnUnLoadedSceneEvent;
         loadDataEvent.OnEventRaised += OnLoadDataEvnet;
         gameOverEvent.OnEventRaised += OnGameOverEvnet;
+        gameWinEvent.OnEventRaised += OnWinEvent;
         backToMenuEvent.OnEventRaised += OnLoadDataEvnet;
         syncVolumeEvent.OnEventRaised += OnsyncVolumeEvent;
     }
@@ -66,6 +69,7 @@ public class UIManager : MonoBehaviour
         unloadedSceneEvent.LoadRequestEvent -= OnUnLoadedSceneEvent;
         loadDataEvent.OnEventRaised -= OnLoadDataEvnet;
         gameOverEvent.OnEventRaised -= OnGameOverEvnet;
+        gameWinEvent.OnEventRaised -= OnWinEvent;
         backToMenuEvent.OnEventRaised -= OnLoadDataEvnet;
         syncVolumeEvent.OnEventRaised -= OnsyncVolumeEvent;
     }
@@ -82,10 +86,15 @@ public class UIManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(restartButton);
     }
 
+    private void OnWinEvent()
+    {
+        winPanel.SetActive(true);
+    }
+
     private void OnLoadDataEvnet()
     {
-        
         gameOverPanel.SetActive(false);
+        winPanel.SetActive(false);
     }
 
     private void OnUnLoadedSceneEvent(GameSceneSO scenToLoad, Vector3 arg1, bool arg2)

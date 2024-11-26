@@ -48,28 +48,31 @@ public class PlayerController : MonoBehaviour
     [Header("prefab")]
     public GameObject arrowPrefab;
     public GameObject pauseMenu;
+    public AudioClip stepGrass;
     [Header("Counter")]
     public float shootWaitTime;
     public float shootWaitTimeCounter = 0;
     public float PowerWaitTime;
     public float PowerWaitTimeCounter = 0;
     //tmp
-    public float tmpwaitTime;
-    public float tmpwaitTimeConter;
+    // public float tmpwaitTime;
+    // public float tmpwaitTimeConter;
     [Header("Unity Event")]
     public UnityEvent<PlayerController> playerControllerEvent;
     public UnityEvent<Character> Attack;
     public UnityEvent<Character> Magic;
     private Character character;
+    public PlayAudioEventSO playAudioEvent;
 
+    
     
     
 
 
     private void Awake()
     {
-        //tmp  .To Fix isHurt
-        tmpwaitTimeConter = tmpwaitTime;
+       
+        // tmpwaitTimeConter = tmpwaitTime;
         currentSpeed = speed;
         character = GetComponent<Character>();
         rb = GetComponent<Rigidbody2D>();
@@ -117,13 +120,14 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        GameManager.Instance.RegisterPlayer(character); 
         
     }
 
 
     private void OnEnable()
     {
-        GameManager.Instance.RegisterPlayer(character);
+        
         playerControllerEvent?.Invoke(this);
         sceneLoadEvent.LoadRequestEvent += OnLoadEvent;
         afterSceneLoadedEvent.OnEventRaised += OnafterSceneLoadedEvent;
@@ -153,7 +157,8 @@ public class PlayerController : MonoBehaviour
         CheckState();
         ShootCoolDown();
         PowerConsume();
-        HurtFix();
+        InvokeStepAudio();
+        // HurtFix();
         if (isDead)
         {
             GameManager.Instance.NotifyObservers();
@@ -211,18 +216,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void HurtFix()
-    {
-        if (rb.velocity.x == 0)
-        {
-            tmpwaitTimeConter -= Time.deltaTime;
-        }
-        if (rb.velocity.x == 0 && tmpwaitTimeConter < 0)
-        {
-            isHurt = false;
-            tmpwaitTimeConter = tmpwaitTime;
-        }
-    }
+    // private void HurtFix()
+    // {
+    //     if (rb.velocity.x == 0)
+    //     {
+    //         tmpwaitTimeConter -= Time.deltaTime;
+    //     }
+    //     if (rb.velocity.x == 0 && tmpwaitTimeConter < 0)
+    //     {
+    //         isHurt = false;
+    //         tmpwaitTimeConter = tmpwaitTime;
+    //     }
+    // }
     
     
     private void OnLoadEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)
@@ -535,6 +540,19 @@ public class PlayerController : MonoBehaviour
     }
 
     
+    
+    
+    private void InvokeStepAudio()
+    {
+        if (physiscCheck.isGround && rb.velocity.magnitude > 0)
+        {
+            StepGrass();
+        }
+    }
+    private void StepGrass()
+    {
+        playAudioEvent.RaiseEvent(stepGrass);
+    }
     
 
 }

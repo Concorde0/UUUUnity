@@ -3082,6 +3082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 345005063}
   - {fileID: 788986907}
   - {fileID: 1930667981}
   - {fileID: 385582655}
@@ -3237,6 +3238,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 50.14, y: -7.96, z: 0}
   characterEvent: {fileID: 11400000, guid: 09500edf507e8724f9bc623fc2c7dc09, type: 2}
+--- !u!1001 &345005062
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 316240641}
+    m_Modifications:
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 41.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546133643746134339, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044831515261649031, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+      propertyPath: m_Name
+      value: Bandit
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+--- !u!4 &345005063 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 703799207369623792, guid: 123fcb9931f4a1843958d26801f0cb03, type: 3}
+  m_PrefabInstance: {fileID: 345005062}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &352990061 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1468471888679633681, guid: ed80e2c9f5561a5468e6276ccb83fc73, type: 3}
@@ -82318,6 +82385,93 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistentType: 0
   ID: 505fddad-c9e4-43fe-95fa-4c1cab0977b4
+--- !u!1 &765906672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765906674}
+  - component: {fileID: 765906673}
+  m_Layer: 0
+  m_Name: Bounds
+  m_TagString: Bounds
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &765906673
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765906672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 117.03188, y: -23.606443}
+      - {x: 227.75485, y: -23.719946}
+      - {x: 227.3291, y: 23.518751}
+      - {x: 43.995228, y: 24.402664}
+      - {x: 43.95557, y: 13.903906}
+      - {x: -37.513824, y: 14.320045}
+      - {x: -37.33562, y: -12.7733}
+      - {x: 24.090977, y: -12.856771}
+      - {x: 24.424177, y: -44.447464}
+      - {x: 116.85923, y: -45.205894}
+  m_UseDelaunayMesh: 0
+--- !u!4 &765906674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765906672}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &787292970
 GameObject:
   m_ObjectHideFlags: 0
@@ -113660,7 +113814,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u4F60\u6CA1\u8D44\u683C\u554A"
+  m_text: "\u65E0\u6CD5\u4ECE\u8FD9\u4E00\u4FA7\u6253\u5F00"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c56bf7cd073c154e9c0718aa33ea08a, type: 2}
   m_sharedMaterial: {fileID: -8554772084241785696, guid: d4c601226e8389649bf6646c3ddc5e53, type: 2}
@@ -118069,7 +118223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1322107663
 Transform:
   m_ObjectHideFlags: 0
@@ -119998,7 +120152,7 @@ SpriteRenderer:
   m_SortingLayerID: -1086345417
   m_SortingLayer: 3
   m_SortingOrder: 100
-  m_Sprite: {fileID: 1214411038, guid: 0f4b3edf49d2b354d8421ceae43437d0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -120006,7 +120160,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1474928688
@@ -120018,7 +120172,7 @@ Transform:
   m_GameObject: {fileID: 1474928684}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 85.2, y: -23.69, z: 0}
+  m_LocalPosition: {x: 87.56, y: -23.49, z: 0}
   m_LocalScale: {x: 1.47, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -127776,9 +127930,9 @@ GameObject:
   - component: {fileID: 1745908120}
   - component: {fileID: 1745908122}
   - component: {fileID: 1745908121}
-  m_Layer: 12
+  m_Layer: 8
   m_Name: Attack
-  m_TagString: Attack
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127823,10 +127977,10 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -127836,7 +127990,7 @@ PolygonCollider2D:
     m_Bits: 4294967295
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 10368
+    m_Bits: 4294967295
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -133060,6 +133214,7 @@ MonoBehaviour:
   seeker: {fileID: 0}
   death: {fileID: 0}
   witcher: {fileID: 0}
+  bandits: {fileID: 0}
   character: {fileID: 0}
   normalSpeed: 200
   chaseSpeed: 200
@@ -135855,6 +136010,7 @@ MonoBehaviour:
   seeker: {fileID: 0}
   death: {fileID: 0}
   witcher: {fileID: 0}
+  bandits: {fileID: 0}
   character: {fileID: 0}
   normalSpeed: 200
   chaseSpeed: 200
@@ -135954,6 +136110,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 0bca42e3877103544932873e08728bdf, type: 2}
+        m_TargetAssemblyTypeName: VoidEventSO, Assembly-CSharp
+        m_MethodName: RaiseEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTakeDamage:
     m_PersistentCalls:
       m_Calls:
@@ -135961,6 +136129,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: GroundEnemy, Assembly-CSharp
         m_MethodName: OnTakeDamage
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 0bca42e3877103544932873e08728bdf, type: 2}
+        m_TargetAssemblyTypeName: VoidEventSO, Assembly-CSharp
+        m_MethodName: RaiseEvent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -136130,7 +136310,7 @@ Transform:
   m_GameObject: {fileID: 6329700034319068166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.940987, y: 9.6, z: 0}
+  m_LocalPosition: {x: 51.2, y: 9.7, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -136350,8 +136530,9 @@ MonoBehaviour:
   seeker: {fileID: 0}
   death: {fileID: 0}
   witcher: {fileID: 0}
+  bandits: {fileID: 0}
   character: {fileID: 0}
-  normalSpeed: 55
+  normalSpeed: 100
   chaseSpeed: 0
   attackDistance: 5
   hurtForce: 0
@@ -136962,8 +137143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newGameEvent: {fileID: 11400000, guid: 36b76c370aef5c9438fc55019b4852ea, type: 2}
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 150
+  currentHealth: 150
   maxMagic: 0
   currentMagic: 0
   maxPower: 0
@@ -137018,6 +137199,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 6784d3dfa08d34d468fbd2661dca31b6, type: 2}
+        m_TargetAssemblyTypeName: PlayAudioEventSO, Assembly-CSharp
+        m_MethodName: RaiseEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 02674b41ee8b1a546b73cc54a9953373, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDie:
     m_PersistentCalls:
       m_Calls:
@@ -137034,6 +137227,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 0bca42e3877103544932873e08728bdf, type: 2}
+        m_TargetAssemblyTypeName: VoidEventSO, Assembly-CSharp
+        m_MethodName: RaiseEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e625d06406f213543adf2e1634ded05d, type: 2}
         m_TargetAssemblyTypeName: VoidEventSO, Assembly-CSharp
         m_MethodName: RaiseEvent
         m_Mode: 1
@@ -137770,6 +137975,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 765906674}
   - {fileID: 280874452}
   - {fileID: 1127108177}
   - {fileID: 1322107663}

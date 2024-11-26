@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: d68a33ba67e04164ca74f76fb6c72cbf
   m_SerializeEntries:
   - m_GUID: 3d64cfe93d025524f9096a81f49923a8
-    m_Address: Boss
+    m_Address: Assets/Scenes/Study.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

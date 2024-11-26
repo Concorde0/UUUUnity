@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.Processors;
 using UnityEngine.Rendering;
 
-public class FlyEnemy : MonoBehaviour
+public class FlyEnemy : MonoBehaviour,IEndGameObserver
 {
     public Rigidbody2D rb;
     [HideInInspector] public Animator anim;
@@ -37,6 +37,7 @@ public class FlyEnemy : MonoBehaviour
     public bool foundPlayer;
     public bool attackPlayer;
     public bool isTail;
+    public bool playerDead;
     [Header("其他")]
     public Transform playerPos;
     public GameObject bloodEffect;
@@ -64,12 +65,14 @@ public class FlyEnemy : MonoBehaviour
 
     private void OnEnable()
     {
+        GameManager.Instance.AddObserver(this);
         posEvent.OnEventRaised += OnposEvent;
         currentState = patrolState;
         currentState.OnEnter(this);
     }
     private void OnDisable()
     {
+        GameManager.Instance.RemoveObserver(this);
         posEvent.OnEventRaised -= OnposEvent;
         currentState.OnExit();
     }
@@ -229,7 +232,11 @@ public class FlyEnemy : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
-   
 
+
+    public void EndGame()
+    {
+        playerDead = true;
+    }
 }
 

@@ -18,10 +18,10 @@ public class PhysiscCheck : MonoBehaviour
     public bool isOneWayPlatform;
     public bool touchLeftWall;
     public bool touchRightWall;
+    
     private void Awake()
     {
         coll = GetComponent<CapsuleCollider2D>();
-
         if (!manual)
         {
             rightOffset = new Vector2((coll.bounds.size.x + coll.offset.x) / 2, coll.bounds.size.y / 2);

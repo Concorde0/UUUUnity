@@ -147,7 +147,6 @@ public class SceneLoader : MonoBehaviour,ISaveable
         
         if(currentLoadedScene.sceneType != SceneType.Menu)
         {
-            //����������ɺ��¼�
             afterSceneLoadedEvent.RaiseEvent();
         }
         
