@@ -278,6 +278,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: caff77b3c769135409feb80fc8841980, type: 2}
+        m_TargetAssemblyTypeName: PlayAudioEventSO, Assembly-CSharp
+        m_MethodName: RaiseEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 02674b41ee8b1a546b73cc54a9953373, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDie:
     m_PersistentCalls:
       m_Calls:
@@ -325,7 +337,11 @@ MonoBehaviour:
   groundlayer:
     serializedVersion: 2
     m_Bits: 64
+  oneWayPlatformLayer:
+    serializedVersion: 2
+    m_Bits: 0
   isGround: 0
+  isOneWayPlatform: 0
   touchLeftWall: 0
   touchRightWall: 0
 --- !u!114 &1098797527752778325
@@ -341,7 +357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
-  attackRate: 0
 --- !u!114 &6843657810214736485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,6 +374,10 @@ MonoBehaviour:
   physiscCheck: {fileID: 0}
   knight: {fileID: 0}
   skeleton: {fileID: 0}
+  seeker: {fileID: 0}
+  death: {fileID: 0}
+  witcher: {fileID: 0}
+  bandits: {fileID: 0}
   character: {fileID: 0}
   normalSpeed: 100
   chaseSpeed: 260
@@ -384,6 +403,7 @@ MonoBehaviour:
   isDead: 0
   attackPlayer: 0
   foundPlayer: 0
+  playerDead: 0
   bloodEffect: {fileID: 1133313273171254190, guid: 946c6c9873dadfd4ca9285cff14b5970, type: 3}
 --- !u!114 &1464878972124666364
 MonoBehaviour:

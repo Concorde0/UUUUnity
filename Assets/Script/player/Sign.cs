@@ -45,8 +45,6 @@ public class Sign : MonoBehaviour
     {
         if(actionChange == InputActionChange.ActionStarted)
         {
-            //Debug.Log(((InputAction)obj).activeControl.device);
-
             var d = (((InputAction)obj).activeControl.device);
 
             switch (d.device)

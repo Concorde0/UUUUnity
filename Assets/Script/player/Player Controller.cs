@@ -48,7 +48,8 @@ public class PlayerController : MonoBehaviour
     [Header("prefab")]
     public GameObject arrowPrefab;
     public GameObject pauseMenu;
-    public AudioClip stepGrass;
+    public AudioClip stepGrass1;
+    public AudioClip stepGrass2;
     [Header("Counter")]
     public float shootWaitTime;
     public float shootWaitTimeCounter = 0;
@@ -157,7 +158,6 @@ public class PlayerController : MonoBehaviour
         CheckState();
         ShootCoolDown();
         PowerConsume();
-        InvokeStepAudio();
         // HurtFix();
         if (isDead)
         {
@@ -538,20 +538,15 @@ public class PlayerController : MonoBehaviour
     {
         PowerWaitTimeCounter = PowerWaitTime;
     }
-
     
-    
-    
-    private void InvokeStepAudio()
+    private void StepGrass1()
     {
-        if (physiscCheck.isGround && rb.velocity.magnitude > 0)
-        {
-            StepGrass();
-        }
+        playAudioEvent.RaiseEvent(stepGrass1);
     }
-    private void StepGrass()
+
+    private void StepGrass2()
     {
-        playAudioEvent.RaiseEvent(stepGrass);
+        playAudioEvent.RaiseEvent(stepGrass2);
     }
     
 

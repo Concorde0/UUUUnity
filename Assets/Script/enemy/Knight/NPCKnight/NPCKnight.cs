@@ -28,7 +28,7 @@ public class NPCKnight : MonoBehaviour, IInteractable
     private void FixedUpdate()
     {
         if (!isDead)
-        Move();
+            Move();
     }
     public void TriggerAction()
     {

@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using Script.enemy.Knight;
+using Script.Utilities;
+using Unity.VisualScripting;
 using UnityEditor.Search;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class Knight : GroundEnemy
+public class Knight : GroundEnemy,ITalk
 {
     public bool isAttack = false;
     public GroundEnemyBaseState attack1State;
@@ -15,6 +17,7 @@ public class Knight : GroundEnemy
     public GroundEnemyBaseState whackState;
     private GroundEnemyBaseState waitState;
     public GameObject statBar;
+    public GameObject text;
 
     protected override void Awake()
     {
@@ -30,6 +33,7 @@ public class Knight : GroundEnemy
     protected override void Update()
     {
         base.Update();
+        TalkWithOther();
         AttackPlayer();
     }
     public override void OnEnable()
@@ -141,6 +145,14 @@ public class Knight : GroundEnemy
     {
         Destroy(this.gameObject);
     }
-   
 
+
+    public void TalkWithOther()
+    {
+        if (FoundPlayer())
+        {
+            Time.timeScale = 0;
+            text.SetActive(true);
+        }
+    }
 }

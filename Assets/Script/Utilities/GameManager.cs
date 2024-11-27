@@ -29,4 +29,6 @@ public class GameManager : Singleton<GameManager>
             observer.EndGame();
         }
     }
+
+    
 }
