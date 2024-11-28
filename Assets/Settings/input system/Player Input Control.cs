@@ -161,6 +161,15 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Talk"",
+                    ""type"": ""Button"",
+                    ""id"": ""b9e99d7c-3f57-490d-bd24-18abe50b300e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -535,6 +544,17 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Spcial"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""af21e3e9-e49c-49d5-9c77-2630f9294799"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Talk"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1137,6 +1157,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         m_GamePlay_RightXbox = m_GamePlay.FindAction("RightXbox", throwIfNotFound: true);
         m_GamePlay_LeftXbox = m_GamePlay.FindAction("LeftXbox", throwIfNotFound: true);
         m_GamePlay_Spcial = m_GamePlay.FindAction("Spcial", throwIfNotFound: true);
+        m_GamePlay_Talk = m_GamePlay.FindAction("Talk", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1225,6 +1246,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_RightXbox;
     private readonly InputAction m_GamePlay_LeftXbox;
     private readonly InputAction m_GamePlay_Spcial;
+    private readonly InputAction m_GamePlay_Talk;
     public struct GamePlayActions
     {
         private @PlayerInputControl m_Wrapper;
@@ -1244,6 +1266,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         public InputAction @RightXbox => m_Wrapper.m_GamePlay_RightXbox;
         public InputAction @LeftXbox => m_Wrapper.m_GamePlay_LeftXbox;
         public InputAction @Spcial => m_Wrapper.m_GamePlay_Spcial;
+        public InputAction @Talk => m_Wrapper.m_GamePlay_Talk;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1298,6 +1321,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Spcial.started += instance.OnSpcial;
             @Spcial.performed += instance.OnSpcial;
             @Spcial.canceled += instance.OnSpcial;
+            @Talk.started += instance.OnTalk;
+            @Talk.performed += instance.OnTalk;
+            @Talk.canceled += instance.OnTalk;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -1347,6 +1373,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @Spcial.started -= instance.OnSpcial;
             @Spcial.performed -= instance.OnSpcial;
             @Spcial.canceled -= instance.OnSpcial;
+            @Talk.started -= instance.OnTalk;
+            @Talk.performed -= instance.OnTalk;
+            @Talk.canceled -= instance.OnTalk;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -1544,6 +1573,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         void OnRightXbox(InputAction.CallbackContext context);
         void OnLeftXbox(InputAction.CallbackContext context);
         void OnSpcial(InputAction.CallbackContext context);
+        void OnTalk(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

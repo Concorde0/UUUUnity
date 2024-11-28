@@ -5,11 +5,13 @@ using Script.Utilities;
 using Unity.VisualScripting;
 using UnityEditor.Search;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Knight : GroundEnemy,ITalk
 {
-    public bool isAttack = false;
+    public bool isAttack;
+    public bool isTalk;
     public GroundEnemyBaseState attack1State;
     public GroundEnemyBaseState attack2State;
     public GroundEnemyBaseState idle2State;
@@ -29,11 +31,17 @@ public class Knight : GroundEnemy,ITalk
         idle2State = new KnightIdleState();
         stabState = new KnightStabState();
         whackState = new KnightWhackState();
+        
+        
     }
     protected override void Update()
     {
         base.Update();
-        TalkWithOther();
+        if (!isTalk)
+        {
+            TalkWithPlayer();
+        }
+        
         AttackPlayer();
     }
     public override void OnEnable()
@@ -41,15 +49,31 @@ public class Knight : GroundEnemy,ITalk
         posEvent.OnEventRaised += OnposEvent;
         currentState = waitState;
         currentState.OnEnter(this);
+        
+       
     }
+
+    public override void OnDisable()
+    {
+        base.OnDisable();
+        
+    }
+
+    
+
+
     protected override void FixedUpdate()
     {
         if (!isHurt && !isDead && !wait && !attackPlayer && !isAttack)
         {
             Move();
         }
-        if(!isDead)
-            currentState.PhysicsUpdate();
+
+        if (!isDead)
+        {
+            currentState.PhysicsUpdate(); 
+        }
+            
     }
 
     protected override void TimeCounter()
@@ -83,7 +107,6 @@ public class Knight : GroundEnemy,ITalk
         if (Vector2.Distance(transform.position, playerPos.position) < attackDistance)
         {
             attackPlayer = true;
-            //Debug.Log("AttackPlayer");
         }
     }
 
@@ -129,7 +152,6 @@ public class Knight : GroundEnemy,ITalk
     }
     public IEnumerator OnDead()
     {
-        //Debug.Log("IE");
         yield return new WaitForSeconds(0.05f); 
         knight.statBar.SetActive(false);
         anim.SetBool("dead", false);
@@ -145,14 +167,19 @@ public class Knight : GroundEnemy,ITalk
     {
         Destroy(this.gameObject);
     }
+    
+   
 
-
-    public void TalkWithOther()
+    public void TalkWithPlayer()
     {
         if (FoundPlayer())
         {
-            Time.timeScale = 0;
+            isTalk = true;
             text.SetActive(true);
+          
+            
         }
     }
+
+   
 }

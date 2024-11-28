@@ -14,33 +14,32 @@ public class DialogSystem : MonoBehaviour
 
     [Header("Text")]
     public TextAsset textFile;
-    public int index;
-    
-    private PlayerInputControl playerInput;
+    public int index = 10;
+
     private ITalk targetItem;
-    // List<ITalk> talkList = new List<ITalk>();
-    List<string> textList = new List<string>();
+    public List<string> textList = new List<string>();
     private void Awake()
     {
         GetTextFromFile(textFile);
-        
     }
+
+    
 
     private void OnEnable()
     {
         textLabel.text = textList[index];
         index++;
-
-        playerInput.GamePlay.Interact.started += OnStarted;
+        StartTalk();
     }
-
-    private void OnDisable()
-    {
-        playerInput.GamePlay.Interact.started -= OnStarted;
-    }
+    
     
     private void Update()
     {
+        if (index == textList.Count)
+        {
+            gameObject.SetActive(false);
+            index = 0;
+        }
         
     }
 
@@ -55,27 +54,37 @@ public class DialogSystem : MonoBehaviour
             textList.Add(line); 
        }
     }
-    
-    private void OnStarted(InputAction.CallbackContext context)
+
+    private void StartTalk()
     {
-        if (index == textList.Count)
+        StartCoroutine(abc());
+    }
+    IEnumerator abc()
+    {
+        StartCoroutine(SetText());
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(SetText());
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(SetText());
+        yield return new WaitForSeconds(4f);
+        StartCoroutine(SetText());
+        yield return new WaitForSeconds(2f);
+        StartCoroutine(SetText());
+    }
+
+    IEnumerator SetText()
+    {
+        textLabel.text = "";
+        for (int i = 0; i < textList[index].Length; i++)
         {
-            gameObject.SetActive(false);
-            index = 0;
-            return;
+            textLabel.text += textList[index][i];
+            yield return new WaitForSeconds(0.1f);
         }
-        textLabel.text = textList[index];
+        
         index++;
     }
-    // public void AddObserver(ITalk observer)
-    // {
-    //     talkList.Add(observer);
-    // }
-    //
-    // public void RemoveObserver(ITalk observer)
-    // {
-    //     talkList.Remove(observer);
-    // }
+    
+    
 
     
 }

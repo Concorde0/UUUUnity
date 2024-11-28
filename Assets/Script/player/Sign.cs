@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using Script.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XInput;
@@ -40,6 +41,8 @@ public class Sign : MonoBehaviour
         {
             targetItem.TriggerAction();
         }
+
+        
     }
     private void OnActionChange(object obj, InputActionChange actionChange)
     {

@@ -5,14 +5,15 @@ using UnityEngine;
 public class KnightStabState : GroundEnemyBaseState
 {
 
-    public float attackWait = 3;
+    public float attackWait = 2.5f;
     public float attackWaitTimeConter;
     public override void OnEnter(GroundEnemy enemy)
     {
         currentEnemy = enemy;
         currentEnemy.knight.isAttack = true;
         attackWaitTimeConter = attackWait;
-        
+        currentEnemy.rb.velocity = Vector2.zero;
+
         currentEnemy.currentSpeed = 0;
         currentEnemy.anim.SetBool("stab", true);
     }
@@ -35,5 +36,6 @@ public class KnightStabState : GroundEnemyBaseState
         currentEnemy.knight.isAttack = false;
         currentEnemy.attackPlayer = false;
         currentEnemy.anim.SetBool("stab", false);
+        currentEnemy.rb.velocity = currentEnemy.rb.velocity.normalized;
     }
 }

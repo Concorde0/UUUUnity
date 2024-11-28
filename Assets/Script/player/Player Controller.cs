@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
     
     
     
+    
 
 
     private void Awake()
@@ -113,6 +114,9 @@ public class PlayerController : MonoBehaviour
         inputControl.GamePlay.Down.started += Down;
         //pause
         inputControl.GamePlay.Pause.started += Pasue;
+        
+        //
+        
 
     }
 

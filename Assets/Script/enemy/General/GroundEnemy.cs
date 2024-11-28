@@ -23,6 +23,7 @@ public class GroundEnemy : MonoBehaviour, IEndGameObserver
     [HideInInspector] public Death death;
     [HideInInspector]public Witcher witcher;
     [HideInInspector] public Bandits bandits;
+    [HideInInspector] public Sega sega;
     [HideInInspector]public Character character;
     
     [Header("基本属性")]
@@ -73,6 +74,7 @@ public class GroundEnemy : MonoBehaviour, IEndGameObserver
         death = GetComponent<Death>();
         witcher = GetComponent<Witcher>();
         bandits = GetComponent<Bandits>();
+        sega = GetComponent<Sega>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         physiscCheck = GetComponent<PhysiscCheck>();
@@ -92,7 +94,7 @@ public class GroundEnemy : MonoBehaviour, IEndGameObserver
         currentState = patrolState;
         currentState.OnEnter(this);
     }
-    private void OnDisable()
+    public virtual void OnDisable()
     {
         GameManager.Instance.RemoveObserver(this);
         posEvent.OnEventRaised -= OnposEvent;

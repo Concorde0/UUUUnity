@@ -15,6 +15,7 @@ public class KnightIdleState : GroundEnemyBaseState
         attackWaitTimeConter = attackWait;
         currentEnemy = enemy;
         currentEnemy.currentSpeed = 0;
+        currentEnemy.rb.velocity = Vector2.zero;
         currentEnemy.anim.SetBool("idle2", true);
     }
     public override void LogicUpdate()
@@ -41,6 +42,7 @@ public class KnightIdleState : GroundEnemyBaseState
     public override void OnExit()
     {
         currentEnemy.anim.SetBool("idle2", false);
+        currentEnemy.rb.velocity = currentEnemy.rb.velocity.normalized;    
     }
     public int GetRandomNumber(int min, int max)
     {

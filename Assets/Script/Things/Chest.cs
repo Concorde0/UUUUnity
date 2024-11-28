@@ -20,7 +20,6 @@ public class Chest : MonoBehaviour, IInteractable
     }
     public void TriggerAction()
     {
-        /*Debug.Log("1");*/
         if(!isDone)
         {
             OpenCheast();

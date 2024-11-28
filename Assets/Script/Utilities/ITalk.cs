@@ -4,7 +4,7 @@ namespace Script.Utilities
 {
     public interface ITalk
     {
-        void TalkWithOther();
+        void TalkWithPlayer();
         
     }
 }

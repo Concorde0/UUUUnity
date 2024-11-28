@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class KnightAttack2State : GroundEnemyBaseState
 {
-    public float attackWait = 4;
+    public float attackWait = 3.3f;
     public float attackWaitTimeConter;
     public override void OnEnter(GroundEnemy enemy)
     {
         currentEnemy = enemy;
         currentEnemy.knight.isAttack = true;
         attackWaitTimeConter = attackWait;
-        
+        currentEnemy.rb.velocity = Vector2.zero;
         currentEnemy.currentSpeed = 0;
         currentEnemy.anim.SetBool("attack2", true);
     }
@@ -22,7 +22,6 @@ public class KnightAttack2State : GroundEnemyBaseState
         {
             currentEnemy.SwichState(NPCState.Patrol);
         }
-        //3种状态， 返回patrol,   进入斩击 => 返回patrol.   进入idle => 准备刺击 || 旋转攻击 => 返回patrol
     }
 
     public override void PhysicsUpdate()
@@ -34,5 +33,6 @@ public class KnightAttack2State : GroundEnemyBaseState
         currentEnemy.knight.isAttack = false;
         currentEnemy.attackPlayer = false;
         currentEnemy.anim.SetBool("attack2", false);
+        currentEnemy.rb.velocity = currentEnemy.rb.velocity.normalized;
     }
 }

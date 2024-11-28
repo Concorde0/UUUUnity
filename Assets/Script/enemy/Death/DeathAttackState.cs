@@ -10,7 +10,6 @@ namespace Script.enemy.Death
         {
             
             currentEnemy = enemy;
-            currentEnemy.currentSpeed = 0;
             currentEnemy.rb.velocity = Vector3.zero;
             currentEnemy.attackPlayer = true;
             attackTimeCounter = attackTime;
