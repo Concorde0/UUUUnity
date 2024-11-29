@@ -4,16 +4,22 @@ namespace Script.enemy.Sega
 {
     public class SegaJumpFlyAttackState : GroundEnemyBaseState
     {
+        public float stateTime = 2f;
+        public float stateTimeCounter;
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
+            currentEnemy.rb.velocity = new Vector2(currentEnemy.rb.velocity.x, 0f);
             currentEnemy.rb.AddForce(currentEnemy.transform.up * currentEnemy.sega.jumpFlyAttackForce, ForceMode2D.Impulse);
             currentEnemy.anim.SetBool("jumpFlyAttack1",true);
+            stateTimeCounter = stateTime;
         }
 
         public override void LogicUpdate()
         {
-            if (currentEnemy.rb.velocity.y <= 0)
+            Debug.Log("JumpFlyAttack1");
+            stateTimeCounter -= Time.deltaTime;
+            if (stateTimeCounter <= 0)
             {
                 currentEnemy.SwichState(NPCState.JumpFlyAttack2);
             }

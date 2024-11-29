@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening.Plugins.Options;
 using Script.enemy.Sega;
 using UnityEngine;
 
@@ -12,11 +13,16 @@ public class Sega : GroundEnemy
     public float magic1Cooldown = 5f;
     public float magic2Cooldown = 7f;
     public float jumpFlyAttackCooldown = 13f;
+    public float attack2Cooldown = 10f;
     public float magic1CooldownTimeCounter;
     public float magic2CooldownTimeCounter;
     public float jumpFlyAttackTimeCounter;
+    public float attack2CooldownTimeCounter;
+    
+    public float jumpAttackSpeed;
     
     public GameObject statBar;
+    private PhysiscCheck physiscCheck;
     
     
     private GroundEnemyBaseState segaChaseState;
@@ -27,7 +33,8 @@ public class Sega : GroundEnemy
     private GroundEnemyBaseState segaMagic2State;
     private GroundEnemyBaseState segaJumpAttackState;
     private GroundEnemyBaseState segaJumpAttack2State;
-    private GroundEnemyBaseState segaJumpFlyAttackState;
+    private GroundEnemyBaseState segaJumpFlyAttack1State;
+    private GroundEnemyBaseState segaJumpFlyAttack2State;
     private GroundEnemyBaseState segaEscapeState;
     protected override void Awake()
     {
@@ -35,13 +42,16 @@ public class Sega : GroundEnemy
         segaChaseState = new SegaChaseState();
         segaAttackState = new SegaAttackState();
         segaAttack2State = new SegaAttack2State();
-        segaDeadState = new SegaDeadState();
         segaMagic1State = new SegaMagic1State();
         segaMagic2State = new SegaMagic2State();
         segaJumpAttackState = new SegaJumpAttackState();
-        segaJumpFlyAttackState = new SegaJumpFlyAttackState();
-        segaJumpFlyAttackState = new SegaJumpFlyAttack2State();
+        segaJumpAttack2State = new SegaJumpAttack2State();
+        segaJumpFlyAttack1State = new SegaJumpFlyAttackState();
+        segaJumpFlyAttack2State = new SegaJumpFlyAttack2State();
         segaEscapeState = new SegaEscapeState();
+        segaDeadState = new SegaDeadState();
+
+        physiscCheck = GetComponent<PhysiscCheck>();
 
     }
     public override void OnEnable()
@@ -50,22 +60,32 @@ public class Sega : GroundEnemy
         currentState = segaChaseState;
         currentState.OnEnter(this);
         posEvent.OnEventRaised += OnposEvent;
+        
+        magic1CooldownTimeCounter = magic1Cooldown;
+        magic2CooldownTimeCounter = magic2Cooldown;
+        attack2CooldownTimeCounter = attack2Cooldown;
+        jumpFlyAttackTimeCounter = jumpFlyAttackCooldown;
     }
     protected override void Update()
     {
         base.Update();
-        if (foundPlayer && jumpFlyAttackTimeCounter >= 0)
+        if (jumpFlyAttackTimeCounter >= 0)
         {
             jumpFlyAttackTimeCounter -= Time.deltaTime;
         }
-        if (foundPlayer && magic2CooldownTimeCounter>= 0)
+        if ( magic2CooldownTimeCounter>= 0)
         {
             magic2CooldownTimeCounter -= Time.deltaTime;
         }
 
-        if (foundPlayer && magic1CooldownTimeCounter >= 0)
+        if (magic1CooldownTimeCounter >= 0)
         {
             magic1CooldownTimeCounter -= Time.deltaTime;
+        }
+
+        if ( attack2CooldownTimeCounter >= 0)
+        {
+            attack2CooldownTimeCounter -= Time.deltaTime;
         }
         
         
@@ -80,8 +100,9 @@ public class Sega : GroundEnemy
             NPCState.Magic1 => segaMagic1State,
             NPCState.Magic2 => segaMagic2State,
             NPCState.JumpAttack => segaJumpAttackState,
-            NPCState.JumpFlyAttack => segaJumpFlyAttackState,
-            NPCState.JumpFlyAttack2 => segaJumpAttack2State,
+            NPCState.JumpAttack2 => segaJumpAttack2State,
+            NPCState.JumpFlyAttack => segaJumpFlyAttack1State,
+            NPCState.JumpFlyAttack2 => segaJumpFlyAttack2State,
             NPCState.Dead => segaDeadState,
             NPCState.Escape => segaEscapeState,
             _ => null
@@ -99,8 +120,8 @@ public class Sega : GroundEnemy
         }
         currentState.PhysicsUpdate();
     }
-    private void Chase()
+    public void Chase()
     {
-        rb.velocity = new Vector2(currentSpeed * faceDir.x * Time.deltaTime, rb.velocity.y);
+        rb.velocity = new Vector2(currentSpeed * -faceDir.x * Time.deltaTime, rb.velocity.y);
     }
 }

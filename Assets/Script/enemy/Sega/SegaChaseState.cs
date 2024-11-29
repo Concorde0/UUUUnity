@@ -14,18 +14,19 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
+            Debug.Log("chase");
             //Turn
             if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
             {
-                currentEnemy.rb.transform.localScale = new(-2, 2, 2);
+                currentEnemy.rb.transform.localScale = new(2, 2, 2);
             }
             if (currentEnemy.rb.transform.position.x > currentEnemy.playerPos.transform.transform.position.x)
             {
-                currentEnemy.rb.transform.localScale = new(2, 2, 2);
+                currentEnemy.rb.transform.localScale = new(-2, 2, 2);
             }
             
             //JumpAttack
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.sega.jumpAttackDistance)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) > currentEnemy.sega.jumpAttackDistance)
             {
                 currentEnemy.SwichState(NPCState.JumpAttack);
             }
