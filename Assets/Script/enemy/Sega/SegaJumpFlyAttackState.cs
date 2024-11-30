@@ -9,8 +9,9 @@ namespace Script.enemy.Sega
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
-            currentEnemy.rb.velocity = new Vector2(currentEnemy.rb.velocity.x, 0f);
+            currentEnemy.rb.velocity = new Vector2(0f, 0f);
             currentEnemy.rb.AddForce(currentEnemy.transform.up * currentEnemy.sega.jumpFlyAttackForce, ForceMode2D.Impulse);
+            //给一个速度！
             currentEnemy.anim.SetBool("jumpFlyAttack1",true);
             stateTimeCounter = stateTime;
         }

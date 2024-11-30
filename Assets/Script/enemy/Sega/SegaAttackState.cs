@@ -4,7 +4,7 @@ namespace Script.enemy.Sega
 {
     public class SegaAttackState : GroundEnemyBaseState
     {
-        private float attackTime = 1.7f;
+        private float attackTime = 2.1f;
         private float attackTimeCounter;
         public override void OnEnter(GroundEnemy enemy)
         {

@@ -208,7 +208,7 @@ public class GroundEnemy : MonoBehaviour, IEndGameObserver
         }
         public virtual void DestroyAfterAnimation()
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     
 

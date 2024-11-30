@@ -10,15 +10,14 @@ namespace Script.enemy.Sega
         private float recoverGravityTime = 0.3f;
         private float recoverGravityTimeCounter;
 
-        private float attackPlayerDistance = 3f;
+        // private float attackPlayerDistance = 3f;
 
         private bool isJump;
-        
+        private bool isTowards;
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
             stateTimeCounter = stateTime;
-            currentEnemy.sega.isChase = true;
             recoverGravityTimeCounter = recoverGravityTime;
             currentEnemy.anim.SetBool("jumpFlyAttack2",true);
             currentEnemy.sega.rb.gravityScale = 0;
@@ -29,11 +28,11 @@ namespace Script.enemy.Sega
         {
             Debug.Log("JumpFlyAttack2");
             recoverGravityTimeCounter -= Time.deltaTime;
-            if (recoverGravityTimeCounter <= 0)
+            if (recoverGravityTimeCounter <= 0 )
             {
                 currentEnemy.rb.gravityScale = 1;
             }
-            
+            currentEnemy.sega.JumpFlyAttackTowards();
             
             if (currentEnemy.sega.physiscCheck.isGround)
             {
@@ -66,7 +65,6 @@ namespace Script.enemy.Sega
             currentEnemy.anim.SetBool("jumpFlyAttack3",false);
             currentEnemy.sega.jumpFlyAttackTimeCounter = currentEnemy.sega.jumpFlyAttackCooldown;
             currentEnemy.rb.gravityScale = 1;
-            currentEnemy.sega.isChase = false;
 
             isJump = false;
         }

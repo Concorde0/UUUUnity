@@ -115,8 +115,7 @@ public class Witcher : GroundEnemy
     public void Magic3()
     {
         Vector3 magic2Position = new Vector3(transform.position.x+6, transform.position.y-3, transform.position.z);
-        // Vector3 magic3Position = new Vector3(transform.position.x-2, transform.position.y-3, transform.position.z);
         Instantiate(witcherMagic3Prefab, magic2Position, Quaternion.identity);
-        // Instantiate(witcherMagic3Prefab, magic3Position, Quaternion.identity);
+      
     }
 }

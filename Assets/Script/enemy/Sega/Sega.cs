@@ -2,28 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening.Plugins.Options;
 using Script.enemy.Sega;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Sega : GroundEnemy
 {
     public bool isChase;
-    public float jumpAttackDistance;
-    public float jumpAttackForce;
-    public float jumpFlyAttackForce;
+    [Header("CoolDown")]
     public float magic1Cooldown = 5f;
     public float magic2Cooldown = 7f;
     public float jumpFlyAttackCooldown = 13f;
     public float attack2Cooldown = 10f;
+    
+    [Header("TimeCounter")]
     public float magic1CooldownTimeCounter;
     public float magic2CooldownTimeCounter;
     public float jumpFlyAttackTimeCounter;
     public float attack2CooldownTimeCounter;
-    
+
+    [Header("1")]
+    // public float jumpFlyAttackVelocityY;
+    public float jumpFlyAttackSpeed;
+    public float jumpFlyAttackForce;
+    public float jumpAttackDistance;
+    public float jumpAttackForce;
     public float jumpAttackSpeed;
+
+    [Header("事件监听")] 
+    public VoidEventSO recoverHealth;
+
+
+    public UnityEvent<Character> recover;
+    
+    
     
     public GameObject statBar;
-    private PhysiscCheck physiscCheck;
-    
+    public GameObject rockPrefab;
+    public GameObject magic2Prefab;
+    public GameObject smallDemonPrefab;
     
     private GroundEnemyBaseState segaChaseState;
     private GroundEnemyBaseState segaAttackState;
@@ -50,22 +67,36 @@ public class Sega : GroundEnemy
         segaJumpFlyAttack2State = new SegaJumpFlyAttack2State();
         segaEscapeState = new SegaEscapeState();
         segaDeadState = new SegaDeadState();
-
         physiscCheck = GetComponent<PhysiscCheck>();
 
     }
     public override void OnEnable()
     {
         GameManager.Instance.AddObserver(this);
+        statBar.SetActive(true);
         currentState = segaChaseState;
         currentState.OnEnter(this);
         posEvent.OnEventRaised += OnposEvent;
-        
+        recoverHealth.OnEventRaised += OnRecoverHealth;
         magic1CooldownTimeCounter = magic1Cooldown;
         magic2CooldownTimeCounter = magic2Cooldown;
         attack2CooldownTimeCounter = attack2Cooldown;
         jumpFlyAttackTimeCounter = jumpFlyAttackCooldown;
     }
+
+    public override void OnDisable()
+    {
+        base.OnDisable();
+        recoverHealth.OnEventRaised -= OnRecoverHealth;
+
+    }
+
+    private void OnRecoverHealth()
+    {
+        character.currentHealth += 20;
+        recover?.Invoke(character);
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -123,5 +154,30 @@ public class Sega : GroundEnemy
     public void Chase()
     {
         rb.velocity = new Vector2(currentSpeed * -faceDir.x * Time.deltaTime, rb.velocity.y);
+    }
+
+
+    public void JumpFlyAttackTowards()
+    {
+        transform.position = Vector2.MoveTowards(transform.position,playerPos.position,jumpFlyAttackSpeed*Time.deltaTime);
+        
+    }
+
+    public void InstantiateRock()
+    {
+        var playerPosition1 = new Vector2(playerPos.position.x+2, playerPos.position.y+1);
+        var playerPosition2 = new Vector2(playerPos.position.x-2, playerPos.position.y+1);
+        var playerPosition3 = new Vector2(playerPos.position.x, playerPos.position.y+6);
+        Instantiate(rockPrefab, playerPosition1, Quaternion.identity);
+        Instantiate(rockPrefab, playerPosition2, Quaternion.identity);
+        Instantiate(magic2Prefab, playerPosition3, Quaternion.identity);
+    }
+
+    public void InstantiateSmallDemon()
+    {
+        var smallDemonPosition1 = new Vector2(transform.position.x+3, transform.position.y+5);
+        var smallDemonPosition2 = new Vector2(transform.position.x-3, transform.position.y+5);
+        Instantiate(smallDemonPrefab,smallDemonPosition1, Quaternion.identity);
+        Instantiate(smallDemonPrefab,smallDemonPosition2, Quaternion.identity);
     }
 }
