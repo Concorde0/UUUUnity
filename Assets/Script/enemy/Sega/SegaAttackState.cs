@@ -9,7 +9,7 @@ namespace Script.enemy.Sega
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
-            currentEnemy.rb.velocity = Vector3.zero;
+            currentEnemy.rb.velocity = Vector2.zero;
             currentEnemy.attackPlayer = true;
             attackTimeCounter = attackTime;
             currentEnemy.anim.SetBool("attack",true);
@@ -17,6 +17,7 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
+            Debug.Log("attack");
             if (currentEnemy.character.currentHealth <= 0)
             {
                 currentEnemy.SwichState(NPCState.Dead);

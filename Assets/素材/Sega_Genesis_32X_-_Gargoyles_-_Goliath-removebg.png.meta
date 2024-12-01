@@ -2113,7 +2113,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_97
+      name: jumpToWall1
       rect:
         serializedVersion: 2
         x: 6
@@ -2134,7 +2134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_98
+      name: jumpToWall2
       rect:
         serializedVersion: 2
         x: 79
@@ -2155,11 +2155,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_99
+      name: jumpToWall3
       rect:
         serializedVersion: 2
         x: 154
-        y: 1371
+        y: 1370
         width: 43
         height: 72
       alignment: 7
@@ -2176,7 +2176,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_100
+      name: jumpToWall4
       rect:
         serializedVersion: 2
         x: 208
@@ -2197,7 +2197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_101
+      name: jumpToWall5
       rect:
         serializedVersion: 2
         x: 265
@@ -2218,7 +2218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_102
+      name: jumpToWall6
       rect:
         serializedVersion: 2
         x: 322
@@ -2239,7 +2239,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_103
+      name: jumpToWall7
       rect:
         serializedVersion: 2
         x: 380
@@ -2260,7 +2260,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_104
+      name: jumpToWall8
       rect:
         serializedVersion: 2
         x: 435
@@ -2281,7 +2281,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_105
+      name: jumpToWall9
       rect:
         serializedVersion: 2
         x: 490
@@ -2512,7 +2512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_147
+      name: clam1
       rect:
         serializedVersion: 2
         x: 229
@@ -2533,7 +2533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_148
+      name: clam2
       rect:
         serializedVersion: 2
         x: 275
@@ -2554,7 +2554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_149
+      name: clam3
       rect:
         serializedVersion: 2
         x: 319
@@ -2575,7 +2575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_150
+      name: clam4
       rect:
         serializedVersion: 2
         x: 364
@@ -2596,7 +2596,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_151
+      name: clam6
       rect:
         serializedVersion: 2
         x: 448
@@ -2617,7 +2617,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_152
+      name: clam7
       rect:
         serializedVersion: 2
         x: 492
@@ -2638,7 +2638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_153
+      name: clam8
       rect:
         serializedVersion: 2
         x: 536
@@ -2659,7 +2659,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_154
+      name: clam10
       rect:
         serializedVersion: 2
         x: 618
@@ -2764,7 +2764,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_159
+      name: clam5
       rect:
         serializedVersion: 2
         x: 405
@@ -2785,7 +2785,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_160
+      name: clam9
       rect:
         serializedVersion: 2
         x: 576
@@ -2806,7 +2806,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_161
+      name: wallAttack1
       rect:
         serializedVersion: 2
         x: 21
@@ -2827,7 +2827,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_162
+      name: wallAttack2
       rect:
         serializedVersion: 2
         x: 77
@@ -2848,7 +2848,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_163
+      name: wallAttack3
       rect:
         serializedVersion: 2
         x: 133
@@ -2869,7 +2869,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_164
+      name: wallAttack4
       rect:
         serializedVersion: 2
         x: 211
@@ -2890,7 +2890,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_165
+      name: wallAttack5
       rect:
         serializedVersion: 2
         x: 287
@@ -2911,10 +2911,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_166
+      name: wallAttack6
       rect:
         serializedVersion: 2
-        x: 345
+        x: 346
         y: 1056
         width: 43
         height: 86
@@ -2932,11 +2932,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_167
+      name: up1
       rect:
         serializedVersion: 2
         x: 18
-        y: 947
+        y: 946
         width: 50
         height: 77
       alignment: 7
@@ -2953,10 +2953,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_168
+      name: up2
       rect:
         serializedVersion: 2
-        x: 75
+        x: 77
         y: 952
         width: 56
         height: 73
@@ -2974,7 +2974,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_169
+      name: up3
       rect:
         serializedVersion: 2
         x: 141
@@ -2995,7 +2995,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_170
+      name: up4
       rect:
         serializedVersion: 2
         x: 210
@@ -3016,7 +3016,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_171
+      name: up5
       rect:
         serializedVersion: 2
         x: 280
@@ -3037,7 +3037,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_172
+      name: up6
       rect:
         serializedVersion: 2
         x: 338
@@ -3058,7 +3058,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_173
+      name: up7
       rect:
         serializedVersion: 2
         x: 393
@@ -3079,7 +3079,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_174
+      name: up8
       rect:
         serializedVersion: 2
         x: 457
@@ -3100,7 +3100,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_175
+      name: up9
       rect:
         serializedVersion: 2
         x: 523
@@ -3121,7 +3121,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_176
+      name: up10
       rect:
         serializedVersion: 2
         x: 587
@@ -3142,10 +3142,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_177
+      name: up11
       rect:
         serializedVersion: 2
-        x: 660
+        x: 662
         y: 979
         width: 58
         height: 48
@@ -5934,12 +5934,6 @@ TextureImporter:
       2magic5: -338426206
       2magic6: -1221428643
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_10: -1885349968
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_100: 1652954219
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_101: 384523840
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_102: 643714461
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_103: -325285877
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_104: -1293485604
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_105: 447389993
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_106: -455490234
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_107: -971081891
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_108: 619858396
@@ -5981,37 +5975,10 @@ TextureImporter:
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_144: 1321674130
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_145: 1565166626
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_146: 715709146
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_147: -1792350856
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_148: -231394856
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_149: 1433393794
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_150: -1801499400
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_151: -444329655
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_152: 1259411508
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_153: -1336834287
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_154: 1266919840
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_155: 799840676
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_156: -1387351412
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_157: -792967661
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_158: 1995749991
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_159: 752766622
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_160: 789295504
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_161: 1472456473
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_162: -735605807
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_163: 606729256
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_164: 1682949371
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_165: -1257307409
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_166: -442724195
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_167: 1782264577
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_168: 1453745232
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_169: 218807618
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_170: 978463749
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_171: 64209462
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_172: 984944118
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_173: -258862604
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_174: -1021134029
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_175: -15700596
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_176: -556081302
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_177: -912832057
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_178: 1687025750
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_179: 1316853092
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_180: -1959297427
@@ -6168,9 +6135,6 @@ TextureImporter:
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_7: -1237963270
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_8: 1382274445
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_9: 356688926
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_97: -1748549733
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_98: -1990436671
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_99: -35477361
       attack1: 948384304
       attack10: -1685338726
       attack11: 910943719
@@ -6190,6 +6154,16 @@ TextureImporter:
       attack7: -1265806733
       attack8: -798899714
       attack9: 1364294638
+      clam1: -1792350856
+      clam10: 1266919840
+      clam2: -231394856
+      clam3: 1433393794
+      clam4: -1801499400
+      clam5: 752766622
+      clam6: -444329655
+      clam7: 1259411508
+      clam8: -1336834287
+      clam9: 789295504
       idle: 1879998687
       idle1: -1501476672
       idle2: -1719795565
@@ -6234,6 +6208,15 @@ TextureImporter:
       jumpFlyAttack7: -1661189380
       jumpFlyAttack8: -156759701
       jumpFlyAttack9: 774367749
+      jumpToWall1: -1748549733
+      jumpToWall2: -1990436671
+      jumpToWall3: -35477361
+      jumpToWall4: 1652954219
+      jumpToWall5: 384523840
+      jumpToWall6: 643714461
+      jumpToWall7: -325285877
+      jumpToWall8: -1293485604
+      jumpToWall9: 447389993
       run1: 163885001
       run10: -102583782
       run11: -1561967546
@@ -6246,6 +6229,23 @@ TextureImporter:
       run7: 559046439
       run8: -2077159498
       run9: -358259139
+      up1: 1782264577
+      up10: -556081302
+      up11: -912832057
+      up2: 1453745232
+      up3: 218807618
+      up4: 978463749
+      up5: 64209462
+      up6: 984944118
+      up7: -258862604
+      up8: -1021134029
+      up9: -15700596
+      wallAttack1: 1472456473
+      wallAttack2: -735605807
+      wallAttack3: 606729256
+      wallAttack4: 1682949371
+      wallAttack5: -1257307409
+      wallAttack6: -442724195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,6 +8,7 @@ using UnityEngine.Events;
 
 public class Sega : GroundEnemy
 {
+    
     public bool isChase;
     [Header("CoolDown")]
     public float magic1Cooldown = 5f;
@@ -24,10 +25,29 @@ public class Sega : GroundEnemy
     [Header("1")]
     // public float jumpFlyAttackVelocityY;
     public float jumpFlyAttackSpeed;
+
+    public float jumpWallSpeed;
     public float jumpFlyAttackForce;
     public float jumpAttackDistance;
     public float jumpAttackForce;
     public float jumpAttackSpeed;
+
+    [Header("bool")] 
+    public bool magic1;
+    public bool magic2;
+    public bool jumpFlyAttack;
+    public bool attack2;
+
+    public bool isEscape;
+    
+
+    [Header("position")] 
+    public GameObject jumpPosition;
+    public GameObject jumpWallPosition;
+    public GameObject wallPosition1;
+    public GameObject wallPosition2;
+    
+
 
     [Header("事件监听")] 
     public VoidEventSO recoverHealth;
@@ -45,7 +65,6 @@ public class Sega : GroundEnemy
     private GroundEnemyBaseState segaChaseState;
     private GroundEnemyBaseState segaAttackState;
     private GroundEnemyBaseState segaAttack2State;
-    private GroundEnemyBaseState segaDeadState;
     private GroundEnemyBaseState segaMagic1State;
     private GroundEnemyBaseState segaMagic2State;
     private GroundEnemyBaseState segaJumpAttackState;
@@ -53,6 +72,11 @@ public class Sega : GroundEnemy
     private GroundEnemyBaseState segaJumpFlyAttack1State;
     private GroundEnemyBaseState segaJumpFlyAttack2State;
     private GroundEnemyBaseState segaEscapeState;
+    private GroundEnemyBaseState segaJumpWallState;
+    private GroundEnemyBaseState segaWallMoveState;
+    private GroundEnemyBaseState segaWallAttackState;
+    private GroundEnemyBaseState segaUpState;
+    private GroundEnemyBaseState segaDeadState;
     protected override void Awake()
     {
         base.Awake();
@@ -66,6 +90,11 @@ public class Sega : GroundEnemy
         segaJumpFlyAttack1State = new SegaJumpFlyAttackState();
         segaJumpFlyAttack2State = new SegaJumpFlyAttack2State();
         segaEscapeState = new SegaEscapeState();
+        segaJumpWallState = new SegaJumpWallState();
+        segaWallMoveState = new SegaWallMoveState();
+        segaWallAttackState = new SegaWallAttackState();
+        segaUpState = new SegaUpState();
+        
         segaDeadState = new SegaDeadState();
         physiscCheck = GetComponent<PhysiscCheck>();
 
@@ -93,7 +122,16 @@ public class Sega : GroundEnemy
 
     private void OnRecoverHealth()
     {
-        character.currentHealth += 20;
+        Debug.Log("recoverEvent");
+        if (character.currentHealth <= character.maxHealth - 20)
+        {
+            character.currentHealth += 20;
+        }
+        else
+        {
+            character.currentHealth = character.maxHealth;
+        }
+        
         recover?.Invoke(character);
     }
 
@@ -134,8 +172,13 @@ public class Sega : GroundEnemy
             NPCState.JumpAttack2 => segaJumpAttack2State,
             NPCState.JumpFlyAttack => segaJumpFlyAttack1State,
             NPCState.JumpFlyAttack2 => segaJumpFlyAttack2State,
-            NPCState.Dead => segaDeadState,
             NPCState.Escape => segaEscapeState,
+            NPCState.JumpWall => segaJumpWallState,
+            NPCState.WallMove => segaWallMoveState,
+            NPCState.WallAttack => segaWallAttackState,
+            NPCState.SegaUp => segaUpState,
+            NPCState.Dead => segaDeadState,
+            
             _ => null
         };
         
@@ -145,15 +188,45 @@ public class Sega : GroundEnemy
     }
     protected override void FixedUpdate()
     {
-        if (!isHurt && !isDead && !wait && !attackPlayer && isChase )
+        if (!isHurt && !isDead && !wait && !attackPlayer && isChase && !isEscape)
         {
             Chase();
         }
+
+        if (isEscape)
+        {
+            Escape();
+        }
         currentState.PhysicsUpdate();
     }
-    public void Chase()
+
+    private void Chase()
     {
         rb.velocity = new Vector2(currentSpeed * -faceDir.x * Time.deltaTime, rb.velocity.y);
+    }
+
+    private void Escape()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, jumpPosition.transform.position,
+            jumpWallSpeed * Time.deltaTime);
+    }
+
+    private void JumpToWallPosition()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, jumpWallPosition.transform.position,
+            jumpWallSpeed * Time.deltaTime);
+    }
+
+    private void MoveToWallPosition1()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, wallPosition1.transform.position,
+            jumpWallSpeed * Time.deltaTime);
+    }
+
+    private void MoveToWallPosition2()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, wallPosition2.transform.position,
+            jumpWallSpeed * Time.deltaTime);
     }
 
 
@@ -180,4 +253,6 @@ public class Sega : GroundEnemy
         Instantiate(smallDemonPrefab,smallDemonPosition1, Quaternion.identity);
         Instantiate(smallDemonPrefab,smallDemonPosition2, Quaternion.identity);
     }
+
+    
 }

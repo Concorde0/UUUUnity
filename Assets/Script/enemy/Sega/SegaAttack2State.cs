@@ -10,6 +10,7 @@ namespace Script.enemy.Sega
         {
             currentEnemy = enemy;
             currentEnemy.anim.SetBool("attack2",true);
+            currentEnemy.rb.velocity = Vector2.zero;
             stateTimeCounter = stateTime;
         }
 
@@ -30,9 +31,9 @@ namespace Script.enemy.Sega
 
         public override void OnExit()
         {
-            
             currentEnemy.anim.SetBool("attack2",false);
             currentEnemy.sega.attack2CooldownTimeCounter = currentEnemy.sega.attack2Cooldown;
+            currentEnemy.sega.attack2 = false;
         }
     }
 }

@@ -12,6 +12,11 @@ namespace Script.enemy.Bandits
 
         public override void LogicUpdate()
         {
+            if (!Mathf.Approximately(currentEnemy.character.currentHealth, currentEnemy.character.maxHealth))
+            {
+                currentEnemy.SwichState(NPCState.Chase);
+            }
+            
             if (currentEnemy.character.currentHealth <= 0)
             {
                 currentEnemy.SwichState(NPCState.Dead);

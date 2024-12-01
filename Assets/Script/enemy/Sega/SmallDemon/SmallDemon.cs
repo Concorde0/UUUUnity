@@ -9,10 +9,12 @@ public class SmallDemon : GroundEnemy
 {
     public float smallDemonSpeed;
     private string targetTag = "Sega";
+    private string targetTag2 = "Player";
     private GameObject target;
+    private GameObject target2;
     private bool toPlayer;
-
-    public float fixMoveTime = 0.1f;
+    
+    private float fixMoveTime = 1f;
     private float fixMoveTimeCounter;
         
 
@@ -35,6 +37,7 @@ public class SmallDemon : GroundEnemy
 
     protected override void Update()
     {
+        target2 = GameObject.FindGameObjectWithTag(targetTag2);
         if (playerPos == null)
         {
             Debug.Log("null");
@@ -49,11 +52,13 @@ public class SmallDemon : GroundEnemy
         {
             MoveToPlayer();
         }
+        
         if(toPlayer)
         {
             target = GameObject.FindGameObjectWithTag(targetTag);
             MoveToSega();
         }
+        DestroySelf();
     }
     public override void SwichState(NPCState state)
     {
@@ -74,17 +79,24 @@ public class SmallDemon : GroundEnemy
     {
         
     }
+    public override void OnDie()
+    {
+        gameObject.layer = 2;
+        anim.SetTrigger("hurt");
+        isDead = false;
+    }
 
     
 
     private void MoveToPlayer()
     {
-        transform.position= Vector2.MoveTowards(transform.position, playerPos.position,smallDemonSpeed*Time.deltaTime);
+        transform.position= Vector2.MoveTowards(transform.position, target2.transform.position,smallDemonSpeed*Time.deltaTime);
     }
 
     private void MoveToSega()
     {
-        transform.position= Vector2.MoveTowards(transform.position, target.transform.position ,smallDemonSpeed*Time.deltaTime);
+        Vector2 toSega = new Vector2(target.transform.position.x, target.transform.position.y+2);
+        transform.position= Vector2.MoveTowards(transform.position, toSega ,smallDemonSpeed*Time.deltaTime);
     }
 
     private void FixMove()
@@ -98,20 +110,30 @@ public class SmallDemon : GroundEnemy
     {
         if (other.CompareTag("Player"))
         {
-            toPlayer = true;
+            
+            StartCoroutine(FixCollider());
         }
+        
     }
 
+    private IEnumerator FixCollider()
+    {
+        yield return new WaitForSeconds(0.1f);
+        toPlayer = true;
+    }
     
-    private void OnTriggerExit2D(Collider2D other)
+    private void DestroySelf()
     {
         if (toPlayer)
         {
-            if (other.CompareTag("Sega"))
+            if (Vector2.Distance(transform.position, target.transform.position) <= 2.3f)
             {
                 onHealthSega?.Invoke(this);
                 Destroy(gameObject);
             }
         }
     }
+
+    
+   
 }

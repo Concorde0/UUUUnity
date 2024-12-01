@@ -5,13 +5,17 @@ namespace Script.enemy.Sega
     
     public class SegaJumpAttackState : GroundEnemyBaseState
     {
-        private float jumpAttackDistance = 2f;
+        // private float fixJumpAttackTime = 3f;
+        // private float fixJumpAttackTimeCounter;
+        //
+        private float jumpAttackDistance = 3f;
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
             currentEnemy.currentSpeed = currentEnemy.chaseSpeed;
             currentEnemy.sega.isChase = true;
-            
+
+            // fixJumpAttackTimeCounter = fixJumpAttackTime;
             currentEnemy.rb.AddForce(currentEnemy.transform.up*currentEnemy.sega.jumpAttackForce, ForceMode2D.Impulse);
             currentEnemy.anim.SetBool("jumpAttack1",true);
         }
@@ -20,12 +24,18 @@ namespace Script.enemy.Sega
         {
             Debug.Log("JumpAttack");
 
+            // fixJumpAttackTimeCounter -= Time.deltaTime;
             
             if (currentEnemy.character.currentHealth <= 0)
             {
                 currentEnemy.SwichState(NPCState.Dead);
             }
             if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < jumpAttackDistance)
+            {
+                currentEnemy.SwichState(NPCState.JumpAttack2);
+            }
+
+            if (currentEnemy.physiscCheck.touchLeftWall || currentEnemy.physiscCheck.touchRightWall)
             {
                 currentEnemy.SwichState(NPCState.JumpAttack2);
             }

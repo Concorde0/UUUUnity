@@ -25,39 +25,58 @@ namespace Script.enemy.Sega
                 currentEnemy.rb.transform.localScale = new(-2, 2, 2);
             }
             
-            //JumpAttack
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) > currentEnemy.sega.jumpAttackDistance)
-            {
-                currentEnemy.SwichState(NPCState.JumpAttack);
-            }
-            
-            //Magic1
-            if (currentEnemy.sega.magic1CooldownTimeCounter <= 0)
-            {
-                currentEnemy.SwichState(NPCState.Magic1);
-            }
-            
-            //Magic2
-            if (currentEnemy.sega.magic2CooldownTimeCounter <= 0)
-            {
-                currentEnemy.SwichState(NPCState.Magic2);
-            }
-            
-            //JumpFlyState
-            if (currentEnemy.sega.jumpFlyAttackTimeCounter <= 0)
-            {
-                currentEnemy.SwichState(NPCState.JumpFlyAttack);
-            }
-            
             //Escape
             if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 2)
             {
                 currentEnemy.SwichState(NPCState.Escape);
             }
             
+            //JumpFlyAttack
+            if (currentEnemy.sega.jumpFlyAttackTimeCounter <= 0)
+            {
+                currentEnemy.SwichState(NPCState.JumpFlyAttack);
+                currentEnemy.sega.jumpFlyAttack = true;
+            }
+            
+            //JumpAttack
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) > currentEnemy.sega.jumpAttackDistance && currentEnemy.sega.jumpFlyAttack == false)
+            {
+                currentEnemy.SwichState(NPCState.JumpAttack);
+            }
+            
+            //Magic2
+            if (currentEnemy.sega.magic2CooldownTimeCounter <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Magic2);
+                currentEnemy.sega.magic2 = true;
+            }
+            
+            //Magic1
+            if (currentEnemy.sega.magic1CooldownTimeCounter <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Magic1);
+                currentEnemy.sega.magic1 = true;
+            }
+            
+            
+            
+            
+            //Attack2
+            if (currentEnemy.sega.attack2CooldownTimeCounter <= 0 && Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+            {
+                currentEnemy.SwichState(NPCState.Attack2);
+                currentEnemy.sega.attack2 = true;
+            }
+            
+            
+            
             
             //Attack
-            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance)
+            if (Vector2.Distance(currentEnemy.transform.position,currentEnemy.playerPos.position) < currentEnemy.attackDistance
+                && currentEnemy.sega.attack2 == false 
+                && currentEnemy.sega.jumpFlyAttack ==false 
+                && currentEnemy.sega.magic2 == false 
+                && currentEnemy.sega.magic1 == false)
             {
                 currentEnemy.SwichState(NPCState.Attack);
             }

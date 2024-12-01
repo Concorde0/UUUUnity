@@ -32,18 +32,23 @@ namespace Script.enemy.Sega
             {
                 currentEnemy.rb.gravityScale = 1;
             }
-            currentEnemy.sega.JumpFlyAttackTowards();
             
-            if (currentEnemy.sega.physiscCheck.isGround)
+            if (currentEnemy.sega.physiscCheck.isGround || currentEnemy.sega.physiscCheck.touchLeftWall || currentEnemy.sega.physiscCheck.touchRightWall)
             {
                 currentEnemy.anim.SetBool("jumpFlyAttack3",true);
                 isJump = true;
             }
+            else
+            {
+                currentEnemy.sega.JumpFlyAttackTowards();
+            }
 
+            
             if (isJump)
             {
                 stateTimeCounter -= Time.deltaTime;
             }
+            
             
             
             if (stateTimeCounter <= 0)

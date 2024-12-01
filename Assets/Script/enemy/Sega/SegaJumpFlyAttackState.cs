@@ -34,6 +34,8 @@ namespace Script.enemy.Sega
         public override void OnExit()
         {
             currentEnemy.anim.SetBool("jumpFlyAttack1",false);
+            currentEnemy.sega.jumpFlyAttack = false;
+
 
         }
     }

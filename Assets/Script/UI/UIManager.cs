@@ -106,7 +106,7 @@ public class UIManager : MonoBehaviour
 
     private void OnHealthEvent(Character character)
     {
-        //Debug.Log("health");
+        // Debug.Log("health");
         var precentage = character.currentHealth / character.maxHealth;
 
         playerStatBar.OnHealthChange(precentage);

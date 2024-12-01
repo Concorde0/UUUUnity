@@ -17,6 +17,11 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: d68a33ba67e04164ca74f76fb6c72cbf
   m_SerializeEntries:
+  - m_GUID: 1b74733562d3d8e47aac1d9eed2e5eb7
+    m_Address: Assets/Scenes/SegaBoss.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3d64cfe93d025524f9096a81f49923a8
     m_Address: Assets/Scenes/Study.unity
     m_ReadOnly: 0

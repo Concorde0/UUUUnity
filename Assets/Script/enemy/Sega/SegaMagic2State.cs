@@ -9,6 +9,7 @@ namespace Script.enemy.Sega
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
+            currentEnemy.rb.velocity = Vector2.zero;
             currentEnemy.anim.SetBool("magic2",true);
             stateTimeCounter = stateTime;
         }
@@ -32,6 +33,8 @@ namespace Script.enemy.Sega
         public override void OnExit()
         {
             currentEnemy.anim.SetBool("magic2",false);
+            currentEnemy.sega.magic2 = false;
+
             currentEnemy.sega.magic2CooldownTimeCounter = currentEnemy.sega.magic2Cooldown;
         }
     }

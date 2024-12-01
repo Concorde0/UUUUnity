@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class BanditsChaseState : GroundEnemyBaseState
@@ -19,6 +20,9 @@ public class BanditsChaseState : GroundEnemyBaseState
         {
             currentEnemy.SwichState(NPCState.Dead);
         }
+
+        
+        
         if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
         {
             currentEnemy.rb.transform.localScale = new(-1, 1, 1);
