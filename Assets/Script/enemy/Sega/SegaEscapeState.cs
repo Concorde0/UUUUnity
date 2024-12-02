@@ -13,9 +13,16 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
-            if (Vector2.Distance(currentEnemy.transform.position,
-                    currentEnemy.sega.jumpWallPosition.transform.position) < 0.1f)
+            if (currentEnemy.character.currentHealth <= 0)
             {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
+            
+            currentEnemy.rb.transform.localScale = new(2, 2, 2);
+            if (Vector2.Distance(currentEnemy.transform.position,
+                    currentEnemy.sega.jumpPosition.transform.position) < 0.5f)
+            {
+                Debug.Log("change");
                 currentEnemy.SwichState(NPCState.JumpWall);
             }
             

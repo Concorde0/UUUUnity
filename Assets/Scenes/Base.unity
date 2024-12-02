@@ -24240,7 +24240,7 @@ MonoBehaviour:
   afterSceneLoadedEvent: {fileID: 11400000, guid: 52f09459a3627674c951d65f16df842a, type: 2}
   fadeEvnet: {fileID: 11400000, guid: 6af2a313c1976454393d69ee7e9bea54, type: 2}
   unloadedeSceneEvent: {fileID: 11400000, guid: f075e6b25b1e8c842baa727d1f613131, type: 2}
-  firstLoadScene: {fileID: 11400000, guid: ac3ae98cca2785b46b9c57a513592533, type: 2}
+  firstLoadScene: {fileID: 11400000, guid: aee400fc08fe8814c964910c486568f4, type: 2}
   menuLoadScene: {fileID: 11400000, guid: d08a320d389306346ab90653474de4ae, type: 2}
   currentLoadedScene: {fileID: 0}
   fadeDuration: 0.5

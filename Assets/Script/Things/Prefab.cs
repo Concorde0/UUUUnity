@@ -17,7 +17,7 @@ public class Prefab : MonoBehaviour
 
         if (beeHitState.arrow == true)
         {
-            //0fÐèÒª¸Ä
+           
             InvokeRepeating("SpawnArrow", 0f, spawnInterval); 
         }
     }

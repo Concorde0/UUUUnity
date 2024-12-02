@@ -26,6 +26,12 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
+            
+            
+            if (currentEnemy.character.currentHealth <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
             Debug.Log("JumpFlyAttack2");
             recoverGravityTimeCounter -= Time.deltaTime;
             if (recoverGravityTimeCounter <= 0 )

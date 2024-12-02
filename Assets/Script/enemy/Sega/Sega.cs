@@ -27,6 +27,7 @@ public class Sega : GroundEnemy
     public float jumpFlyAttackSpeed;
 
     public float jumpWallSpeed;
+    public float wallMoveSpeed;
     public float jumpFlyAttackForce;
     public float jumpAttackDistance;
     public float jumpAttackForce;
@@ -39,6 +40,8 @@ public class Sega : GroundEnemy
     public bool attack2;
 
     public bool isEscape;
+    public bool isMoveWallPosition1;
+    public bool isUp;
     
 
     [Header("position")] 
@@ -46,6 +49,8 @@ public class Sega : GroundEnemy
     public GameObject jumpWallPosition;
     public GameObject wallPosition1;
     public GameObject wallPosition2;
+    public GameObject wallPositionUp;
+    public GameObject waitPosition;
     
 
 
@@ -74,8 +79,11 @@ public class Sega : GroundEnemy
     private GroundEnemyBaseState segaEscapeState;
     private GroundEnemyBaseState segaJumpWallState;
     private GroundEnemyBaseState segaWallMoveState;
+    private GroundEnemyBaseState segaWallWaitState;
     private GroundEnemyBaseState segaWallAttackState;
+    private GroundEnemyBaseState segaWaitState;
     private GroundEnemyBaseState segaUpState;
+    
     private GroundEnemyBaseState segaDeadState;
     protected override void Awake()
     {
@@ -93,7 +101,7 @@ public class Sega : GroundEnemy
         segaJumpWallState = new SegaJumpWallState();
         segaWallMoveState = new SegaWallMoveState();
         segaWallAttackState = new SegaWallAttackState();
-        segaUpState = new SegaUpState();
+        segaWaitState = new SegaWaitState();
         
         segaDeadState = new SegaDeadState();
         physiscCheck = GetComponent<PhysiscCheck>();
@@ -177,6 +185,7 @@ public class Sega : GroundEnemy
             NPCState.WallMove => segaWallMoveState,
             NPCState.WallAttack => segaWallAttackState,
             NPCState.SegaUp => segaUpState,
+            NPCState.Wait => segaWaitState,
             NPCState.Dead => segaDeadState,
             
             _ => null
@@ -211,24 +220,34 @@ public class Sega : GroundEnemy
             jumpWallSpeed * Time.deltaTime);
     }
 
-    private void JumpToWallPosition()
+    public void JumpToWallPosition()
     {
         transform.position = Vector2.MoveTowards(transform.position, jumpWallPosition.transform.position,
             jumpWallSpeed * Time.deltaTime);
     }
 
-    private void MoveToWallPosition1()
+    public void MoveToWallPosition1()
     {
         transform.position = Vector2.MoveTowards(transform.position, wallPosition1.transform.position,
-            jumpWallSpeed * Time.deltaTime);
+            wallMoveSpeed * Time.deltaTime);
     }
 
-    private void MoveToWallPosition2()
+    public void MoveToWallPosition2()
     {
         transform.position = Vector2.MoveTowards(transform.position, wallPosition2.transform.position,
-            jumpWallSpeed * Time.deltaTime);
+            wallMoveSpeed * Time.deltaTime);
     }
-
+    public void MoveToWallPositionUp()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, wallPositionUp.transform.position,
+            wallMoveSpeed * Time.deltaTime);
+    }
+    
+    public void WaitPosition()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, waitPosition.transform.position,
+            wallMoveSpeed * Time.deltaTime);
+    }
 
     public void JumpFlyAttackTowards()
     {

@@ -24,7 +24,10 @@ namespace Script.enemy.Sega
         {
             Debug.Log("JumpAttack");
 
-            // fixJumpAttackTimeCounter -= Time.deltaTime;
+            if (currentEnemy.character.currentHealth <= 0)
+            {
+                currentEnemy.SwichState(NPCState.Dead);
+            }
             
             if (currentEnemy.character.currentHealth <= 0)
             {
