@@ -8,7 +8,7 @@ namespace Script.enemy.Sega
         // private float fixJumpAttackTime = 3f;
         // private float fixJumpAttackTimeCounter;
         //
-        private float jumpAttackDistance = 3f;
+        private float jumpAttackDistance = 4f;
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;

@@ -20,6 +20,7 @@ public class Knight : GroundEnemy,ITalk
     private GroundEnemyBaseState waitState;
     public GameObject statBar;
     public GameObject text;
+    public GameObject patrol;
 
     protected override void Awake()
     {
@@ -147,6 +148,7 @@ public class Knight : GroundEnemy,ITalk
     {
         gameObject.layer = 2;
         anim.SetBool("dead", true);
+        patrol.SetActive(true);
         isDead = false;
         StartCoroutine(OnDead());
     }
@@ -155,6 +157,7 @@ public class Knight : GroundEnemy,ITalk
         yield return new WaitForSeconds(0.05f); 
         knight.statBar.SetActive(false);
         anim.SetBool("dead", false);
+        
     }
 
     public virtual void BloodEffect()

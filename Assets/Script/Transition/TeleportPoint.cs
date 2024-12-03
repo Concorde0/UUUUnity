@@ -12,7 +12,7 @@ public class TeleportPoint : MonoBehaviour
     {
         if (canTrigger != true) 
         {
-            Debug.Log("11");
+            
             loadEventSO.RaiseLoadRequestEvent(sceneToGo, positionToGo, true);
             canTrigger = true;
         }

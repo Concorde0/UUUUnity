@@ -6,7 +6,6 @@ using UnityEngine;
 public class Demon1 : MonoBehaviour
 {
     public float attackDistance;
-    //private Rigidbody2D rb;
     private Animator anim;
     public Transform Knight;
     private void Awake()

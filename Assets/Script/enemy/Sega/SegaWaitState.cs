@@ -11,6 +11,7 @@ namespace Script.enemy.Sega
         {
             currentEnemy = enemy;
             currentEnemy.anim.SetBool("chase",true);
+            currentEnemy.anim.SetBool("wallup",false);
             waitFixTimeCounter = waitFix;
         }
 
@@ -30,6 +31,11 @@ namespace Script.enemy.Sega
             waitFixTimeCounter -= Time.deltaTime;
             currentEnemy.sega.WaitPosition();
 
+            if (Vector2.Distance(currentEnemy.transform.position, currentEnemy.sega.waitPosition.transform.position) < 0.3f)
+            {
+                currentEnemy.anim.SetBool("chase",false);
+            }
+            
             if (waitFixTimeCounter <= 0)
             {
                 if (Vector2.Distance(currentEnemy.transform.position, currentEnemy.playerPos.transform.position) <=

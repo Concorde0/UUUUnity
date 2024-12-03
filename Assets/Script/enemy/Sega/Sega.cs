@@ -41,6 +41,7 @@ public class Sega : GroundEnemy
 
     public bool isEscape;
     public bool isMoveWallPosition1;
+    public bool isMoveWallPosition2;
     public bool isUp;
     
 
@@ -273,5 +274,8 @@ public class Sega : GroundEnemy
         Instantiate(smallDemonPrefab,smallDemonPosition2, Quaternion.identity);
     }
 
-    
+    private void MoveToTop()
+    {
+        transform.position = new Vector3(75f, 65f, 0);
+    }
 }

@@ -22,7 +22,6 @@ namespace Script.enemy.Sega
             if (Vector2.Distance(currentEnemy.transform.position,
                     currentEnemy.sega.jumpPosition.transform.position) < 0.5f)
             {
-                Debug.Log("change");
                 currentEnemy.SwichState(NPCState.JumpWall);
             }
             

@@ -12,6 +12,8 @@ namespace Script.enemy.Sega
         {
             currentEnemy = enemy;
             currentEnemy.anim.SetBool("wallmove",true);
+            
+
             currentEnemy.rb.gravityScale = 0;
             wallUpTimeCounter = wallUpTime;
             
@@ -24,7 +26,7 @@ namespace Script.enemy.Sega
 
         public override void PhysicsUpdate()
         {
-            
+            currentEnemy.anim.SetBool("wallattack",false);
             
             if (currentEnemy.character.currentHealth <= 0)
             {
@@ -48,7 +50,7 @@ namespace Script.enemy.Sega
 
                 currentEnemy.sega.MoveToWallPosition1();
                 if (Vector2.Distance(currentEnemy.transform.position,
-                        currentEnemy.sega.wallPosition1.transform.position) <=  1f)
+                        currentEnemy.sega.wallPosition1.transform.position) <= 0.3f)
                 {
                     currentEnemy.SwichState(NPCState.WallAttack);
                 }
@@ -60,24 +62,27 @@ namespace Script.enemy.Sega
             {
                 Debug.Log("To 2 wall");
                 currentEnemy.sega.MoveToWallPosition2();
+                
                 if (Vector2.Distance(currentEnemy.transform.position,
-                        currentEnemy.sega.wallPosition2.transform.position) <= 1f)
+                        currentEnemy.sega.wallPosition2.transform.position) <= 0.2f)
                 {
-                    currentEnemy.sega.isUp = true;
                     currentEnemy.SwichState(NPCState.WallAttack);
                     
                 }
+                
+                
                 
             }
             
             
             if (currentEnemy.sega.isUp)
             {
-                Debug.Log("To up");
+                
                 currentEnemy.sega.MoveToWallPositionUp();
                 if (Vector2.Distance(currentEnemy.transform.position,
-                        currentEnemy.sega.wallPositionUp.transform.position) <= 1f)
+                        currentEnemy.sega.wallPositionUp.transform.position) <= 0.3f)
                 {
+                    Debug.Log("To up");
                     isCheack = true;
                     currentEnemy.anim.SetBool("wallmove",false);
                     currentEnemy.anim.SetBool("wallup",true);

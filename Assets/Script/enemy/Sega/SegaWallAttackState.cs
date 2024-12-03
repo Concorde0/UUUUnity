@@ -8,25 +8,24 @@ namespace Script.enemy.Sega
         private float attackTimeCounter;
 
         private bool isCheck;
+        private bool isEscape;
         
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
-            currentEnemy.sega.isMoveWallPosition1 = true;
             currentEnemy.anim.SetBool("wallwait", true);   
             currentEnemy.rb.velocity = new Vector2(0f, 0f);
             attackTimeCounter = attackTime;
+            
         }
 
         public override void LogicUpdate()
         {
-            
-            
             if (currentEnemy.character.currentHealth <= 0)
             {
                 currentEnemy.SwichState(NPCState.Dead);
             }
-            Debug.Log("wallAttack");
+            Debug.Log("wallWait");
             
             if (isCheck)
             {
@@ -38,9 +37,10 @@ namespace Script.enemy.Sega
                 currentEnemy.SwichState(NPCState.WallMove);
             }
             
-            if (Vector2.Distance(currentEnemy.transform.position, currentEnemy.playerPos.transform.position) < 1f)
+            if (Vector2.Distance(currentEnemy.transform.position, currentEnemy.playerPos.transform.position) < 3f )
             {
-                currentEnemy.anim.SetBool("wallattack", true);
+                Debug.Log("wallAttack");
+                currentEnemy.anim.SetBool("wallattack",true);
                 currentEnemy.anim.SetBool("wallwait", false);  
                 isCheck = true;
             }
@@ -53,7 +53,12 @@ namespace Script.enemy.Sega
 
         public override void OnExit()
         {
-            currentEnemy.anim.SetBool("wallattack", false);
+            if (currentEnemy.sega.isMoveWallPosition1)
+            {
+                currentEnemy.sega.isUp = true;
+            }
+            currentEnemy.sega.isMoveWallPosition1 = true;
+
             currentEnemy.anim.SetBool("wallwait", false);
             isCheck = false;
 

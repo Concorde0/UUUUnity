@@ -4,7 +4,8 @@ namespace Script.enemy.Sega
 {
     public class SegaAttackState : GroundEnemyBaseState
     {
-        private float attackTime = 2.1f;
+        private bool issEscape;
+        private float attackTime = 2.8f;
         private float attackTimeCounter;
         public override void OnEnter(GroundEnemy enemy)
         {
@@ -17,6 +18,13 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
+            //Escape
+            if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 1.5f && !issEscape)
+            {
+                issEscape = true;
+                currentEnemy.anim.SetBool("attack", false);
+                currentEnemy.SwichState(NPCState.Escape);
+            }
             
             if (currentEnemy.character.currentHealth <= 0)
             {

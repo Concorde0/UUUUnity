@@ -13617,7 +13617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
+  damage: 30
 --- !u!60 &971790635
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13818,8 +13818,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newGameEvent: {fileID: 11400000, guid: 36b76c370aef5c9438fc55019b4852ea, type: 2}
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 400
+  currentHealth: 400
   maxMagic: 100
   currentMagic: 100
   maxPower: 200

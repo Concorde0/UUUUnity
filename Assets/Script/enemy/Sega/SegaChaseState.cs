@@ -4,12 +4,14 @@ namespace Script.enemy.Sega
 {
     public class SegaChaseState : GroundEnemyBaseState
     {
+        private bool issEscape;
         public override void OnEnter(GroundEnemy enemy)
         {
             currentEnemy = enemy;
             currentEnemy.currentSpeed = currentEnemy.normalSpeed;
             currentEnemy.sega.isChase = true;
             currentEnemy.anim.SetBool("chase",true);
+                                   
         }
 
         public override void LogicUpdate()
@@ -22,6 +24,12 @@ namespace Script.enemy.Sega
                 currentEnemy.SwichState(NPCState.Dead);
             }
             
+            //Escape
+            if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 2f && !issEscape)
+            {
+                issEscape = true;
+                currentEnemy.SwichState(NPCState.Escape);
+            }
             //Turn
             if (currentEnemy.rb.transform.position.x < currentEnemy.playerPos.transform.position.x)
             {
@@ -32,11 +40,6 @@ namespace Script.enemy.Sega
                 currentEnemy.rb.transform.localScale = new(-2, 2, 2);
             }
             
-            //Escape
-            if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 2)
-            {
-                currentEnemy.SwichState(NPCState.Escape);
-            }
             
             //JumpFlyAttack
             if (currentEnemy.sega.jumpFlyAttackTimeCounter <= 0)
