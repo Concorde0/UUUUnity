@@ -104,10 +104,6 @@ public class Character : MonoBehaviour,ISaveable
         characterRB?.Invoke(rb);
         OnHealthChange?.Invoke(this);
     }
-    public void PowerConsume()
-    {
-
-    }
 
     private void TriggerInvulnerable()
     {

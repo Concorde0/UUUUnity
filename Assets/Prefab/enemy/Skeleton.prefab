@@ -276,6 +276,7 @@ MonoBehaviour:
   death: {fileID: 0}
   witcher: {fileID: 0}
   bandits: {fileID: 0}
+  sega: {fileID: 0}
   character: {fileID: 0}
   normalSpeed: 3
   chaseSpeed: 270
@@ -431,7 +432,7 @@ Transform:
   m_GameObject: {fileID: 3901651155536882187}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.9775124, y: -0.36869746, z: 0}
+  m_LocalPosition: {x: 7.9775124, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -653,7 +654,7 @@ Transform:
   m_GameObject: {fileID: 8118668697361505169}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.355821, y: -0.3686975, z: 0}
+  m_LocalPosition: {x: -7.355821, y: -0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

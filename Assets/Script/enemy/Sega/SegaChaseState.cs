@@ -18,6 +18,9 @@ namespace Script.enemy.Sega
         {
             Debug.Log("chase");
             
+            currentEnemy.sega.Resilience();
+            
+            
             //dead
             if (currentEnemy.character.currentHealth <= 0)
             {

@@ -8,6 +8,7 @@ using UnityEngine.Events;
 
 public class Sega : GroundEnemy
 {
+    public UnityEvent<Sega> stone;
     
     public bool isChase;
     [Header("CoolDown")]
@@ -22,7 +23,7 @@ public class Sega : GroundEnemy
     public float jumpFlyAttackTimeCounter;
     public float attack2CooldownTimeCounter;
 
-    [Header("1")]
+    [Header("float")]
     // public float jumpFlyAttackVelocityY;
     public float jumpFlyAttackSpeed;
 
@@ -32,6 +33,13 @@ public class Sega : GroundEnemy
     public float jumpAttackDistance;
     public float jumpAttackForce;
     public float jumpAttackSpeed;
+    public float hurtForceHorizontal;
+    public float hurtForceVertical;
+    [Header("Resilience")] 
+    public float resilienceValue;
+    public float resilienceTime;
+    public float resilienceTimeCounter;
+    public float currentHealth;
 
     [Header("bool")] 
     public bool magic1;
@@ -85,6 +93,7 @@ public class Sega : GroundEnemy
     private GroundEnemyBaseState segaWaitState;
     private GroundEnemyBaseState segaUpState;
     
+    private GroundEnemyBaseState segaHurtState;
     private GroundEnemyBaseState segaDeadState;
     protected override void Awake()
     {
@@ -104,6 +113,8 @@ public class Sega : GroundEnemy
         segaWallAttackState = new SegaWallAttackState();
         segaWaitState = new SegaWaitState();
         
+        
+        segaHurtState = new SegaHurtState();
         segaDeadState = new SegaDeadState();
         physiscCheck = GetComponent<PhysiscCheck>();
 
@@ -120,6 +131,8 @@ public class Sega : GroundEnemy
         magic2CooldownTimeCounter = magic2Cooldown;
         attack2CooldownTimeCounter = attack2Cooldown;
         jumpFlyAttackTimeCounter = jumpFlyAttackCooldown;
+
+        currentHealth = character.currentHealth;
     }
 
     public override void OnDisable()
@@ -165,8 +178,11 @@ public class Sega : GroundEnemy
         {
             attack2CooldownTimeCounter -= Time.deltaTime;
         }
+
         
-        
+
+        // if()
+
     }
     public override void SwichState(NPCState state)
     {
@@ -187,6 +203,7 @@ public class Sega : GroundEnemy
             NPCState.WallAttack => segaWallAttackState,
             NPCState.SegaUp => segaUpState,
             NPCState.Wait => segaWaitState,
+            NPCState.Hurt => segaHurtState,
             NPCState.Dead => segaDeadState,
             
             _ => null
@@ -208,6 +225,26 @@ public class Sega : GroundEnemy
             Escape();
         }
         currentState.PhysicsUpdate();
+    }
+
+    public void Resilience()
+    {
+        
+        if (character.currentHealth < currentHealth)
+        {
+            resilienceTimeCounter -= Time.deltaTime;
+            if (currentHealth - character.currentHealth > resilienceValue)
+            {
+                SwichState(NPCState.Hurt);
+                currentHealth = character.currentHealth;
+                resilienceTimeCounter = resilienceTime;
+            }
+            if (resilienceTimeCounter <= 0)
+            {
+                currentHealth = character.currentHealth;
+                resilienceTimeCounter = resilienceTime;
+            }
+        }
     }
 
     private void Chase()
@@ -258,6 +295,7 @@ public class Sega : GroundEnemy
 
     public void InstantiateRock()
     {
+        stone?.Invoke(this);
         var playerPosition1 = new Vector2(playerPos.position.x+2, playerPos.position.y+1);
         var playerPosition2 = new Vector2(playerPos.position.x-2, playerPos.position.y+1);
         var playerPosition3 = new Vector2(playerPos.position.x, playerPos.position.y+6);

@@ -4927,7 +4927,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_297
+      name: hurt1
       rect:
         serializedVersion: 2
         x: 22
@@ -4948,7 +4948,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_298
+      name: hurt2
       rect:
         serializedVersion: 2
         x: 92
@@ -4969,7 +4969,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_299
+      name: hurt3
       rect:
         serializedVersion: 2
         x: 147
@@ -4990,7 +4990,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_300
+      name: hurt4
       rect:
         serializedVersion: 2
         x: 221
@@ -5011,7 +5011,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_301
+      name: hurt5
       rect:
         serializedVersion: 2
         x: 287
@@ -5032,7 +5032,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_302
+      name: hurt6
       rect:
         serializedVersion: 2
         x: 361
@@ -5053,10 +5053,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_303
+      name: hurt7
       rect:
         serializedVersion: 2
-        x: 448
+        x: 449
         y: 147
         width: 73
         height: 42
@@ -5074,7 +5074,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_304
+      name: hurt8
       rect:
         serializedVersion: 2
         x: 531
@@ -5095,7 +5095,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_305
+      name: hurt9
       rect:
         serializedVersion: 2
         x: 610
@@ -5116,7 +5116,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_306
+      name: hurt10
       rect:
         serializedVersion: 2
         x: 677
@@ -5137,7 +5137,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_307
+      name: hurt11
       rect:
         serializedVersion: 2
         x: 745
@@ -5158,7 +5158,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_308
+      name: hurt12
       rect:
         serializedVersion: 2
         x: 815
@@ -5758,18 +5758,6 @@ TextureImporter:
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_294: 1897733561
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_295: 1515271480
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_296: -1925096216
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_297: 462006151
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_298: 1234403379
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_299: 1011708261
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_300: -462082634
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_301: 1820358172
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_302: -262714086
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_303: -456739175
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_304: 364737070
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_305: 1390736986
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_306: -1532781950
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_307: 1376270370
-      Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_308: 1893446083
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_319: 696366579
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_320: -2126851888
       Sega_Genesis_32X_-_Gargoyles_-_Goliath-removebg_321: 885674513
@@ -5849,6 +5837,18 @@ TextureImporter:
       dead7: 833692219
       dead8: 1753996689
       dead9: -985733054
+      hurt1: 462006151
+      hurt10: -1532781950
+      hurt11: 1376270370
+      hurt12: 1893446083
+      hurt2: 1234403379
+      hurt3: 1011708261
+      hurt4: -462082634
+      hurt5: 1820358172
+      hurt6: -262714086
+      hurt7: -456739175
+      hurt8: 364737070
+      hurt9: 1390736986
       idle: 1879998687
       idle1: -1501476672
       idle2: -1719795565

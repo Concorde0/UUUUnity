@@ -16,7 +16,7 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
-            
+            currentEnemy.sega.Resilience();
             
             if (currentEnemy.character.currentHealth <= 0)
             {

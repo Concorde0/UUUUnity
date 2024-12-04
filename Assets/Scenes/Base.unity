@@ -11725,7 +11725,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: -1.9000001, z: -10}
+  m_LocalPosition: {x: 26.5, y: 20.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -13617,7 +13617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161cd1940077a845a734d30b225966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 3
 --- !u!60 &971790635
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13794,7 +13794,7 @@ Transform:
   m_GameObject: {fileID: 997327767}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: -5.4, z: 0}
+  m_LocalPosition: {x: 26.5, y: 16.9, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14016,6 +14016,7 @@ MonoBehaviour:
   afterSceneLoadedEvent: {fileID: 11400000, guid: 52f09459a3627674c951d65f16df842a, type: 2}
   loadDataEvnet: {fileID: 11400000, guid: d6427b260593af4488b7289d9093f7e2, type: 2}
   backToMenuEvent: {fileID: 11400000, guid: 1edd4df5168581d419ccd231051bc508, type: 2}
+  segaStoneEvent: {fileID: 11400000, guid: 870482e0d7d8a2c4b8186e2c028bbd61, type: 2}
   rb: {fileID: 0}
   inputDirection: {x: 0, y: 0}
   currentSpeed: 0
@@ -14035,6 +14036,7 @@ MonoBehaviour:
   isMagic: 0
   isDrink: 0
   isMagic2: 0
+  isStone: 0
   arrowPrefab: {fileID: 5586905182270694457, guid: b6bd2fb26f6da9147bc5e4822962a79c, type: 3}
   pauseMenu: {fileID: 915379155}
   stepGrass1: {fileID: 8300000, guid: c48bff4b2b943c24a9eaf04b4e08631d, type: 3}
@@ -14652,7 +14654,7 @@ Transform:
   m_GameObject: {fileID: 1179956698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: -1.9000001, z: -10}
+  m_LocalPosition: {x: 26.5, y: 20.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

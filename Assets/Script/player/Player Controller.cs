@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public VoidEventSO afterSceneLoadedEvent;
     public VoidEventSO loadDataEvnet;
     public VoidEventSO backToMenuEvent;
-
+    public VoidEventSO segaStoneEvent;
     public PlayerInputControl inputControl;
     public Rigidbody2D rb;
     private PhysiscCheck physiscCheck;
@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
     public bool isMagic;
     public bool isDrink;
     public bool isMagic2;
+    public bool isStone;
 
     [Header("prefab")]
     public GameObject arrowPrefab;
@@ -65,8 +66,9 @@ public class PlayerController : MonoBehaviour
     private Character character;
     public PlayAudioEventSO playAudioEvent;
 
-    
-    
+    [Header("Stone")]
+    public int requiredPresses = 10; // 需要的按键次数
+    private int pressCount = 0; // 当前按键次数    
     
     
 
@@ -138,7 +140,8 @@ public class PlayerController : MonoBehaviour
         afterSceneLoadedEvent.OnEventRaised += OnafterSceneLoadedEvent;
         loadDataEvnet.OnEventRaised += OnLoadDataEvnet;
         backToMenuEvent.OnEventRaised += OnLoadDataEvnet;
-        
+        segaStoneEvent.OnEventRaised += OnSegaStoneEvent;
+
 
 
     }
@@ -150,10 +153,13 @@ public class PlayerController : MonoBehaviour
         afterSceneLoadedEvent.OnEventRaised -= OnafterSceneLoadedEvent;
         loadDataEvnet.OnEventRaised -= OnLoadDataEvnet;
         backToMenuEvent.OnEventRaised -= OnLoadDataEvnet;
+        segaStoneEvent.OnEventRaised -= OnSegaStoneEvent;
+
 
 
     }
 
+    
 
 
     private void Update()
@@ -167,7 +173,7 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Instance.NotifyObservers();
         }
-        //TODO:
+       
 
 
 
@@ -175,7 +181,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (!isHurt && !isAttack && !isArrow)
+        if (!isHurt && !isAttack && !isArrow && !isStone)
         {
             Move();
         }
@@ -249,6 +255,14 @@ public class PlayerController : MonoBehaviour
     {
         inputControl.GamePlay.Enable();
     }
+    
+    private void OnSegaStoneEvent()
+    {
+        playerAnimation.isStone();
+        isStone = true;
+        
+    }
+    
 
     private void Shoot(InputAction.CallbackContext obj)
     {
@@ -260,8 +274,8 @@ public class PlayerController : MonoBehaviour
                 return;
             }
             isArrow = true;
-            Vector3 arorwPosition = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
-            Instantiate(arrowPrefab, arorwPosition, transform.rotation);
+            Vector3 arrowPosition = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+            Instantiate(arrowPrefab, arrowPosition, transform.rotation);
             shootWaitTimeCounter = shootWaitTime;
         }
 
@@ -269,7 +283,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void Move()
+    private void Move()
     {
 
         rb.velocity = new Vector2(inputDirection.x * currentSpeed * Time.deltaTime, rb.velocity.y);
@@ -298,7 +312,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext obj)
     {
-        if (physiscCheck.isGround)
+        if (physiscCheck.isGround && !isStone)
         {
             rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
@@ -336,7 +350,18 @@ public class PlayerController : MonoBehaviour
     
     private void PlayerLightAttack(InputAction.CallbackContext obj)
     {
-        if (Sword.instance.swordSign.activeSelf)
+        if (isStone)
+        {
+            pressCount++;
+            if(pressCount >= requiredPresses)
+            {
+                isStone = false;
+                pressCount = 0;
+            }
+        }
+        
+        
+        if (Sword.instance.swordSign.activeSelf && !isStone)
         {
             if (character.currentPower > 20)
             {
@@ -346,7 +371,7 @@ public class PlayerController : MonoBehaviour
             Attack?.Invoke(character);
         }
 
-        if (Axe.instance.axeSign.activeSelf)
+        if (Axe.instance.axeSign.activeSelf && !isStone)
         {
             if (character.currentPower > 30)
             {
@@ -379,7 +404,7 @@ public class PlayerController : MonoBehaviour
     private void skill(InputAction.CallbackContext obj) 
     {
         //LightSkill
-        if (LightSkill.instance.lightSign.activeSelf && Staff.instance.staffSign.activeSelf)
+        if (LightSkill.instance.lightSign.activeSelf && Staff.instance.staffSign.activeSelf && !isStone)
         {
             if (character.currentMagic >= LightSkill.instance.magicConsumer)
             {
@@ -396,7 +421,7 @@ public class PlayerController : MonoBehaviour
         }
         
         //BloodLineSkill
-        if (BloodLineSkill.instance.bloodLineSign.activeSelf && Staff.instance.staffSign.activeSelf)
+        if (BloodLineSkill.instance.bloodLineSign.activeSelf && Staff.instance.staffSign.activeSelf && !isStone)
         {
             if (character.currentMagic >= BloodLineSkill.instance.magicConsumer)
             {
@@ -406,7 +431,7 @@ public class PlayerController : MonoBehaviour
         }
         
         //GoldSkill
-        if (GoldSkill.instance.goldSign.activeSelf && Staff.instance.staffSign.activeSelf)
+        if (GoldSkill.instance.goldSign.activeSelf && Staff.instance.staffSign.activeSelf && !isStone)
         {
             if (character.currentMagic >= GoldSkill.instance.magicConsumer && character.currentPower >= 55f)
             {
@@ -421,7 +446,7 @@ public class PlayerController : MonoBehaviour
         }
         
         //WaterSkill
-        if (WaterSkill.instance.waterSign.activeSelf && Staff.instance.staffSign.activeSelf)
+        if (WaterSkill.instance.waterSign.activeSelf && Staff.instance.staffSign.activeSelf && !isStone)
         {
             if (character.currentMagic >= WaterSkill.instance.magicConsumer)
             {

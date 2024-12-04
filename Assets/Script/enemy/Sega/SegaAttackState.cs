@@ -18,6 +18,9 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
+            
+            currentEnemy.sega.Resilience();
+            
             //Escape
             if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 1.5f && !issEscape)
             {

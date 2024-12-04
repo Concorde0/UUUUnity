@@ -36,6 +36,7 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetBool("isMagic",playerController.isMagic);
         anim.SetBool("isDrink",playerController.isDrink);
         anim.SetBool("isMagic2",playerController.isMagic2);
+        anim.SetBool("isStone",playerController.isStone);
     }
 
 
@@ -75,5 +76,10 @@ public class PlayerAnimation : MonoBehaviour
     public void GoldEffect()
     {
         anim.SetTrigger("goldEffect");
+    }
+
+    public void isStone()
+    {
+        anim.SetBool("isStone", true);
     }
 }
