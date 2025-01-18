@@ -26,6 +26,7 @@ namespace Script.enemy.Sega
 
         public override void PhysicsUpdate()
         {
+            Debug.Log("Wall Move");
             currentEnemy.anim.SetBool("wallattack",false);
             
             if (currentEnemy.character.currentHealth <= 0)
@@ -66,6 +67,7 @@ namespace Script.enemy.Sega
                 if (Vector2.Distance(currentEnemy.transform.position,
                         currentEnemy.sega.wallPosition2.transform.position) <= 0.2f)
                 {
+                    
                     currentEnemy.SwichState(NPCState.WallAttack);
                     
                 }

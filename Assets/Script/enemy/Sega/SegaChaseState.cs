@@ -28,9 +28,9 @@ namespace Script.enemy.Sega
             }
             
             //Escape
-            if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 2f && !issEscape)
+            if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 1.5f && !currentEnemy.sega.issEscape)
             {
-                issEscape = true;
+                currentEnemy.sega.issEscape = true;
                 currentEnemy.SwichState(NPCState.Escape);
             }
             //Turn

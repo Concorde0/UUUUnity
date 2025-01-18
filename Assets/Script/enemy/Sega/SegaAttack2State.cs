@@ -23,7 +23,6 @@ namespace Script.enemy.Sega
                 currentEnemy.SwichState(NPCState.Dead);
             }
             
-            Debug.Log("Attack2");
             stateTimeCounter -= Time.deltaTime;
             if (stateTimeCounter <= 0)
             {

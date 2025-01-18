@@ -22,7 +22,6 @@ namespace Script.enemy.Sega
             {
                 currentEnemy.SwichState(NPCState.Dead);
             }
-            Debug.Log("magic1");
             stateTimeCounter -= Time.deltaTime;
             if (stateTimeCounter <= 0)
             {

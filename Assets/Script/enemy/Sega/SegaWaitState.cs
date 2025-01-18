@@ -27,7 +27,6 @@ namespace Script.enemy.Sega
             {
                 currentEnemy.SwichState(NPCState.Dead);
             }
-            Debug.Log("wait");
             waitFixTimeCounter -= Time.deltaTime;
             currentEnemy.sega.WaitPosition();
 

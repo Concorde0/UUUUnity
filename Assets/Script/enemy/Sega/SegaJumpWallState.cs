@@ -24,7 +24,6 @@ namespace Script.enemy.Sega
             {
                 currentEnemy.SwichState(NPCState.Dead);
             }
-            Debug.Log("jumpWall");
             currentEnemy.sega.JumpToWallPosition();
             if (Vector2.Distance(currentEnemy.transform.position,
                     currentEnemy.sega.jumpWallPosition.transform.position) <= 1f)

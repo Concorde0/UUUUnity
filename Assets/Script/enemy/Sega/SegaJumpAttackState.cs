@@ -22,7 +22,6 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
-            Debug.Log("JumpAttack");
 
             if (currentEnemy.character.currentHealth <= 0)
             {

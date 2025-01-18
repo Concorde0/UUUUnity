@@ -6,8 +6,7 @@ public class BaseInteract : MonoBehaviour
 {
     public bool canInteract;
     private PlayerController playerController;
-    //UI提示按键
-    //可交互物品描边
+   
     private void Awake()
     {
         canInteract = false; 

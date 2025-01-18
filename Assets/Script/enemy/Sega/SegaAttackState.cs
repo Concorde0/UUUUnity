@@ -22,9 +22,9 @@ namespace Script.enemy.Sega
             currentEnemy.sega.Resilience();
             
             //Escape
-            if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 1.5f && !issEscape)
+            if (currentEnemy.character.currentHealth <= currentEnemy.character.maxHealth / 1.5f && !currentEnemy.sega.issEscape)
             {
-                issEscape = true;
+                currentEnemy.sega.issEscape = true;
                 currentEnemy.anim.SetBool("attack", false);
                 currentEnemy.SwichState(NPCState.Escape);
             }

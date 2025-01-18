@@ -24,7 +24,7 @@ namespace Script.enemy.Sega
 
         public override void LogicUpdate()
         {
-            
+            Debug.Log("hurt");
             if (currentEnemy.character.currentHealth <= 0)
             {
                 currentEnemy.SwichState(NPCState.Dead);

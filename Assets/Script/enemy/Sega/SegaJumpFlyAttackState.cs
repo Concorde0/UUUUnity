@@ -25,7 +25,6 @@ namespace Script.enemy.Sega
             {
                 currentEnemy.SwichState(NPCState.Dead);
             }
-            Debug.Log("JumpFlyAttack1");
             stateTimeCounter -= Time.deltaTime;
             if (stateTimeCounter <= 0)
             {

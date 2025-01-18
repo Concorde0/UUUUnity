@@ -38,10 +38,7 @@ public class SmallDemon : GroundEnemy
     protected override void Update()
     {
         target2 = GameObject.FindGameObjectWithTag(targetTag2);
-        if (playerPos == null)
-        {
-            Debug.Log("null");
-        }
+        
 
         if (fixMoveTimeCounter >= 0)
         {

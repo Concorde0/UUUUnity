@@ -32,7 +32,6 @@ namespace Script.enemy.Sega
             {
                 currentEnemy.SwichState(NPCState.Dead);
             }
-            Debug.Log("JumpFlyAttack2");
             recoverGravityTimeCounter -= Time.deltaTime;
             if (recoverGravityTimeCounter <= 0 )
             {

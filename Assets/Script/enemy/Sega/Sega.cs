@@ -48,6 +48,7 @@ public class Sega : GroundEnemy
     public bool attack2;
 
     public bool isEscape;
+    public bool issEscape;
     public bool isMoveWallPosition1;
     public bool isMoveWallPosition2;
     public bool isUp;
